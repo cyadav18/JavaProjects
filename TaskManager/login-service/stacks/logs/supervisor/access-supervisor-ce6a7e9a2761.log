@@ -69008,3 +69008,779 @@ RESULT 958
 processname:editor groupname:editor pid:1821 channel:stdout
 {"level":"info","ts":1741330084.2166185,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"47796","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.00037825,"size":6812,"status":200,"resp_headers":{"Vary":["Accept-Encoding"],"Etag":["\"d87h49k4cp2v598\""],"Accept-Ranges":["bytes"],"Content-Length":["6812"],"X-Appsmith-Request-Id":["750f36f3-9124-491c-9508-562ef0f4a26b"],"X-Request-Id":["invalid_request_id"],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"X-Content-Type-Options":["nosniff"],"Content-Security-Policy":["frame-ancestors 'self' *"]},"traceID":"438ce90a4c494bb4d19e8597d5a41b62","spanID":"6febf0dff11758a3","uuid":"750f36f3-9124-491c-9508-562ef0f4a26b"}
 READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330097.1371658,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 865
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330099.3544912,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"35470","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Accept":["*/*"],"X-Request-Id":["invalid_request_id"],"Traceparent":["00-4111b618e5b5d09b5f36044de6d0dfac-1226349a2edf9706-01"],"User-Agent":["curl/7.68.0"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330099.3545105,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330099.3545456,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 958
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330099.354829,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"35470","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.001159375,"size":6812,"status":200,"resp_headers":{"Content-Length":["6812"],"X-Appsmith-Request-Id":["98582a9e-06cc-4967-9b76-d98a490c19ff"],"X-Request-Id":["invalid_request_id"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Accept-Ranges":["bytes"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Content-Type-Options":["nosniff"],"Vary":["Accept-Encoding"],"Etag":["\"d87h49k4cp2v598\""],"Content-Type":["text/html; charset=utf-8"]},"traceID":"4111b618e5b5d09b5f36044de6d0dfac","spanID":"1226349a2edf9706","uuid":"98582a9e-06cc-4967-9b76-d98a490c19ff"}
+READY
+RESULT 161
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:48:23.667158293Z level=info msg="reporting Alloy stats" date=2025-03-07T06:48:23.666Z
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:48:23.770863876Z level=info msg="failed to send usage report" retries=0 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 288
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:48:25.45420846Z level=info msg="failed to send usage report" retries=1 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:48:29.345208046Z level=info msg="failed to send usage report" retries=2 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330112.1445873,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 865
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330114.5123785,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"38832","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-59ae40c550e47606e1f2ddc2b90688f2-f1b8ba43d4fb2ba7-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330114.5123992,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330114.5124104,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 959
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330114.5125656,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"38832","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.001216292,"size":6812,"status":200,"resp_headers":{"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Content-Type-Options":["nosniff"],"X-Request-Id":["invalid_request_id"],"Etag":["\"d87h49k4cp2v598\""],"Accept-Ranges":["bytes"],"Content-Length":["6812"],"X-Appsmith-Request-Id":["de59ff67-30ad-489e-949d-861b69bf8f7e"],"Vary":["Accept-Encoding"],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"]},"traceID":"59ae40c550e47606e1f2ddc2b90688f2","spanID":"f1b8ba43d4fb2ba7","uuid":"de59ff67-30ad-489e-949d-861b69bf8f7e"}
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:48:35.099532923Z level=info msg="failed to send usage report" retries=3 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330127.1456666,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 865
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330129.6508942,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"33018","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-c909fa670f59c0fb9f16d4956cbd311a-1689185cf34d0e8b-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330129.6509204,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330129.6509418,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 956
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330129.651123,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"33018","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"Accept":["*/*"],"User-Agent":["curl/7.68.0"]}},"bytes_read":0,"user_id":"","duration":0.0005025,"size":6812,"status":200,"resp_headers":{"X-Appsmith-Request-Id":["3a96f70f-5a6f-4101-bda9-1236a6a761e3"],"Vary":["Accept-Encoding"],"Accept-Ranges":["bytes"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Content-Length":["6812"],"X-Content-Type-Options":["nosniff"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Request-Id":["invalid_request_id"],"Etag":["\"d87h49k4cp2v598\""],"Content-Type":["text/html; charset=utf-8"]},"traceID":"c909fa670f59c0fb9f16d4956cbd311a","spanID":"1689185cf34d0e8b","uuid":"3a96f70f-5a6f-4101-bda9-1236a6a761e3"}
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:48:50.771234375Z level=info msg="failed to send usage report" retries=4 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 832
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:48:50.771402625Z level=info msg="failed to report usage" err="5 errors: Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 301
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330142.148942,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 864
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330144.7931798,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"38706","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-c4e6fada1bcc0ebc1a92bca5a0419ac1-9887cd96cf16591a-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330144.7932308,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330144.793261,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 958
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330144.7935672,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"38706","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.00132975,"size":6812,"status":200,"resp_headers":{"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Accept-Ranges":["bytes"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["d4af6c81-33b1-4841-abbc-a54df8f13c79"],"Vary":["Accept-Encoding"],"Etag":["\"d87h49k4cp2v598\""],"Content-Type":["text/html; charset=utf-8"],"Content-Length":["6812"],"X-Content-Type-Options":["nosniff"],"X-Request-Id":["invalid_request_id"]},"traceID":"c4e6fada1bcc0ebc1a92bca5a0419ac1","spanID":"9887cd96cf16591a","uuid":"d4af6c81-33b1-4841-abbc-a54df8f13c79"}
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330157.1509502,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 865
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330159.9334257,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"55806","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Accept":["*/*"],"X-Request-Id":["invalid_request_id"],"Traceparent":["00-8ebdb70d9fef10e239db82abd53f651c-61fd53f44ad0f387-01"],"User-Agent":["curl/7.68.0"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330159.9334595,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330159.9334893,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 959
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330159.9337714,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"55806","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000829125,"size":6812,"status":200,"resp_headers":{"Accept-Ranges":["bytes"],"X-Content-Type-Options":["nosniff"],"Content-Security-Policy":["frame-ancestors 'self' *"],"Etag":["\"d87h49k4cp2v598\""],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Content-Length":["6812"],"X-Appsmith-Request-Id":["ef81778a-50ac-4143-b30c-33bbb96511ed"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Content-Type":["text/html; charset=utf-8"]},"traceID":"8ebdb70d9fef10e239db82abd53f651c","spanID":"61fd53f44ad0f387","uuid":"ef81778a-50ac-4143-b30c-33bbb96511ed"}
+READY
+RESULT 161
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:49:23.668971543Z level=info msg="reporting Alloy stats" date=2025-03-07T06:49:23.668Z
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:49:23.866954918Z level=info msg="failed to send usage report" retries=0 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 288
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:49:25.38782321Z level=info msg="failed to send usage report" retries=1 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:49:28.456096128Z level=info msg="failed to send usage report" retries=2 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330172.1596987,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:49:34.994258382Z level=info msg="failed to send usage report" retries=3 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 865
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330175.0211203,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"59884","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-0974ddb860b3a8ea71e306fd2376e808-97825a9e42651339-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330175.0211363,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330175.0211458,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 958
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330175.021273,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"59884","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000311542,"size":6812,"status":200,"resp_headers":{"X-Appsmith-Request-Id":["48539b44-79a5-4da6-b99c-df35f136545d"],"Etag":["\"d87h49k4cp2v598\""],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Accept-Ranges":["bytes"],"Content-Length":["6812"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"X-Content-Type-Options":["nosniff"],"Content-Security-Policy":["frame-ancestors 'self' *"]},"traceID":"0974ddb860b3a8ea71e306fd2376e808","spanID":"97825a9e42651339","uuid":"48539b44-79a5-4da6-b99c-df35f136545d"}
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:49:45.766741512Z level=info msg="failed to send usage report" retries=4 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 832
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:49:45.766789512Z level=info msg="failed to report usage" err="5 errors: Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330187.1619494,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 864
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330190.127069,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"59862","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-f2b599104424644ef4ef4a28cf6f2e6b-fd048b1edf2144d4-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330190.1271043,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330190.1271284,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 958
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330190.127374,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"59862","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"Accept":["*/*"],"User-Agent":["curl/7.68.0"]}},"bytes_read":0,"user_id":"","duration":0.000822416,"size":6812,"status":200,"resp_headers":{"Vary":["Accept-Encoding"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"X-Appsmith-Request-Id":["a0d3c6a2-2173-42b4-8e72-95ec87252989"],"X-Content-Type-Options":["nosniff"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Request-Id":["invalid_request_id"],"Etag":["\"d87h49k4cp2v598\""],"Content-Type":["text/html; charset=utf-8"],"Accept-Ranges":["bytes"],"Content-Length":["6812"]},"traceID":"f2b599104424644ef4ef4a28cf6f2e6b","spanID":"fd048b1edf2144d4","uuid":"a0d3c6a2-2173-42b4-8e72-95ec87252989"}
+READY
+RESULT 301
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330202.171013,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 864
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330205.2506459,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"38164","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-8dfe1d2dfbe59d4394e1a0a7531f4361-ebc8eb0206a3b549-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330205.2506688,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330205.250684,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 959
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330205.2507982,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"38164","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000342875,"size":6812,"status":200,"resp_headers":{"Vary":["Accept-Encoding"],"Etag":["\"d87h49k4cp2v598\""],"Content-Length":["6812"],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Accept-Ranges":["bytes"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["486a0d3b-d864-4f54-815b-4039e81df9a4"],"X-Content-Type-Options":["nosniff"],"X-Request-Id":["invalid_request_id"]},"traceID":"8dfe1d2dfbe59d4394e1a0a7531f4361","spanID":"ebc8eb0206a3b549","uuid":"486a0d3b-d864-4f54-815b-4039e81df9a4"}
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330217.1733036,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 864
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330220.375653,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"58412","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-d91a1772b659ad3126910b5b5ea03b94-ca3a1ca95b63b05a-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330220.3756783,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330220.3756914,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 958
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330220.375857,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"58412","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000461375,"size":6812,"status":200,"resp_headers":{"X-Request-Id":["invalid_request_id"],"Content-Type":["text/html; charset=utf-8"],"Content-Length":["6812"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["b19b6215-00ab-40e1-b021-0e7935dba2d6"],"X-Content-Type-Options":["nosniff"],"Vary":["Accept-Encoding"],"Etag":["\"d87h49k4cp2v598\""],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Accept-Ranges":["bytes"]},"traceID":"d91a1772b659ad3126910b5b5ea03b94","spanID":"ca3a1ca95b63b05a","uuid":"b19b6215-00ab-40e1-b021-0e7935dba2d6"}
+READY
+RESULT 161
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:50:23.670085751Z level=info msg="reporting Alloy stats" date=2025-03-07T06:50:23.669Z
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:50:23.784742126Z level=info msg="failed to send usage report" retries=0 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:50:25.314483669Z level=info msg="failed to send usage report" retries=1 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 288
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:50:28.68927892Z level=info msg="failed to send usage report" retries=2 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330232.1795588,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:50:33.767133006Z level=info msg="failed to send usage report" retries=3 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 864
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330235.4973822,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"36504","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-afc9358ef8813cbd8b9a7fc17c23b53e-5aaaf71fd712de23-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330235.497401,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330235.4974198,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 959
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330235.4975886,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"36504","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000410167,"size":6812,"status":200,"resp_headers":{"Accept-Ranges":["bytes"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Content-Type-Options":["nosniff"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Content-Type":["text/html; charset=utf-8"],"Content-Length":["6812"],"X-Appsmith-Request-Id":["284d7b93-4d87-471e-9fa1-29a3a10f526a"],"Etag":["\"d87h49k4cp2v598\""],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"]},"traceID":"afc9358ef8813cbd8b9a7fc17c23b53e","spanID":"5aaaf71fd712de23","uuid":"284d7b93-4d87-471e-9fa1-29a3a10f526a"}
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:50:44.510938511Z level=info msg="failed to send usage report" retries=4 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 832
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:50:44.511173261Z level=info msg="failed to report usage" err="5 errors: Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330247.1905615,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 865
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330250.6475601,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"34248","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-98bd71e4c6d3997670ad68eb26ecb959-c0f9691d758ba339-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330250.6475952,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330250.6476254,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 956
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330250.647829,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"34248","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.0008795,"size":6812,"status":200,"resp_headers":{"Etag":["\"d87h49k4cp2v598\""],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Accept-Ranges":["bytes"],"Content-Length":["6812"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["06caf65f-c041-416b-a41e-0c2028a2c076"],"X-Content-Type-Options":["nosniff"]},"traceID":"98bd71e4c6d3997670ad68eb26ecb959","spanID":"c0f9691d758ba339","uuid":"06caf65f-c041-416b-a41e-0c2028a2c076"}
+READY
+RESULT 299
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330262.1969,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 865
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330265.7861445,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"38818","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-7500a60bc0729e58cfb355a6a1bc532c-9ca60a56a467c217-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330265.7861648,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330265.7861795,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 959
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330265.7863622,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"38818","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000458917,"size":6812,"status":200,"resp_headers":{"X-Request-Id":["invalid_request_id"],"Etag":["\"d87h49k4cp2v598\""],"Content-Type":["text/html; charset=utf-8"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["7c4c64f6-dd7c-4359-ac2d-9097e6b29e04"],"X-Content-Type-Options":["nosniff"],"Vary":["Accept-Encoding"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Accept-Ranges":["bytes"],"Content-Length":["6812"]},"traceID":"7500a60bc0729e58cfb355a6a1bc532c","spanID":"9ca60a56a467c217","uuid":"7c4c64f6-dd7c-4359-ac2d-9097e6b29e04"}
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330277.2027187,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 863
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330280.914848,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"42198","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-1ad24d4bc9a0b31d135026961684dfaf-5e0a861cd3fb050b-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330280.9148657,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330280.914888,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 959
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330280.9150367,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"42198","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000395875,"size":6812,"status":200,"resp_headers":{"Vary":["Accept-Encoding"],"Accept-Ranges":["bytes"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["9e76fca7-f231-4a61-b0b5-9d7f3db883a1"],"X-Request-Id":["invalid_request_id"],"Etag":["\"d87h49k4cp2v598\""],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Content-Length":["6812"],"X-Content-Type-Options":["nosniff"]},"traceID":"1ad24d4bc9a0b31d135026961684dfaf","spanID":"5e0a861cd3fb050b","uuid":"9e76fca7-f231-4a61-b0b5-9d7f3db883a1"}
+READY
+RESULT 161
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:51:23.667067834Z level=info msg="reporting Alloy stats" date=2025-03-07T06:51:23.666Z
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:51:23.761273001Z level=info msg="failed to send usage report" retries=0 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:51:25.625749669Z level=info msg="failed to send usage report" retries=1 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:51:29.138175545Z level=info msg="failed to send usage report" retries=2 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330292.2084103,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:51:34.692589756Z level=info msg="failed to send usage report" retries=3 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 864
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330296.0551276,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"46822","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-694af5dd84e525c85139a362d995c557-fd7a00b77b376ef0-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330296.055157,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330296.0551975,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 959
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330296.0554605,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"46822","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000800791,"size":6812,"status":200,"resp_headers":{"Etag":["\"d87h49k4cp2v598\""],"Content-Type":["text/html; charset=utf-8"],"Accept-Ranges":["bytes"],"X-Content-Type-Options":["nosniff"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Content-Length":["6812"],"X-Appsmith-Request-Id":["4ae6737d-1763-47cc-a51c-5866d530cce7"]},"traceID":"694af5dd84e525c85139a362d995c557","spanID":"fd7a00b77b376ef0","uuid":"4ae6737d-1763-47cc-a51c-5866d530cce7"}
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:51:43.206457427Z level=info msg="failed to send usage report" retries=4 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 832
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:51:43.206489802Z level=info msg="failed to report usage" err="5 errors: Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330307.2151527,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 864
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330311.1485074,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"45404","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"X-Request-Id":["invalid_request_id"],"Traceparent":["00-a91b4f641cdaf44f9806b6c059bad7d6-9640431604f12703-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330311.1485403,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330311.148553,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 959
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330311.1486568,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"45404","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000311375,"size":6812,"status":200,"resp_headers":{"Content-Type":["text/html; charset=utf-8"],"Accept-Ranges":["bytes"],"Content-Length":["6812"],"X-Appsmith-Request-Id":["a81ad2b8-1544-4937-86da-a298afcdad04"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Etag":["\"d87h49k4cp2v598\""],"Content-Security-Policy":["frame-ancestors 'self' *"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"X-Content-Type-Options":["nosniff"]},"traceID":"a91b4f641cdaf44f9806b6c059bad7d6","spanID":"9640431604f12703","uuid":"a81ad2b8-1544-4937-86da-a298afcdad04"}
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330322.2233088,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 959
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330326.2671766,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"36296","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000346958,"size":6812,"status":200,"resp_headers":{"X-Request-Id":["invalid_request_id"],"Content-Length":["6812"],"X-Appsmith-Request-Id":["d275fe91-bdd0-4609-80fe-81c29a4070b0"],"X-Content-Type-Options":["nosniff"],"Content-Security-Policy":["frame-ancestors 'self' *"],"Vary":["Accept-Encoding"],"Etag":["\"d87h49k4cp2v598\""],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Accept-Ranges":["bytes"]},"traceID":"1f0942f3d8a8a696d06e4a610af5db1f","spanID":"d68c5b5ba241b9f6","uuid":"d275fe91-bdd0-4609-80fe-81c29a4070b0"}
+READY
+RESULT 865
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330326.2670372,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"36296","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-1f0942f3d8a8a696d06e4a610af5db1f-d68c5b5ba241b9f6-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330326.2670562,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330326.2670763,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 301
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330337.228884,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 959
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330341.3815744,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"53118","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000287833,"size":6812,"status":200,"resp_headers":{"Content-Length":["6812"],"X-Appsmith-Request-Id":["58a786f4-4093-42b6-a710-2ffea2d98537"],"X-Content-Type-Options":["nosniff"],"Vary":["Accept-Encoding"],"X-Request-Id":["invalid_request_id"],"Etag":["\"d87h49k4cp2v598\""],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Accept-Ranges":["bytes"],"Content-Security-Policy":["frame-ancestors 'self' *"]},"traceID":"94c722ee3150c4567624f5e385498ccc","spanID":"fc4e54bfbeb40d5c","uuid":"58a786f4-4093-42b6-a710-2ffea2d98537"}
+READY
+RESULT 864
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330341.381446,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"53118","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-94c722ee3150c4567624f5e385498ccc-fc4e54bfbeb40d5c-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330341.3814664,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330341.3814785,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 161
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:52:23.667758918Z level=info msg="reporting Alloy stats" date=2025-03-07T06:52:23.667Z
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:52:23.758718251Z level=info msg="failed to send usage report" retries=0 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:52:25.576311502Z level=info msg="failed to send usage report" retries=1 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:52:28.702473004Z level=info msg="failed to send usage report" retries=2 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330352.2370815,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 289
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:52:32.923662631Z level=info msg="failed to send usage report" retries=3 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 865
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330356.5077026,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"36868","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-187294c2a08e6d6b1db962bd3e9195fa-d14dc6a0f363a299-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330356.5077188,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330356.5077288,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 958
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330356.507836,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"36868","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000273834,"size":6812,"status":200,"resp_headers":{"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Accept-Ranges":["bytes"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Request-Id":["invalid_request_id"],"Content-Type":["text/html; charset=utf-8"],"Etag":["\"d87h49k4cp2v598\""],"Content-Length":["6812"],"X-Appsmith-Request-Id":["391d24e8-7d03-45e0-ad6c-be1c48f0221f"],"X-Content-Type-Options":["nosniff"],"Vary":["Accept-Encoding"]},"traceID":"187294c2a08e6d6b1db962bd3e9195fa","spanID":"d14dc6a0f363a299","uuid":"391d24e8-7d03-45e0-ad6c-be1c48f0221f"}
+READY
+RESULT 3079
+processname:backend groupname:backend pid:1797 channel:stdout
+[2025-03-07 06:52:42,453] [cluster-ClusterId{value='67c6ef4d53054e7c0befa23e', description='null'}-localhost:27017] requestId= userEmail= traceId= spanId= - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:583)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:428)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:381)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: The connection to the server was closed
+	at com.mongodb.internal.connection.netty.NettyStream$OpenChannelFutureListener.lambda$operationComplete$0(NettyStream.java:520)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1161)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:753)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:729)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:619)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+READY
+RESULT 3079
+processname:backend groupname:backend pid:1797 channel:stdout
+[2025-03-07 06:52:42,453] [cluster-ClusterId{value='67c6ef4c53054e7c0befa23d', description='null'}-localhost:27017] requestId= userEmail= traceId= spanId= - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:583)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:428)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:381)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: The connection to the server was closed
+	at com.mongodb.internal.connection.netty.NettyStream$OpenChannelFutureListener.lambda$operationComplete$0(NettyStream.java:520)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1161)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:753)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:729)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:619)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+READY
+RESULT 173
+processname:mongodb groupname:mongodb pid:65536 channel:stderr
+supervisor: couldn't chdir to /appsmith-stacks/data/mongodb: ENOENT
+supervisor: child process was not spawned
+READY
+RESULT 7146
+processname:backend groupname:backend pid:1797 channel:stdout
+[2025-03-07 06:52:42,464] [cluster-ClusterId{value='67c6ef4c53054e7c0befa23d', description='null'}-localhost:27017] requestId= userEmail= traceId= spanId= - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.netty.NettyStream$OpenChannelFutureListener.lambda$operationComplete$1(NettyStream.java:527)
+	at com.mongodb.internal.Locks.lambda$withLock$0(Locks.java:33)
+	at com.mongodb.internal.Locks.checkedWithLock(Locks.java:45)
+	at com.mongodb.internal.Locks.withLock(Locks.java:39)
+	at com.mongodb.internal.Locks.withLock(Locks.java:32)
+	at com.mongodb.internal.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:514)
+	at com.mongodb.internal.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:500)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:326)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:342)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:27017
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2025-03-07 06:52:42,464] [cluster-ClusterId{value='67c6ef4d53054e7c0befa23e', description='null'}-localhost:27017] requestId= userEmail= traceId= spanId= - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.netty.NettyStream$OpenChannelFutureListener.lambda$operationComplete$1(NettyStream.java:527)
+	at com.mongodb.internal.Locks.lambda$withLock$0(Locks.java:33)
+	at com.mongodb.internal.Locks.checkedWithLock(Locks.java:45)
+	at com.mongodb.internal.Locks.withLock(Locks.java:39)
+	at com.mongodb.internal.Locks.withLock(Locks.java:32)
+	at com.mongodb.internal.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:514)
+	at com.mongodb.internal.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:500)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:326)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:342)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:27017
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+READY
+RESULT 173
+processname:mongodb groupname:mongodb pid:65541 channel:stderr
+supervisor: couldn't chdir to /appsmith-stacks/data/mongodb: ENOENT
+supervisor: child process was not spawned
+READY
+RESULT 173
+processname:mongodb groupname:mongodb pid:65542 channel:stderr
+supervisor: couldn't chdir to /appsmith-stacks/data/mongodb: ENOENT
+supervisor: child process was not spawned
+READY
+RESULT 1061
+processname:alloy groupname:alloy pid:1836 channel:stderr
+ts=2025-03-07T06:52:45.78931697Z level=info msg="failed to send usage report" retries=4 err="Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+ts=2025-03-07T06:52:45.78941597Z level=info msg="failed to report usage" err="5 errors: Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority; Post \"https://stats.grafana.org/alloy-usage-report\": tls: failed to verify certificate: x509: certificate signed by unknown authority"
+READY
+RESULT 301
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330367.237529,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY
+RESULT 173
+processname:mongodb groupname:mongodb pid:65543 channel:stderr
+supervisor: couldn't chdir to /appsmith-stacks/data/mongodb: ENOENT
+supervisor: child process was not spawned
+READY
+RESULT 863
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"debug","ts":1741330371.633182,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"40894","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Traceparent":["00-3925941b7eda8ccf3a5f59f935afb4ad-e2012a6372c20773-01"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1741330371.633219,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1741330371.6332462,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 959
+processname:editor groupname:editor pid:1821 channel:stdout
+{"level":"info","ts":1741330371.6335068,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"40894","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000650334,"size":6812,"status":200,"resp_headers":{"Content-Length":["6812"],"Content-Security-Policy":["frame-ancestors 'self' *"],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Tue, 04 Mar 2025 12:17:10 GMT"],"Accept-Ranges":["bytes"],"X-Appsmith-Request-Id":["a6491492-7b02-4bec-8715-3274f6ffd935"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Etag":["\"d87h49k4cp2v598\""],"X-Content-Type-Options":["nosniff"]},"traceID":"3925941b7eda8ccf3a5f59f935afb4ad","spanID":"e2012a6372c20773","uuid":"a6491492-7b02-4bec-8715-3274f6ffd935"}
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:53.144 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:53.887 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 868
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:53.887 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.888 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.888 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.889 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.889 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.889 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 1806
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:53.890 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.890 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.890 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.890 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.890 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.890 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.891 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.891 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.891 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.891 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.891 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.891 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.891 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 466
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:53.891 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.891 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:53.891 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:53.896 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:53.896 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:54.058 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 466
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:54.058 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:54.058 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:54.058 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:54.644 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:54.645 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:55.394 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:55.394 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:55.990 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 466
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:55.991 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:55.991 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:55.991 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:56.138 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:56.139 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:56.160 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:56.160 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:56.944 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:56.944 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:57.691 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:57.692 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:58.102 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 1136
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:58.102 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:58.102 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:58.102 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:58.102 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:58.103 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:58.103 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:58.103 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2025-03-07 06:52:58.103 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:58.440 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:58.440 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:59.198 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:59.199 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:59.253 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:59.253 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:59.956 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:52:59.957 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:53:00.711 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:53:00.711 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:53:01.470 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:53:01.470 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:53:01.629 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:53:01.629 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:53:02.239 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 198
+processname:postgres groupname:postgres pid:1761 channel:stderr
+2025-03-07 06:53:02.239 UTC [1908] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+READY
+RESULT 302
+processname:editor groupname:editor pid:1821 channel:stderr
+{"level":"info","ts":1741330382.2448497,"msg":"traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:4317: connect: connection refused\""}
+READY

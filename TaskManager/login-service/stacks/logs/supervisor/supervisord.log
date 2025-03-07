@@ -44,3 +44,13 @@
 2025-03-04 12:17:20,407 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
 2025-03-04 12:17:20,407 INFO success: temporal entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
 2025-03-04 12:17:30,485 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
+2025-03-07 06:52:42,455 INFO exited: mongodb (terminated by SIGABRT; not expected)
+2025-03-07 06:52:42,459 INFO spawned: 'mongodb' with pid 65536
+2025-03-07 06:52:42,463 INFO exited: mongodb (exit status 127; not expected)
+2025-03-07 06:52:43,469 INFO spawned: 'mongodb' with pid 65541
+2025-03-07 06:52:43,473 INFO exited: mongodb (exit status 127; not expected)
+2025-03-07 06:52:45,479 INFO spawned: 'mongodb' with pid 65542
+2025-03-07 06:52:45,480 INFO exited: mongodb (exit status 127; not expected)
+2025-03-07 06:52:49,248 INFO spawned: 'mongodb' with pid 65543
+2025-03-07 06:52:49,252 INFO exited: mongodb (exit status 127; not expected)
+2025-03-07 06:52:49,253 INFO gave up: mongodb entered FATAL state, too many start retries too quickly

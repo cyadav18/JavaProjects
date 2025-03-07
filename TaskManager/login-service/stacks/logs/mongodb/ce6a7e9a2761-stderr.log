@@ -1,0 +1,8 @@
+supervisor: couldn't chdir to /appsmith-stacks/data/mongodb: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /appsmith-stacks/data/mongodb: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /appsmith-stacks/data/mongodb: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /appsmith-stacks/data/mongodb: ENOENT
+supervisor: child process was not spawned

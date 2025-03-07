@@ -12536,3 +12536,33 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot des
 2025-03-07 08:19:54 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m13s137ms).
 2025-03-07 08:21:16 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s30ms).
 2025-03-07 09:12:23 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=40m37s646ms).
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@aec63e1, started on Fri Mar 07 07:21:09 IST 2025
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'applicationTaskExecutor' completed its stop procedure
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147482623
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'webServerGracefulShutdown' completed its stop procedure
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147481599
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'webServerStartStop' completed its stop procedure
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase -2147483647
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'springBootLoggingLifecycle' completed its stop procedure
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - alter table if exists attachments drop constraint if exists FKbydtpaj4hcd1ahpdu9091hlpp
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - alter table if exists attachments drop constraint if exists FKarckrvsrmyju0l03022gq5o20
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - alter table if exists attachments drop constraint if exists FKq4u9ne3x0xtpc5d2jdddv1ii7
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - alter table if exists comments drop constraint if exists FK5gwpjmos2yt8akpcfuqct44dr
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - alter table if exists comments drop constraint if exists FKi7pp0331nbiwd2844kg78kfwb
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - alter table if exists sub_task_watchers drop constraint if exists FKl0vqf33s6qd123aqr54ngkeqo
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - alter table if exists subtasks drop constraint if exists FKsvs126nsj9ohhvwjog5ddp76x
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - alter table if exists task_watchers drop constraint if exists FKpigj1w08sfvf6n3fgwcek67pv
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists attachments cascade
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists comments cascade
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists sub_task_watchers cascade
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists subtasks cascade
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists task_watchers cascade
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists tasks cascade
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-07 12:21:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
