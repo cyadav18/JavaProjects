@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!--
+    🔹 Define a Rolling File Appender that logs messages to a file.
+    🔹 The logs will be rotated daily and kept for a maximum of 30 days.
+    -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <!-- ✅ The main log file where logs will be written -->
+        <file>logs/task-service.log</file>
+
+        <!-- ✅ Rolling policy: Controls log file rotation -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Log file pattern: Logs will be stored with a date suffix (e.g., application-2025-02-19.log) -->
+            <fileNamePattern>logs/task-service-%d{yyyy-MM-dd}.log</fileNamePattern>
+
+            <!-- Number of days to keep old log files (default: 30 days) -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <!-- ✅ Define log message format -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <!--
+    🔹 Console Appender: Logs messages to the console (useful for debugging).
+    -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- ✅ Define the log format for the console -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <!--
+    🔹 Root Logger Configuration: Defines the default logging level.
+    🔹 The root logger captures all logs and redirects them to FILE and STDOUT.
+    -->
+    <root level="INFO">
+        <appender-ref ref="FILE"/>    <!-- ✅ Logs will be written to the file -->
+        <appender-ref ref="STDOUT"/>  <!-- ✅ Logs will be displayed in the console -->
+    </root>
+
+
+    <!--
+    🔹 Fine-tune logging levels for specific packages (Application Logs)
+    -->
+
+    <!-- ✅ Spring Framework logs (DEBUG level) -->
+    <logger name="org.springframework" level="DEBUG"/>
+
+    <!-- ✅ Hibernate SQL Queries (DEBUG level) -->
+    <logger name="org.hibernate.SQL" level="DEBUG"/>
+
+    <!-- ✅ Hibernate Parameter Values (TRACE level) -->
+    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE"/>
+
+    <!-- ✅ Custom application logs (TRACE level for detailed logs) -->
+    <logger name="org.guidewire.login" level="TRACE"/>
+
+</configuration>

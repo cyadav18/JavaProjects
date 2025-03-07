@@ -1,0 +1,11 @@
+2025-03-04 12:17:10.262 UTC [1761] LOG:  starting PostgreSQL 14.15 (Ubuntu 14.15-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2025-03-04 12:17:10.262 UTC [1761] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-03-04 12:17:10.267 UTC [1761] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2025-03-04 12:17:10.285 UTC [1898] LOG:  database system was shut down at 2025-03-04 12:17:08 UTC
+2025-03-04 12:17:10.294 UTC [1761] LOG:  database system is ready to accept connections
+2025-03-04 12:17:10.472 UTC [1983] FATAL:  no pg_hba.conf entry for host "[local]", user "root", database "root", no encryption
+2025-03-04 12:17:10.837 UTC [2060] ERROR:  duplicate key value violates unique constraint "namespaces_pkey"
+2025-03-04 12:17:10.837 UTC [2060] DETAIL:  Key (partition_id, id)=(54321, \x32049b68787240948e63d0dd59896a83) already exists.
+2025-03-04 12:17:10.837 UTC [2060] STATEMENT:  INSERT INTO 
+	 namespaces (partition_id, id, name, is_global, data, data_encoding, notification_version)
+	 VALUES($1, $2, $3, $4, $5, $6, $7)

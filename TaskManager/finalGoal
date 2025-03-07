@@ -1,0 +1,139 @@
+https://chatgpt.com/c/6704c80d-616c-8010-8516-62d825f5803c
+### **Current Project Structure**
+
+```
+TaskManager
+login-service
+├── src/main/java/org/guidewire/login
+│   ├── controller
+│   │   ├── AuthController.java         # Handles authentication (login/register)
+│   │   ├── RoleController.java         # Admin-only: Manages roles
+│   │   ├── UserController.java         # Manages user operations
+│   │   ├── PermissionController.java   # Admin-only: Manages permissions
+│   ├── dto
+│   │   ├── LoginRequest.java           # DTO for login request
+│   │   ├── SignupRequest.java          # DTO for user registration
+│   │   ├── RoleRequest.java            # DTO for creating a new role
+│   │   ├── PermissionRequest.java      # DTO for creating a new permission
+│   ├── model
+│   │   ├── User.java                   # Entity for user details
+│   │   ├── Role.java                   # Entity for roles (Admin, User, etc.)
+│   │   ├── Permission.java             # Entity for permissions (READ, WRITE, DELETE)
+│   ├── repository
+│   │   ├── UserRepository.java         # JPA repository for users
+│   │   ├── RoleRepository.java         # JPA repository for roles
+│   │   ├── PermissionRepository.java   # JPA repository for permissions
+│   ├── security
+│   │   ├── JwtUtil.java                # Utility class for JWT operations
+│   │   ├── JwtAuthenticationFilter.java # Filters and validates JWT tokens
+│   │   ├── CustomUserDetails.java      # Implements UserDetails for Spring Security
+│   │   ├── CustomUserDetailsService.java # Loads user details from DB
+│   │   ├── SecurityConfig.java         # Configures Spring Security with roles/permissions
+│   ├── services
+│   │   ├── AuthService.java            # Handles authentication logic
+│   │   ├── RoleService.java            # Handles role management
+│   │   ├── PermissionService.java      # Handles permission management
+│   ├── LoginServiceApplication.java    # Main Spring Boot application
+│   ├── resources
+│   │   ├── application.properties      # Config (DB, JWT settings)
+│   ├── pom.xml
+└── README.md
+
+├── task-service                 # Main module for task management
+│   ├── src/main/java/org/guidewire/taskmanager
+│   │   ├── model                # Entity classes
+│   │   │   ├── Task.java
+│   │   │   ├── SubTask.java
+│   │   │   ├── Comment.java
+│   │   │   ├── Attachment.java
+│   │   │   └── TaskStatus.java
+│   │   │   └── Priority.java
+│   │   ├── repository           # Repositories for database interaction
+│   │   │   ├── TaskRepository.java
+│   │   │   ├── SubTaskRepository.java
+│   │   │   ├── CommentRepository.java
+│   │   │   └── AttachmentRepository.java
+│   │   ├── service              # Business logic
+│   │   │   ├── TaskService.java
+│   │   │   ├── SubTaskService.java
+│   │   │   ├── CommentService.java
+│   │   │   └── AttachmentService.java
+│   │   ├── controller           # REST controllers
+│   │   │   ├── TaskController.java
+│   │   │   ├── SubTaskController.java
+│   │   │   ├── CommentController.java
+│   │   │   └── AttachmentController.java
+│   │   ├── dto                  # Data Transfer Objects
+│   │   │   ├── TaskDTO.java
+│   │   │   ├── SubTaskDTO.java
+│   │   │   ├── CommentDTO.java
+│   │   │   └── AttachmentDTO.java
+│   │   └── TaskManagerApplication.java
+│   ├── src/main/resources
+│   │   ├── db/migration         # Flyway or Liquibase migration scripts
+│   │   │   ├── V1__Create_Task_Schema.sql
+│   │   │   └── V2__Add_Comment_and_Attachment.sql
+│   │   └── application.properties
+│   └── pom.xml
+│
+├── notification-service         # Service for sending notifications
+│   ├── src/main/java/org/guidewire/notification
+│   │   └── NotificationServiceApplication.java
+│   ├── src/main/resources
+│   │   └── application.properties
+│   └── pom.xml
+│
+├── kafka-config                 # Shared module for Kafka configuration
+│   ├── src/main/java/org/guidewire/kafka
+│   │   ├── ProducerConfig.java
+│   │   ├── ConsumerConfig.java
+│   │   └── KafkaTopics.java
+│   └── pom.xml
+│
+├── parent-pom.xml               # Parent POM for building all modules together
+└── README.md                    # Project documentation
+├── gateway-service
+│   ├── src
+│   │   └── main
+│   │       └── java
+│   │           └── org.guidewire.gateway
+│   │               ├── GatewayApplication.java
+│   │               └── filters
+│   │                   └── JwtAuthenticationFilter.java
+│   ├── src/main/resources
+│   │   └── application.yml
+│   └── pom.xml
+└── pom.xml
+```
+
+---
+
+### **Highlights of the Structure**
+1. **Modules**:
+   - **`login-service`**: Handles user authentication and registration.
+   - **`task-service`**: Core logic for managing tasks, subtasks, comments, and attachments.
+   - **`notification-service`**: Manages notifications for tasks, such as email alerts for overdue tasks.
+   - **`kafka-config`**: Centralized Kafka configuration for event-driven communication.
+
+2. **Layers**:
+   - **Model**: Contains JPA entity classes for database representation.
+   - **Repository**: Contains interfaces for CRUD operations on the database.
+   - **Service**: Contains business logic for each entity.
+   - **Controller**: REST APIs to interact with the service layer.
+   - **DTOs**: Used to transfer data between layers and APIs.
+
+3. **Migration Scripts**:
+   - SQL scripts for schema management using Flyway or Liquibase.
+
+4. **Kafka Config**:
+   - Centralized Kafka producer/consumer configuration for handling events.
+
+
+
+
+
+
+
+
+
+

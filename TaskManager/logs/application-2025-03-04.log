@@ -1,0 +1,65 @@
+2025-03-04 00:13:54 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m54s860ms).
+2025-03-04 00:47:33 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m39s13ms).
+2025-03-04 01:23:27 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m54s340ms).
+2025-03-04 01:56:06 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m39s364ms).
+2025-03-04 02:28:59 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m52s420ms).
+2025-03-04 02:56:26 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m26s695ms).
+2025-03-04 03:17:40 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m44s18ms).
+2025-03-04 04:06:49 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49m9s810ms).
+2025-03-04 04:39:13 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m23s693ms).
+2025-03-04 04:56:36 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m22s625ms).
+2025-03-04 05:59:32 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h2m56s59ms).
+2025-03-04 06:59:39 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h7s619ms).
+2025-03-04 07:17:07 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m27s415ms).
+2025-03-04 07:35:20 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m13s531ms).
+2025-03-04 07:41:00 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m40s171ms).
+2025-03-04 08:09:45 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m44s190ms).
+2025-03-04 08:44:51 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m5s825ms).
+2025-03-04 08:46:20 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m28s989ms).
+2025-03-04 09:55:27 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h9m7s911ms).
+2025-03-04 10:15:46 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m18s32ms).
+2025-03-04 11:14:44 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m28s183ms).
+2025-03-04 13:56:35 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57m20s141ms).
+2025-03-04 14:16:13 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m7s876ms).
+2025-03-04 14:52:23 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m10s177ms).
+2025-03-04 15:51:48 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m24s132ms).
+2025-03-04 16:12:21 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m33s684ms).
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4e73203a, started on Mon Feb 24 11:31:23 IST 2025
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'applicationTaskExecutor' completed its stop procedure
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147482623
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'webServerGracefulShutdown' completed its stop procedure
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147481599
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'webServerStartStop' completed its stop procedure
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase -2147483647
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'springBootLoggingLifecycle' completed its stop procedure
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Beans' from the JMX domain
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Caches' from the JMX domain
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Health' from the JMX domain
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Info' from the JMX domain
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Conditions' from the JMX domain
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Configprops' from the JMX domain
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Env' from the JMX domain
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Loggers' from the JMX domain
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Threaddump' from the JMX domain
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Metrics' from the JMX domain
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Sbom' from the JMX domain
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Scheduledtasks' from the JMX domain
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Mappings' from the JMX domain
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - alter table if exists role_permissions drop constraint if exists FKegdk29eiy7mdtefy5c7eirr6e
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - alter table if exists role_permissions drop constraint if exists FKn5fotdgk8d1xvo8nav9uv3muc
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - alter table if exists user_roles drop constraint if exists FKhfh9dx7w3ubf1co1vdev94g3f
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists permissions cascade
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists role_permissions cascade
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists roles cascade
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists user_roles cascade
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL - drop table if exists users cascade
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-04 17:44:18 [SpringApplicationShutdownHook] DEBUG o.s.b.f.s.DisposableBeanAdapter - Custom destroy method 'close' on bean with name 'simpleMeterRegistry' completed

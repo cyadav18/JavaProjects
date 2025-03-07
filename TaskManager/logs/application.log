@@ -1,0 +1,52 @@
+2025-03-07 00:29:25 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47m50s612ms).
+2025-03-07 01:01:13 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m48s703ms).
+2025-03-07 01:50:39 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49m25s345ms).
+2025-03-07 02:09:24 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m45s610ms).
+2025-03-07 02:55:54 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46m29s52ms).
+2025-03-07 03:29:44 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m50s195ms).
+2025-03-07 04:06:51 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m7s186ms).
+2025-03-07 04:52:20 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-07 04:52:20 [File Watcher] DEBUG o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Change set: [/Users/cyadav/JavaProjects/TaskManager/login-service/target/classes [/Users/cyadav/JavaProjects/TaskManager/login-service/target/classes/logback-spring.xml (MODIFY)]]
+2025-03-07 04:52:20 [File Watcher] DEBUG o.s.boot.devtools.restart.Restarter - Restarting application
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.boot.devtools.restart.Restarter - Stopping application
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4723b222, started on Thu Mar 06 12:14:42 IST 2025
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'applicationTaskExecutor' completed its stop procedure
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147482623
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'webServerGracefulShutdown' completed its stop procedure
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147481599
+2025-03-07 04:52:20 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'webServerStartStop' completed its stop procedure
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase -2147483647
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'springBootLoggingLifecycle' completed its stop procedure
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Beans' from the JMX domain
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Caches' from the JMX domain
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Health' from the JMX domain
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Info' from the JMX domain
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Conditions' from the JMX domain
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Configprops' from the JMX domain
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Env' from the JMX domain
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Loggers' from the JMX domain
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Threaddump' from the JMX domain
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Metrics' from the JMX domain
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Sbom' from the JMX domain
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Scheduledtasks' from the JMX domain
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.a.e.jmx.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Mappings' from the JMX domain
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-07 04:52:20 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07 04:52:20 [Thread-5] DEBUG org.hibernate.SQL - alter table if exists role_permissions drop constraint if exists FKegdk29eiy7mdtefy5c7eirr6e
+2025-03-07 04:52:20 [Thread-5] DEBUG org.hibernate.SQL - alter table if exists role_permissions drop constraint if exists FKn5fotdgk8d1xvo8nav9uv3muc
+2025-03-07 04:52:20 [Thread-5] DEBUG org.hibernate.SQL - alter table if exists user_roles drop constraint if exists FKh8ciramu9cc9q3qcqiv4ue8a6
+2025-03-07 04:52:20 [Thread-5] DEBUG org.hibernate.SQL - alter table if exists user_roles drop constraint if exists FKhfh9dx7w3ubf1co1vdev94g3f
+2025-03-07 04:52:20 [Thread-5] DEBUG org.hibernate.SQL - drop table if exists permissions cascade
+2025-03-07 04:52:20 [Thread-5] DEBUG org.hibernate.SQL - drop table if exists role_permissions cascade
+2025-03-07 04:52:20 [Thread-5] DEBUG org.hibernate.SQL - drop table if exists roles cascade
+2025-03-07 04:52:20 [Thread-5] DEBUG org.hibernate.SQL - drop table if exists user_roles cascade
+2025-03-07 04:52:20 [Thread-5] DEBUG org.hibernate.SQL - drop table if exists users cascade
+2025-03-07 04:52:20 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-07 04:52:20 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.b.f.s.DisposableBeanAdapter - Custom destroy method 'close' on bean with name 'simpleMeterRegistry' completed
+2025-03-07 04:52:20 [Thread-5] DEBUG o.s.boot.devtools.restart.Restarter - Starting application org.guidewire.login.LoginServiceApplication with URLs [file:/Users/cyadav/JavaProjects/TaskManager/login-service/target/classes/]

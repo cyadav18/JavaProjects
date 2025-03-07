@@ -1,0 +1,23 @@
+2025-03-04 12:17:12,208 WARN  [org.keycloak.quarkus.runtime.cli.Picocli] (main) The following used options or option values are DEPRECATED and will be removed in a future release:
+	- proxy: Use proxy-headers.
+2025-03-04 12:17:13,491 INFO  [org.keycloak.quarkus.runtime.hostname.DefaultHostnameProvider] (main) Hostname settings: Base URL: <unset>, Hostname: <request>, Strict HTTPS: false, Path: /auth, Strict BackChannel: false, Admin URL: <unset>, Admin: <request>, Port: -1, Proxied: true
+2025-03-04 12:17:13,526 INFO  [org.infinispan.CONTAINER] (keycloak-cache-init) ISPN000556: Starting user marshaller 'org.infinispan.jboss.marshalling.core.JBossUserMarshaller'
+2025-03-04 12:17:13,862 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration!
+2025-03-04 12:17:14,001 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000078: Starting JGroups channel `ISPN`
+2025-03-04 12:17:14,007 INFO  [org.jgroups.JChannel] (keycloak-cache-init) local_addr: c6b19bd8-7d37-4325-8f8f-224e6078fe15, name: ce6a7e9a2761-23552
+2025-03-04 12:17:14,028 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the send buffer of socket MulticastSocket was set to 1MB, but the OS only allocated 212.99KB
+2025-03-04 12:17:14,028 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the receive buffer of socket MulticastSocket was set to 20MB, but the OS only allocated 212.99KB
+2025-03-04 12:17:14,029 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the send buffer of socket MulticastSocket was set to 1MB, but the OS only allocated 212.99KB
+2025-03-04 12:17:14,029 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the receive buffer of socket MulticastSocket was set to 25MB, but the OS only allocated 212.99KB
+2025-03-04 12:17:14,058 INFO  [org.jgroups.protocols.FD_SOCK2] (keycloak-cache-init) server listening on *.39634
+2025-03-04 12:17:15,040 WARN  [io.quarkus.agroal.runtime.DataSources] (JPA Startup Thread) Datasource <default> enables XA but transaction recovery is not enabled. Please enable transaction recovery by setting quarkus.transaction-manager.enable-recovery=true, otherwise data may be lost if the application is terminated abruptly
+2025-03-04 12:17:16,065 INFO  [org.jgroups.protocols.pbcast.GMS] (keycloak-cache-init) ce6a7e9a2761-23552: no members discovered after 2002 ms: creating cluster as coordinator
+2025-03-04 12:17:16,071 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000094: Received new cluster view for channel ISPN: [ce6a7e9a2761-23552|0] (1) [ce6a7e9a2761-23552]
+2025-03-04 12:17:16,089 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000079: Channel `ISPN` local address is `ce6a7e9a2761-23552`, physical addresses are `[172.19.0.2:55170]`
+2025-03-04 12:17:16,097 WARN  [org.infinispan.CONFIG] (keycloak-cache-init) ISPN000569: Unable to persist Infinispan internal caches as no global state enabled
+2025-03-04 12:17:19,083 WARN  [io.quarkus.vertx.http.runtime.VertxHttpRecorder] (main) The X-Forwarded-* and Forwarded headers will be considered when determining the proxy address. This configuration can cause a security issue as clients can forge requests and send a forwarded header that is not overwritten by the proxy. Please consider use one of these headers just to forward the proxy address in requests.
+2025-03-04 12:17:19,098 INFO  [org.keycloak.connections.infinispan.DefaultInfinispanConnectionProviderFactory] (main) Node name: ce6a7e9a2761-23552, Site name: null
+2025-03-04 12:17:19,104 INFO  [org.keycloak.broker.provider.AbstractIdentityProviderMapper] (main) Registering class org.keycloak.broker.provider.mappersync.ConfigSyncEventListener
+2025-03-04 12:17:19,931 INFO  [io.quarkus] (main) Keycloak 24.0.0 on JVM (powered by Quarkus 3.8.1) started in 8.122s. Listening on: http://0.0.0.0:8081
+2025-03-04 12:17:19,932 INFO  [io.quarkus] (main) Profile prod activated. 
+2025-03-04 12:17:19,932 INFO  [io.quarkus] (main) Installed features: [agroal, cdi, hibernate-orm, jdbc-h2, keycloak, logging-gelf, narayana-jta, reactive-routes, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation, vertx]
