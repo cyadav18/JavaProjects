@@ -54,3 +54,13 @@
 2025-03-07 06:52:49,248 INFO spawned: 'mongodb' with pid 65543
 2025-03-07 06:52:49,252 INFO exited: mongodb (exit status 127; not expected)
 2025-03-07 06:52:49,253 INFO gave up: mongodb entered FATAL state, too many start retries too quickly
+2025-03-07 06:53:23,321 INFO exited: postgres (exit status 0; expected)
+2025-03-07 06:53:23,326 INFO spawned: 'postgres' with pid 65603
+2025-03-07 06:53:23,330 INFO exited: postgres (exit status 127; not expected)
+2025-03-07 06:53:24,512 INFO spawned: 'postgres' with pid 65604
+2025-03-07 06:53:24,521 INFO exited: postgres (exit status 127; not expected)
+2025-03-07 06:53:27,020 INFO spawned: 'postgres' with pid 65605
+2025-03-07 06:53:27,027 INFO exited: postgres (exit status 127; not expected)
+2025-03-07 06:53:30,209 INFO spawned: 'postgres' with pid 65608
+2025-03-07 06:53:30,212 INFO exited: postgres (exit status 127; not expected)
+2025-03-07 06:53:30,248 INFO gave up: postgres entered FATAL state, too many start retries too quickly
