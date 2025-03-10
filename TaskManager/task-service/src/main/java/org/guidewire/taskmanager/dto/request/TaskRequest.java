@@ -26,7 +26,6 @@ public class TaskRequest {
     private ZonedDateTime dueDate;
 
     @NotNull(message = "CreatedBy user is required")
-
     private UUID createdBy;
 
     @NotNull(message = "Priority is required")

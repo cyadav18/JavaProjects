@@ -89,6 +89,12 @@ public class GlobalExceptionHandler {
         return buildErrorResponse(ex, HttpStatus.NOT_FOUND,"Attachment not found.");
     }
 
+    @ExceptionHandler(NoTasksFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ResponseEntity<Map<String, Object>> handleAttachmentNotFound(@NotNull NoTasksFoundException ex) {
+        return buildErrorResponse(ex, HttpStatus.NOT_FOUND,"Tasks not found.");
+    }
+
 
     /**
      * Utility method to create structured error responses.

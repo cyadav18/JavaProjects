@@ -2,6 +2,7 @@ package org.guidewire.taskmanager.services;
 
 import org.guidewire.taskmanager.dto.request.TaskRequest;
 import org.guidewire.taskmanager.dto.response.TaskResponse;
+import org.guidewire.taskmanager.exceptionhandlers.NoTasksFoundException;
 import org.guidewire.taskmanager.exceptionhandlers.TaskNotFoundException;
 import org.guidewire.taskmanager.model.Task;
 import org.guidewire.taskmanager.repository.TaskRepository;
@@ -111,6 +112,10 @@ public class TaskServiceImpl implements TaskService {
         List<TaskResponse> taskDTOs = taskRepository.findAll().stream()
                 .map(TaskResponse::convertToResponse)
                 .collect(Collectors.toList());
+
+        if (taskDTOs.isEmpty()) {
+            throw new NoTasksFoundException("No tasks available.");
+        }
 
         logger.info("getAllTasks: Fetched {} tasks", taskDTOs.size());
         return taskDTOs;

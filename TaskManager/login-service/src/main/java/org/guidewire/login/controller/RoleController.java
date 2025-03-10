@@ -16,7 +16,7 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/api/admin/roles")
+@RequestMapping("/api/auth/roles")
 @PreAuthorize("hasRole('ADMIN')") // Ensures only admins can manage roles
 public class RoleController {
 
@@ -70,6 +70,19 @@ public class RoleController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
         } catch (Exception e) {
             logger.error("assignPermissions: Unexpected error while assigning permissions", e);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An unexpected error occurred.");
+        }
+    }
+
+    @GetMapping("/list/all")
+    public ResponseEntity<?> fetchAllRoles() {
+        try {
+            logger.info("fetchAllRoles: Received request to fetch all roles");
+            List<RoleResponse> roleResponses = roleService.fetchRolesAndPermissions();
+            logger.info("fetchAllRoles: Roles fetched successfully");
+            return ResponseEntity.ok(roleResponses);
+        } catch (Exception e) {
+            logger.error("fetchAllRoles: Unexpected error while assigning permissions", e);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An unexpected error occurred.");
         }
     }

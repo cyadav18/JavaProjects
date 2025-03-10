@@ -9,7 +9,7 @@ spring:
   #  <create | create-drop | update | validate | none>
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: none
     show-sql: true
 # Enable Hibernate SQL logging
 # Enable Hibernate SQL logging and application logging

@@ -64,6 +64,12 @@ public class GlobalExceptionHandler {
         return getMapResponseEntity(ex, HttpStatus.NOT_FOUND, "Permission not found");
     }
 
+    @ExceptionHandler(RoleNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ResponseEntity<Map<String, Object>> handlePermissionNotFound(@NotNull RoleNotFoundException ex) {
+        return getMapResponseEntity(ex, HttpStatus.NOT_FOUND, "Role not found");
+    }
+
     @NotNull
     private ResponseEntity<Map<String, Object>> getMapResponseEntity(@NotNull Exception ex,
                                                                      HttpStatusCode statusCode,

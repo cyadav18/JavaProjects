@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -111,5 +112,22 @@ public class RoleService {
         return permissionRepository.findAll().stream()
                 .filter(p -> permissionNames.contains(p.getName()))
                 .collect(Collectors.toSet());
+    }
+
+    /**
+     * Fetches All roles in the database.
+     *
+     * @return All roles along with Permission.
+     */
+    public List<RoleResponse> fetchRolesAndPermissions() {
+        logger.info("fetchRolesAndPermissions: Finding roles and permissions");
+        List<Role> roles = roleRepository.findAll();
+        List<RoleResponse> roleResponses = new ArrayList<>();
+        roles.stream().forEach(role -> {
+            roleResponses.add(new RoleResponse(role.getId(), role.getName(),
+                    role.getPermissions().stream().map(Permission::getName).collect(Collectors.toSet())));
+        });
+        logger.info("fetchRolesAndPermissions: Roles found successfully");
+        return roleResponses;
     }
 }
