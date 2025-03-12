@@ -41,7 +41,7 @@ public class PermissionService {
         Permission savedPermission = permissionRepository.save(permission);
 
         logger.info("createPermission:Permission created successfully with ID: {}", savedPermission.getId());
-        return new PermissionResponse(savedPermission.getId(), savedPermission.getName(), "Permission created successfully.");
+        return new PermissionResponse(savedPermission.getId(), savedPermission.getName());
     }
 
     /**
@@ -55,7 +55,7 @@ public class PermissionService {
 
         logger.info("getAllPermissions:Retrieved {} permissions", permissions.size());
         return permissions.stream()
-                .map(permission -> new PermissionResponse(permission.getId(), permission.getName(), ""))
+                .map(permission -> new PermissionResponse(permission.getId(), permission.getName()))
                 .collect(Collectors.toList());
     }
 

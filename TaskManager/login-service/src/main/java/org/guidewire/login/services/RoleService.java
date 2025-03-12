@@ -69,7 +69,7 @@ public class RoleService {
                 });
 
         Set<Permission> permissions = fetchPermissions(permissionNames);
-
+        role.getPermissions().clear();
         role.getPermissions().addAll(permissions);
         role = roleRepository.save(role);
 
@@ -129,5 +129,20 @@ public class RoleService {
         });
         logger.info("fetchRolesAndPermissions: Roles found successfully");
         return roleResponses;
+    }
+
+    /**
+     * Fetches All roles in the database.
+     *
+     * @return All roles along with Permission.
+     */
+    public RoleResponse fetchRolesAndPermission(Long roleId) {
+        logger.info("fetchRolesAndPermission: Finding roles and permissions");
+        Role roles = roleRepository.findById(roleId)
+                .orElseThrow(() -> new RoleNotFoundException("Role not found with ID: " + roleId));
+
+        logger.info("fetchRolesAndPermission: Roles found successfully");
+        return new RoleResponse(roleId, roles.getName(),
+                roles.getPermissions().stream().map(Permission::getName).collect(Collectors.toSet()));
     }
 }

@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/admin/permissions")
+@RequestMapping("/api/auth/permissions")
 @PreAuthorize("hasRole('ADMIN')") // Only Admins can manage permissions
 public class PermissionController {
 
@@ -56,7 +56,7 @@ public class PermissionController {
      *
      * @return List of all permissions.
      */
-    @GetMapping("/all")
+    @GetMapping("/list")
     public ResponseEntity<List<PermissionResponse>> getAllPermissions() {
         logger.info("getAllPermissions:Fetching all permissions...");
         List<PermissionResponse> permissions = permissionService.getAllPermissions();

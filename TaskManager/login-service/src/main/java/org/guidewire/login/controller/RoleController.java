@@ -1,8 +1,10 @@
 package org.guidewire.login.controller;
 
 import org.guidewire.login.dto.requests.RoleRequest;
+import org.guidewire.login.dto.responses.PermissionResponse;
 import org.guidewire.login.dto.responses.RoleResponse;
 import org.guidewire.login.exceptions.RoleNotFoundException;
+import org.guidewire.login.services.PermissionService;
 import org.guidewire.login.services.RoleService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,10 +24,12 @@ public class RoleController {
 
     private static final Logger logger = LoggerFactory.getLogger(RoleController.class);
     private final RoleService roleService;
+    private final PermissionService permissionService;
 
     @Autowired
-    public RoleController(RoleService roleService) {
+    public RoleController(RoleService roleService, PermissionService permissionService) {
         this.roleService = roleService;
+        this.permissionService = permissionService;
     }
 
     /**
@@ -48,6 +52,20 @@ public class RoleController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An unexpected error occurred.");
         }
     }
+
+    @GetMapping("/{roleId}")
+    public ResponseEntity<?> fetchRoleDetails(@PathVariable("roleId") Long roleId) {
+        try {
+            logger.info("fetchRoleDetails: Received request to fetch role details for role: {}", roleId);
+            RoleResponse roleResponses = roleService.fetchRolesAndPermission(roleId);
+            logger.info("fetchRoleDetails: Roles fetched successfully");
+            return ResponseEntity.ok(roleResponses);
+        } catch (Exception e) {
+            logger.error("fetchRoleDetails: Unexpected error while assigning permissions", e);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An unexpected error occurred.");
+        }
+    }
+
 
     /**
      * Assigns permissions to an existing role.

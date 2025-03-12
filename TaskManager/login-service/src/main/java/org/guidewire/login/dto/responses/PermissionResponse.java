@@ -7,12 +7,11 @@ public class PermissionResponse {
 
     private Long id;
     private String name;
-    private String message; // Optional message (e.g., "Created successfully")
 
-    public PermissionResponse(Long id, String name, String message) {
+
+    public PermissionResponse(Long id, String name) {
         this.id = id;
         this.name = name;
-        this.message = message;
     }
 
     public Long getId() {
@@ -23,7 +22,4 @@ public class PermissionResponse {
         return name;
     }
 
-    public String getMessage() {
-        return message;
-    }
 }

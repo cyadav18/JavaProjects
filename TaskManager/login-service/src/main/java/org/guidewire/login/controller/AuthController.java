@@ -4,6 +4,7 @@ import org.guidewire.login.dto.requests.LoginRequest;
 import org.guidewire.login.dto.requests.SignupRequest;
 import org.guidewire.login.dto.responses.AuthResponse;
 import org.guidewire.login.dto.responses.UserResponse;
+import org.guidewire.login.dto.responses.UserRoleResponse;
 import org.guidewire.login.exceptions.UserNameAlreadyExistsException;
 import org.guidewire.login.exceptions.UserNotFoundException;
 import org.guidewire.login.services.AuthService;
@@ -13,6 +14,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
@@ -101,5 +104,14 @@ public class AuthController {
             logger.error("getCurrentUser: Unexpected error while fetching user details", e);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of("error", "Unexpected error occurred"));
         }
+    }
+
+    /**
+     * ✅ API to check if the logged-in user is an Admin
+     */
+    @GetMapping("/check-admin")
+    public ResponseEntity<UserRoleResponse> checkIfAdmin(@AuthenticationPrincipal UserDetails userDetails) {
+        boolean isAdmin = authService.isUserAdmin(userDetails);
+        return ResponseEntity.ok(new UserRoleResponse(userDetails.getUsername(), isAdmin));
     }
 }
