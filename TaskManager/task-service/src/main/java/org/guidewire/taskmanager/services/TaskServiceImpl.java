@@ -113,9 +113,9 @@ public class TaskServiceImpl implements TaskService {
                 .map(TaskResponse::convertToResponse)
                 .collect(Collectors.toList());
 
-        if (taskDTOs.isEmpty()) {
-            throw new NoTasksFoundException("No tasks available.");
-        }
+//        if (taskDTOs.isEmpty()) {
+//            throw new NoTasksFoundException("No tasks available.");
+//        }
 
         logger.info("getAllTasks: Fetched {} tasks", taskDTOs.size());
         return taskDTOs;
