@@ -19,7 +19,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
+import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -107,11 +109,30 @@ public class AuthController {
     }
 
     /**
-     * ✅ API to check if the logged-in user is an Admin
+     * API to check if the logged-in user is an Admin
      */
     @GetMapping("/check-admin")
     public ResponseEntity<UserRoleResponse> checkIfAdmin(@AuthenticationPrincipal UserDetails userDetails) {
         boolean isAdmin = authService.isUserAdmin(userDetails);
         return ResponseEntity.ok(new UserRoleResponse(userDetails.getUsername(), isAdmin));
+    }
+
+    @GetMapping("/user/details")
+    public ResponseEntity<?> fetchUserDetails(@RequestBody List<UUID> userIds) {
+        try {
+            logger.info("fetchUserDetails: Fetching details for users with IDs: {}", userIds);
+
+            List<UserResponse> users = authService.getUserDetails(userIds);
+
+            logger.info("fetchUserDetails: Returning user details for users: {}", users);
+            return ResponseEntity.ok(users);
+        } catch (UserNotFoundException e) {
+            logger.warn("fetchUserDetails: User not found - {}", e.getMessage());
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of("error", e.getMessage()));
+        } catch (Exception e) {
+            logger.error("fetchUserDetails: Unexpected error while fetching user details", e);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(Map.of("error", "Unexpected error occurred"));
+        }
     }
 }

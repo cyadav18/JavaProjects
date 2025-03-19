@@ -24,22 +24,25 @@ public class Attachment extends BaseEntity {
     private String type;
 
     @Column(nullable = false)
-    private String url;
+    private String filePath;  // Local file path where it's stored
+
+    @Column(nullable = false)
+    private Long size; // File size in bytes
 
 
     private ZonedDateTime created;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "comment_id",nullable = false)
-    Comment comment;
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)  
+    @JoinColumn(name = "task_id", referencedColumnName = "id")
+    private Task task;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "task_id",nullable = false)
-    Task task;
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)  
+    @JoinColumn(name = "comment_id", referencedColumnName = "id")
+    private Comment comment;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "subTask_id",nullable = false)
-    SubTask subTask;
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)  
+    @JoinColumn(name = "subtask_id", referencedColumnName = "id")
+    private SubTask subTask;
 
     @PrePersist
     public void prePersist() {

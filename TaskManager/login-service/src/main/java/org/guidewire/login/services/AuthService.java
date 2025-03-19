@@ -12,6 +12,7 @@ import org.guidewire.login.repository.RoleRepository;
 import org.guidewire.login.repository.UserRepository;
 import org.guidewire.login.security.CustomUserDetails;
 import org.guidewire.login.security.JwtUtil;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,9 +23,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -48,7 +47,7 @@ public class AuthService {
         this.jwtUtil = jwtUtil;
     }
 
-    public static boolean isUserAdmin(UserDetails userDetails) {
+    public boolean isUserAdmin(UserDetails userDetails) {
         if (userDetails == null) return false; // Handle case where token is missing/invalid
 
         Set<String> roles = userDetails.getAuthorities().stream()
@@ -148,9 +147,19 @@ public class AuthService {
     /**
      * Extracts role names from User entity.
      */
-    private Set<String> extractRoleNames(User user) {
+    private Set<String> extractRoleNames(@NotNull User user) {
         return user.getRoles().stream()
                 .map(Role::getName)
                 .collect(Collectors.toSet());
+    }
+
+    /**
+     * Extracts usernames and email from User entity.
+     */
+    public List<UserResponse> getUserDetails(@NotNull List<UUID> userId) {
+//        List<UUID> userIds = userId.stream().map(UUID::fromString).toList();
+        List<User> users = userRepository.findAllById(userId);
+        return users.stream().map(user->new UserResponse(user.getId(),user.getUsername(),user.getEmail(),null)).toList();
+
     }
 }

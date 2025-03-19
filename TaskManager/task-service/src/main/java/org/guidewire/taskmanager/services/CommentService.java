@@ -1,17 +1,15 @@
 package org.guidewire.taskmanager.services;
 
+import lombok.extern.slf4j.Slf4j;
 import org.guidewire.taskmanager.dto.request.CommentRequest;
 import org.guidewire.taskmanager.dto.response.CommentResponse;
 import org.guidewire.taskmanager.exceptionhandlers.CommentNotFoundException;
 import org.guidewire.taskmanager.model.Comment;
-import org.guidewire.taskmanager.model.SubTask;
 import org.guidewire.taskmanager.model.Task;
 import org.guidewire.taskmanager.repository.CommentRepository;
-import org.guidewire.taskmanager.repository.SubTaskRepository;
 import org.guidewire.taskmanager.repository.TaskRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,76 +18,44 @@ import java.util.stream.Collectors;
 
 @Service
 public class CommentService {
-    private static final Logger logger = LoggerFactory.getLogger(CommentService.class);
 
     private final CommentRepository commentRepository;
     private final TaskRepository taskRepository;
-    private final SubTaskRepository subTaskRepository;
+    private static final Logger logger = LoggerFactory.getLogger(CommentService.class);
 
-    @Autowired
-    public CommentService(CommentRepository commentRepository, TaskRepository taskRepository, SubTaskRepository subTaskRepository) {
+    public CommentService(CommentRepository commentRepository, TaskRepository taskRepository) {
         this.commentRepository = commentRepository;
         this.taskRepository = taskRepository;
-        this.subTaskRepository = subTaskRepository;
     }
 
-    /**
-     * Creates a new comment for either a task or subtask.
-     */
-    public CommentResponse createComment(CommentRequest request) {
-        logger.info("createComment: Creating comment for author: {}", request.getAuthor());
+    public CommentResponse addCommentToTask(UUID taskId, CommentRequest commentRequest) {
+        logger.info("addCommentToTask: Adding comment to task '{}'", taskId);
 
-        Comment comment = CommentRequest.convertToEntity(request);
+        Task task = taskRepository.findById(taskId)
+                .orElseThrow(() -> new RuntimeException("Task not found with ID: " + taskId));
 
-        // Determine whether the comment is for a task or a subtask
-        if (request.getTaskId() != null) {
-            Task task = taskRepository.findById(request.getTaskId())
-                    .orElseThrow(() -> new CommentNotFoundException("Task not found for comment"));
-            comment.setTask(task);
-        } else if (request.getSubTaskId() != null) {
-            SubTask subTask = subTaskRepository.findById(request.getSubTaskId())
-                    .orElseThrow(() -> new CommentNotFoundException("SubTask not found for comment"));
-            comment.setSubtask(subTask);
-        } else {
-            throw new IllegalArgumentException("Comment must be associated with either a Task or a SubTask");
-        }
+        Comment comment = CommentRequest.convertToEntity(commentRequest);
+        comment.setTask(task);
+        comment = commentRepository.save(comment);
 
-        Comment savedComment = commentRepository.save(comment);
-        logger.info("createComment: Comment created successfully with ID: {}", savedComment.getId());
-        return CommentResponse.convertToDto(savedComment);
+        logger.info("addCommentToTask: Comment '{}' added successfully", comment.getId());
+        return CommentResponse.convertToDto(comment);
     }
 
-    /**
-     * Retrieves all comments for a task.
-     */
-    public List<CommentResponse> getCommentsForTask(UUID taskId) {
-        logger.info("getCommentsForTask: Fetching comments for task ID: {}", taskId);
+    public List<CommentResponse> getCommentsByTask(UUID taskId) {
+        logger.info("getCommentsByTask: Fetching comments for task '{}'", taskId);
         return commentRepository.findByTaskId(taskId)
                 .stream()
                 .map(CommentResponse::convertToDto)
                 .collect(Collectors.toList());
     }
 
-    /**
-     * Retrieves all comments for a subtask.
-     */
-    public List<CommentResponse> getCommentsForSubTask(UUID subTaskId) {
-        logger.info("getCommentsForSubTask: Fetching comments for subtask ID: {}", subTaskId);
-        return commentRepository.findBySubtaskId(subTaskId)
-                .stream()
-                .map(CommentResponse::convertToDto)
-                .collect(Collectors.toList());
-    }
-
-    /**
-     * Deletes a comment by ID.
-     */
     public void deleteComment(UUID commentId) {
-        logger.info("deleteComment: Deleting comment with ID: {}", commentId);
+        logger.info("deleteComment: Deleting comment '{}'", commentId);
         if (!commentRepository.existsById(commentId)) {
-            throw new CommentNotFoundException("Comment not found");
+            throw new CommentNotFoundException("Comment not found with ID: " + commentId);
         }
         commentRepository.deleteById(commentId);
-        logger.info("deleteComment: Successfully deleted comment with ID: {}", commentId);
+        logger.info("deleteComment: Comment '{}' deleted successfully", commentId);
     }
 }

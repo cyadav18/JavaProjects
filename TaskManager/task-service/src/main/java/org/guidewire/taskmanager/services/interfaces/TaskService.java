@@ -9,7 +9,7 @@ import java.util.UUID;
 
 public interface TaskService {
     TaskResponse createTask(TaskRequest taskRequest);
-    Optional<TaskResponse> getTaskById(UUID taskId);
+    TaskResponse getTaskById(UUID taskId);
     TaskResponse updateTask(UUID taskId, TaskRequest taskRequest);
     void deleteTask(UUID taskId);
     List<TaskResponse> getAllTasks();

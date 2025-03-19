@@ -77,4 +77,17 @@ public class TaskController {
         logger.info("deleteTask: Task deleted successfully with ID: {}", taskId);
         return ResponseEntity.noContent().build();
     }
+
+    /**
+     * Gets a task by ID.
+     * @param taskId The UUID of the task.
+     */
+    @GetMapping("/{taskId}")
+    public ResponseEntity<?> getTaskDetails(@PathVariable UUID taskId) {
+        logger.info("getTaskDetails: Received request to fetch task with ID: {}", taskId);
+        TaskResponse taskResponse = taskService.getTaskById(taskId);
+        logger.info("getTaskDetails: Task details fetched successfully with ID: {}", taskId);
+        return ResponseEntity.ok(taskResponse);
+    }
+
 }

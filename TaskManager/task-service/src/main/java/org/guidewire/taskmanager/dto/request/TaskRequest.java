@@ -1,11 +1,15 @@
 package org.guidewire.taskmanager.dto.request;
 
-import jakarta.validation.constraints.*;
+import jakarta.validation.constraints.FutureOrPresent;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 import org.guidewire.taskmanager.model.Enums.Priority;
 import org.guidewire.taskmanager.model.Task;
 
 import java.time.ZonedDateTime;
+import java.util.List;
 import java.util.UUID;
 
 @Data
@@ -20,7 +24,7 @@ public class TaskRequest {
     private String description;
 
 
-    private UUID assignee;  // ✅ Ensures valid UUID
+    private UUID assignee;
 
     @FutureOrPresent(message = "Due date must be in the future or present")
     private ZonedDateTime dueDate;
@@ -30,6 +34,8 @@ public class TaskRequest {
 
     @NotNull(message = "Priority is required")
     private Priority priority;
+
+    private List<UUID> watchers;
 
     // Convert TaskRequest to Task entity
     public static Task convertToEntity(TaskRequest taskRequest) {
@@ -42,6 +48,7 @@ public class TaskRequest {
         task.setCreatedBy(taskRequest.getCreatedBy());
         task.setDueDate(taskRequest.getDueDate());
         task.setPriority(taskRequest.getPriority());
+        task.setWatchers(taskRequest.getWatchers());
         return task;
     }
 }

@@ -2,7 +2,6 @@ package org.guidewire.taskmanager.services;
 
 import org.guidewire.taskmanager.dto.request.TaskRequest;
 import org.guidewire.taskmanager.dto.response.TaskResponse;
-import org.guidewire.taskmanager.exceptionhandlers.NoTasksFoundException;
 import org.guidewire.taskmanager.exceptionhandlers.TaskNotFoundException;
 import org.guidewire.taskmanager.model.Task;
 import org.guidewire.taskmanager.repository.TaskRepository;
@@ -29,6 +28,7 @@ public class TaskServiceImpl implements TaskService {
 
     /**
      * Creates a new task.
+     *
      * @param taskRequest Request DTO containing task details.
      * @return TaskResponse DTO of the saved task.
      */
@@ -45,20 +45,25 @@ public class TaskServiceImpl implements TaskService {
 
     /**
      * Retrieves a task by ID.
+     *
      * @param taskId The UUID of the task.
      * @return Optional TaskResponse DTO.
      */
     @Override
-    public Optional<TaskResponse> getTaskById(UUID taskId) {
+    public TaskResponse getTaskById(UUID taskId) {
         logger.info("getTaskById: Fetching task with ID: {}", taskId);
 
-        return taskRepository.findById(taskId)
-                .map(TaskResponse::convertToResponse);
+        Optional<Task> task = taskRepository.findById(taskId);
+        if (!task.isPresent()) {
+            throw new TaskNotFoundException("Task with ID: " + taskId + " not found");
+        }
+        return TaskResponse.convertToResponse(task.get());
     }
 
     /**
      * Updates an existing task.
-     * @param taskId Task ID to update.
+     *
+     * @param taskId      Task ID to update.
      * @param taskRequest DTO with new task details.
      * @return Updated TaskResponse DTO.
      */
@@ -73,10 +78,12 @@ public class TaskServiceImpl implements TaskService {
                 });
 
         // Update fields
+        existingTask.setSubject(taskRequest.getSubject());
         existingTask.setAssignee(taskRequest.getAssignee());
         existingTask.setDescription(taskRequest.getDescription());
         existingTask.setDueDate(taskRequest.getDueDate());
         existingTask.setPriority(taskRequest.getPriority());
+        existingTask.setWatchers(taskRequest.getWatchers());
 
         Task updatedTask = taskRepository.save(existingTask);
         logger.info("updateTask: Task with ID {} updated successfully", taskId);
@@ -86,6 +93,7 @@ public class TaskServiceImpl implements TaskService {
 
     /**
      * Deletes a task by ID.
+     *
      * @param taskId The UUID of the task.
      */
     @Override
@@ -103,6 +111,7 @@ public class TaskServiceImpl implements TaskService {
 
     /**
      * Retrieves all tasks.
+     *
      * @return List of TaskResponse DTOs.
      */
     @Override
