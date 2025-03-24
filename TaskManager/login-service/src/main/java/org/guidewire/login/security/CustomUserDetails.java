@@ -36,8 +36,8 @@ public class CustomUserDetails implements UserDetails {
          *   - VIEW_TASK
          *
          * Authority Mapping Example:
-         * Role: ADMIN  → Authorities: ["ADMIN", "CREATE_TASK", "DELETE_TASK"]
-         * Role: USER   → Authorities: ["USER", "VIEW_TASK"]
+         * Role: ROLE_ADMIN  → Authorities: ["ROLE_ADMIN", "CREATE_TASK", "DELETE_TASK"]
+         * Role: ROLE_USER   → Authorities: ["ROLE_USER", "VIEW_TASK"]
          */
         Set<String> roles = user.getRoles().stream()
 //                .map(role -> "ROLE_" + role.getName().toUpperCase())

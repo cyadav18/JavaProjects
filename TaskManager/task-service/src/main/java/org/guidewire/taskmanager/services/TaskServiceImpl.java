@@ -129,4 +129,11 @@ public class TaskServiceImpl implements TaskService {
         logger.info("getAllTasks: Fetched {} tasks", taskDTOs.size());
         return taskDTOs;
     }
+
+    public List<TaskResponse> getTasksAssignedTo(String username) {
+        List<Task> tasks = taskRepository.findByAssigneeUsername(username);
+        return tasks.stream().map(task -> TaskResponse.convertToResponse(task)).collect(Collectors.toList());
+    }
+
+
 }

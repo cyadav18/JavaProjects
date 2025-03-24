@@ -13,4 +13,6 @@ public interface TaskService {
     TaskResponse updateTask(UUID taskId, TaskRequest taskRequest);
     void deleteTask(UUID taskId);
     List<TaskResponse> getAllTasks();
+    List<TaskResponse> getTasksAssignedTo(String username);
+
 }

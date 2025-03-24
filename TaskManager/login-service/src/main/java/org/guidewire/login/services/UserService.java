@@ -92,10 +92,10 @@ public class UserService {
                 .filter(role -> roleNames.contains(role.getName()))
                 .collect(Collectors.toSet());
 
-        if (roles.isEmpty()) {
-            logger.warn("updateUserRoles: No valid roles found for provided role names: {}", roleNames);
-            throw new RoleNotFoundException("One or more roles not found");
-        }
+//        if (roles.isEmpty()) {
+//            logger.warn("updateUserRoles: No valid roles found for provided role names: {}", roleNames);
+//            throw new RoleNotFoundException("One or more roles not found");
+//        }
 
         user.setRoles(roles);
         userRepository.save(user);

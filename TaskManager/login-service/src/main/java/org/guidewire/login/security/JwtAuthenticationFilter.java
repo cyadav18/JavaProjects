@@ -9,6 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
@@ -16,6 +18,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
@@ -47,10 +51,14 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         // Extract Token
         String token = authHeader.substring(7);
         String username = null;
+        List<String> roles = new ArrayList<>();
+        List<String> permissions = new ArrayList<>();
 
         try {
             username = jwtUtil.extractUsername(token);
-            logger.info("doFilterInternal: Extracted username '{}' from token.", username);
+            roles = jwtUtil.extractRoles(token);  // Ensure JWT contains roles
+            permissions = jwtUtil.extractPermissions(token);  // Ensure JWT contains permissions
+            logger.info("doFilterInternal: Extracted username '{}' with roles {} and permissions {}", username, roles, permissions);
         } catch (Exception e) {
             logger.error("doFilterInternal: Invalid JWT token - {}", e.getMessage());
         }
@@ -60,12 +68,23 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             UserDetails userDetails = customUserDetailsService.loadUserByUsername(username);
 
             if (jwtUtil.validateToken(token, userDetails)) {
+                // Convert roles to Spring Security format
+                List<GrantedAuthority> authorities = new ArrayList<>();
+
+                for (String role : roles) {
+                    authorities.add(new SimpleGrantedAuthority("ROLE_" + role));  // Ensure ROLE_ prefix
+                }
+                for (String permission : permissions) {
+                    authorities.add(new SimpleGrantedAuthority(permission));  // Permissions stay as is
+                }
+
+                // Set Authentication in Security Context
                 UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(
-                        userDetails, null, userDetails.getAuthorities());
+                        userDetails, null, authorities);
 
                 authToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                 SecurityContextHolder.getContext().setAuthentication(authToken);
-                logger.info("doFilterInternal: Authentication successful for user '{}'.", username);
+                logger.info("doFilterInternal: Authentication successful for user '{}'. Authorities: {}", username, authorities);
             } else {
                 logger.warn("doFilterInternal: JWT validation failed for user '{}'.", username);
             }
@@ -76,4 +95,5 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         // Continue filter chain
         filterChain.doFilter(request, response);
     }
+
 }

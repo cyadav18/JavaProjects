@@ -6,6 +6,8 @@ import org.guidewire.taskmanager.services.interfaces.TaskService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,8 +29,10 @@ public class TaskController {
 
     /**
      * Fetch all tasks.
+     * Requires either ADMIN role or VIEW_TASK permission.
      * @return List of all tasks.
      */
+    @PreAuthorize("hasRole('ADMIN') or hasAuthority('VIEW_TASK')")
     @GetMapping("/list")
     public ResponseEntity<List<TaskResponse>> getAllTasks() {
         logger.info("getAllTasks: Fetching all tasks...");
@@ -39,12 +43,14 @@ public class TaskController {
 
     /**
      * Create a new task.
+     * Requires CREATE_TASK permission.
      * @param taskRequest DTO with task details.
      * @return Created task.
      */
+    @PreAuthorize("hasAuthority('CREATE_TASK')")
     @PostMapping
     public ResponseEntity<TaskResponse> createTask(@Valid @RequestBody TaskRequest taskRequest) {
-        logger.info("createTask: Received request to create a new task: {}", taskRequest.getSubject());
+        logger.info("createTask: User requested to create a task: {}", taskRequest.getSubject());
         TaskResponse taskResponse = taskService.createTask(taskRequest);
         logger.info("createTask: Task created successfully with ID: {}", taskResponse.getId());
         return ResponseEntity.ok(taskResponse);
@@ -52,10 +58,12 @@ public class TaskController {
 
     /**
      * Update an existing task.
+     * Requires UPDATE_TASK permission.
      * @param taskId The task's UUID.
      * @param taskRequest DTO with updated task details.
      * @return Updated task.
      */
+    @PreAuthorize("hasAuthority('UPDATE_TASK')")
     @PutMapping("/{taskId}")
     public ResponseEntity<TaskResponse> updateTask(
             @PathVariable UUID taskId,
@@ -68,8 +76,10 @@ public class TaskController {
 
     /**
      * Delete a task by ID.
+     * Requires DELETE_TASK permission.
      * @param taskId The UUID of the task.
      */
+    @PreAuthorize("hasAuthority('DELETE_TASK')")
     @DeleteMapping("/{taskId}")
     public ResponseEntity<Void> deleteTask(@PathVariable UUID taskId) {
         logger.info("deleteTask: Received request to delete task with ID: {}", taskId);
@@ -80,8 +90,10 @@ public class TaskController {
 
     /**
      * Gets a task by ID.
+     * Requires either ADMIN role or VIEW_TASK permission.
      * @param taskId The UUID of the task.
      */
+    @PreAuthorize("hasRole('ADMIN') or hasAuthority('VIEW_TASK')")
     @GetMapping("/{taskId}")
     public ResponseEntity<?> getTaskDetails(@PathVariable UUID taskId) {
         logger.info("getTaskDetails: Received request to fetch task with ID: {}", taskId);
@@ -89,5 +101,15 @@ public class TaskController {
         logger.info("getTaskDetails: Task details fetched successfully with ID: {}", taskId);
         return ResponseEntity.ok(taskResponse);
     }
+
+    @GetMapping("/my-assigned")
+    @PreAuthorize("hasAuthority('VIEW_TASK')")
+    public ResponseEntity<List<TaskResponse>> getMyAssignedTasks() {
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        logger.info("getMyAssignedTasks: Fetching tasks assigned to '{}'", username);
+        List<TaskResponse> tasks = taskService.getTasksAssignedTo(username);
+        return ResponseEntity.ok(tasks);
+    }
+
 
 }
