@@ -1,12 +1,13 @@
 package org.guidewire.taskmanager.model;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.guidewire.taskmanager.model.Enums.Priority;
 import org.guidewire.taskmanager.model.Enums.TaskStatus;
 
-import java.time.ZonedDateTime;
 import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -51,7 +52,7 @@ public class SubTask extends BaseEntity {
     @Column(name = "watcher_id")
     private List<UUID> watchers;
 
-    @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "task_id")
     private Task task;
 

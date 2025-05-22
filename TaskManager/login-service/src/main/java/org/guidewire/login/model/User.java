@@ -22,6 +22,9 @@ public class User extends BaseEntity {
     @Column(unique = true, nullable = false)
     private String email;
 
+    @Column(unique = true, nullable = false)
+    private String phoneNumber;
+
     @Column(nullable = false)
     private String password;
 
@@ -34,11 +37,12 @@ public class User extends BaseEntity {
     public User() {
     }
 
-    public User(String username, String email, String password, Set<Role> roles) {
+    public User(String username, String email, String phoneNumber, String password, Set<Role> roles) {
         this.username = username;
         this.email = email;
         this.password = password;
         this.roles = roles;
+        this.phoneNumber = phoneNumber;
     }
 
     public UUID getId() {
@@ -63,6 +67,14 @@ public class User extends BaseEntity {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getPassword() {

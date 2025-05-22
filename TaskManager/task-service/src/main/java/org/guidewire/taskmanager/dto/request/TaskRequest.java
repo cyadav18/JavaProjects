@@ -4,7 +4,6 @@ import jakarta.validation.constraints.FutureOrPresent;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Data;
 import org.guidewire.taskmanager.model.Enums.Priority;
 import org.guidewire.taskmanager.model.Task;
 
@@ -12,7 +11,6 @@ import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.UUID;
 
-@Data
 public class TaskRequest {
 
     @NotBlank(message = "Subject is required")
@@ -50,5 +48,61 @@ public class TaskRequest {
         task.setPriority(taskRequest.getPriority());
         task.setWatchers(taskRequest.getWatchers());
         return task;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public UUID getAssignee() {
+        return assignee;
+    }
+
+    public void setAssignee(UUID assignee) {
+        this.assignee = assignee;
+    }
+
+    public ZonedDateTime getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(ZonedDateTime dueDate) {
+        this.dueDate = dueDate;
+    }
+
+    public UUID getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(UUID createdBy) {
+        this.createdBy = createdBy;
+    }
+
+    public Priority getPriority() {
+        return priority;
+    }
+
+    public void setPriority(Priority priority) {
+        this.priority = priority;
+    }
+
+    public List<UUID> getWatchers() {
+        return watchers;
+    }
+
+    public void setWatchers(List<UUID> watchers) {
+        this.watchers = watchers;
     }
 }

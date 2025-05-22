@@ -1,0 +1,17 @@
+{
+  "twilio": {
+    "accountSID": "AC5014aa39d14a73ea3a47b5a90bccf4db",
+    "authToken": "59be3298da6665b05b0c457bf684736b",
+    "whatsAppNumber": "+14155238886"
+  },
+  "kafka": {
+    "bootstrapServer": ["localhost:9092"],
+    "topics": ["task-created", "task-updated", "task-deleted"],
+    "groupId": "notification-group",
+    "minBytes":10e3,
+    "maxBytes": 10e3
+  },
+  "loginService": {
+    "url": "http://localhost:8081"
+  }
+}

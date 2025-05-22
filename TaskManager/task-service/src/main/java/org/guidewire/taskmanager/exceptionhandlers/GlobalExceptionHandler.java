@@ -74,25 +74,25 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(SubTaskNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ResponseEntity<Map<String, Object>> handleSubTaskNotFound(@NotNull SubTaskNotFoundException ex) {
-        return buildErrorResponse(ex, HttpStatus.NOT_FOUND,"Sub task not found.");
+        return buildErrorResponse(ex, HttpStatus.NOT_FOUND, "Sub task not found.");
     }
 
     @ExceptionHandler(CommentNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ResponseEntity<Map<String, Object>> handleCommentNotFound(@NotNull CommentNotFoundException ex) {
-        return buildErrorResponse(ex, HttpStatus.NOT_FOUND,"Comment not found.");
+        return buildErrorResponse(ex, HttpStatus.NOT_FOUND, "Comment not found.");
     }
 
     @ExceptionHandler(AttachmentNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ResponseEntity<Map<String, Object>> handleAttachmentNotFound(@NotNull AttachmentNotFoundException ex) {
-        return buildErrorResponse(ex, HttpStatus.NOT_FOUND,"Attachment not found.");
+        return buildErrorResponse(ex, HttpStatus.NOT_FOUND, "Attachment not found.");
     }
 
     @ExceptionHandler(NoTasksFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ResponseEntity<Map<String, Object>> handleAttachmentNotFound(@NotNull NoTasksFoundException ex) {
-        return buildErrorResponse(ex, HttpStatus.NOT_FOUND,"Tasks not found.");
+        return buildErrorResponse(ex, HttpStatus.NOT_FOUND, "Tasks not found.");
     }
 
 

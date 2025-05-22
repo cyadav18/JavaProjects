@@ -1,12 +1,8 @@
 package org.guidewire.taskmanager.services;
 
-import lombok.extern.slf4j.Slf4j;
 import org.guidewire.taskmanager.dto.request.SubTaskRequest;
-import org.guidewire.taskmanager.dto.request.TaskRequest;
 import org.guidewire.taskmanager.dto.response.SubTaskResponse;
-import org.guidewire.taskmanager.dto.response.TaskResponse;
 import org.guidewire.taskmanager.exceptionhandlers.SubTaskNotFoundException;
-import org.guidewire.taskmanager.exceptionhandlers.TaskNotFoundException;
 import org.guidewire.taskmanager.model.SubTask;
 import org.guidewire.taskmanager.model.Task;
 import org.guidewire.taskmanager.repository.SubTaskRepository;
@@ -22,9 +18,9 @@ import java.util.stream.Collectors;
 @Service
 public class SubTaskService {
 
+    private static final Logger logger = LoggerFactory.getLogger(SubTaskService.class);
     private final SubTaskRepository subTaskRepository;
     private final TaskRepository taskRepository;
-    private static final Logger logger = LoggerFactory.getLogger(SubTaskService.class);
 
     public SubTaskService(SubTaskRepository subTaskRepository, TaskRepository taskRepository) {
         this.subTaskRepository = subTaskRepository;

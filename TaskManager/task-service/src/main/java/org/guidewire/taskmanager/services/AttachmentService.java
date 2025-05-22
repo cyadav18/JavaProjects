@@ -33,24 +33,19 @@ import java.util.stream.Collectors;
 @Service
 public class AttachmentService {
 
+    private static final Logger logger = LoggerFactory.getLogger(AttachmentService.class);
     private final AttachmentRepository attachmentRepository;
     private final TaskRepository taskRepository;
     private final SubTaskRepository subTaskRepository;
     private final CommentRepository commentRepository;
-
     @Value("${file.storage.local.path}")
     private String baseStoragePath;
-
     @Value("${attachments.storage.tasks-path}")
     private String taskStoragePath;
-
     @Value("${attachments.storage.comments-path}")
     private String commentStoragePath;
-
     @Value("${attachments.storage.subtasks-path}")
     private String subTaskStoragePath;
-
-    private static final Logger logger = LoggerFactory.getLogger(AttachmentService.class);
 
     public AttachmentService(AttachmentRepository attachmentRepository, TaskRepository taskRepository, SubTaskRepository subTaskRepository, CommentRepository commentRepository) {
         this.attachmentRepository = attachmentRepository;
@@ -296,8 +291,6 @@ public class AttachmentService {
                 })
                 .collect(Collectors.toList());
     }
-
-
 
 
     /**

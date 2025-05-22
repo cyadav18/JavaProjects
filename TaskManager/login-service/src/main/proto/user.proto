@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "org.guidewire.login.grpc";
+option java_outer_classname = "UserProto";
+
+package user;
+
+// Request containing list of user IDs
+message UserIdsRequest {
+  repeated string ids = 1;
+}
+
+// Single user response
+message UserRpcResponse {
+  string id = 1;
+  string name = 2;
+  string phone = 3;
+  string mailId = 4;
+}
+
+// Response containing list of users
+message UserResponseList {
+  repeated UserRpcResponse users = 1;
+}
+
+// gRPC service
+service UserService {
+  rpc GetUsers(UserIdsRequest) returns (UserResponseList);
+}

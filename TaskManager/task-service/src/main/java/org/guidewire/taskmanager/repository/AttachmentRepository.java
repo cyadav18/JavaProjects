@@ -8,6 +8,8 @@ import java.util.UUID;
 
 public interface AttachmentRepository extends JpaRepository<Attachment, UUID> {
     List<Attachment> findByTaskId(UUID taskId);
+
     List<Attachment> findBySubTaskId(UUID subTaskId);
+
     List<Attachment> findByCommentId(UUID commentId);
 }

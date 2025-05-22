@@ -1,7 +1,6 @@
 package org.guidewire.login.controller;
 
 import org.guidewire.login.dto.requests.RoleRequest;
-import org.guidewire.login.dto.responses.PermissionResponse;
 import org.guidewire.login.dto.responses.RoleResponse;
 import org.guidewire.login.exceptions.RoleNotFoundException;
 import org.guidewire.login.services.PermissionService;

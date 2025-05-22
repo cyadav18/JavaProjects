@@ -21,8 +21,8 @@ import java.util.UUID;
 public class AttachmentController {
 
 
-    private final AttachmentService attachmentService;
     private static final Logger logger = LoggerFactory.getLogger(AttachmentController.class);
+    private final AttachmentService attachmentService;
 
 
     public AttachmentController(AttachmentService attachmentService) {

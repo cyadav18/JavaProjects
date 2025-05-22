@@ -128,6 +128,9 @@ login-service
 4. **Kafka Config**:
    - Centralized Kafka producer/consumer configuration for handling events.
 
+for Attachments
+python3 -m http.server 8000
+
 
 
 

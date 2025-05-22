@@ -21,8 +21,8 @@ import java.util.UUID;
 
 public class SubTaskController {
 
-    private final SubTaskService subTaskService;
     private static final Logger logger = LoggerFactory.getLogger(SubTaskController.class);
+    private final SubTaskService subTaskService;
 
     public SubTaskController(SubTaskService subTaskService) {
         this.subTaskService = subTaskService;

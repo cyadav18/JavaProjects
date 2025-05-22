@@ -1,0 +1,66 @@
+ Since you’re building a Kafka-based notification service that also fetches user info (via DB or RPC) and
+ sends notifications (WhatsApp, email), the best approach would be to go with a Clean Architecture
+(a.k.a. Hexagonal Architecture) with clear layering. This gives you Loose coupling between business logic and
+external systems.Easy testing and maintenance. Future flexibility (e.g., swap DB or notification provider).
+
+
+
+Kafka consumer receives a message.
+Passes the message to NotificationService.ProcessTaskCreatedEvent()
+NotificationService calls UserRepository.GetUserDetails(watcherIDs)
+Once users are fetched, it calls WhatsApp.Send(...) or Email.Send(...)
+
+
+Pattern	Use
+Repository Pattern	For abstracting DB calls (e.g., fetching users)
+Service Layer	For business logic (processing events, transforming data)
+Factory (optional)	For creating messages or channel-specific payloads
+
+# 📦 Notification Service Directory Layout
+
+
+📁 notification-service/
+├── 📁 cmd/
+│   └── 📄 main.go                  # Entry point of the application
+├── 📁 config/
+│   └── 📄 config.go               # Twilio/API/Env configuration loader
+├── 📁 internal/
+│   ├── 📁 adapters/               # External tech-specific implementations
+│   │   ├── 📁 kafka/
+│   │   │   └── 📄 consumer.go     # Kafka consumer implementation
+│   │   ├── 📁 notifier/
+│   │   │   ├── 📄 email.go        # Email sending logic
+│   │   │   └── 📄 whatsapp.go     # WhatsApp sending logic (Twilio)
+│   ├── 📁 app/
+│   │   └── 📄 notification.go     # Use case orchestration (business logic)
+│   ├── 📁 domain/
+│   │   ├── 📄 task.go             # TaskMessage entity
+│   │   └── 📄 user.go             # UserResponse entity
+│   ├── 📁 ports/
+│   │   ├── 📄 consumer.go         # Kafka interface
+│   │   ├── 📄 sender.go           # Notification interface (email/whatsapp)
+│   │   └── 📄 userfetcher.go      # Interface to fetch user (gRPC/DB)
+│   ├── 📁 repository/
+│   │   ├── 📄 user_pg_repository.go # DB-backed user fetch implementation
+│   │   └── 📄 user_repository.go  # Interface for user repository
+│   └── 📁 service/
+│       └── 📄 notification_service.go # Internal service logic glue layer
+├── 📁 proto/
+│   └── 📄 (gRPC proto files)       # User service proto definitions
+├── 📄 go.mod                       # Go module definition
+└── 📄 ReadMe.md5                   # Hash or project info
+
+
+
+| Folder                 | Purpose                                              |
+| ---------------------- | ---------------------------------------------------- |
+| `cmd/`                 | Entry point (main app runner)                        |
+| `config/`              | Configuration loading (Twilio keys, etc.)            |
+| `internal/adapters/`   | External I/O logic (Kafka, Twilio, DB/RPC clients)   |
+| `internal/app/`        | Business logic (use cases like "NotifyUser")         |
+| `internal/domain/`     | Core models/entities (`TaskMessage`, `UserResponse`) |
+| `internal/ports/`      | Interfaces (for DI and testing)                      |
+| `internal/repository/` | Repos backed by DBs or gRPC                          |
+| `internal/service/`    | Glue logic if needed                                 |
+| `proto/`               | gRPC definitions                                     |
+

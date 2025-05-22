@@ -3,6 +3,7 @@ package org.guidewire.taskmanager.services;
 import org.guidewire.taskmanager.dto.request.TaskRequest;
 import org.guidewire.taskmanager.dto.response.TaskResponse;
 import org.guidewire.taskmanager.exceptionhandlers.TaskNotFoundException;
+import org.guidewire.taskmanager.kafka.KafkaPublisher;
 import org.guidewire.taskmanager.model.Task;
 import org.guidewire.taskmanager.repository.TaskRepository;
 import org.guidewire.taskmanager.services.interfaces.TaskService;
@@ -20,10 +21,12 @@ import java.util.stream.Collectors;
 public class TaskServiceImpl implements TaskService {
     private static final Logger logger = LoggerFactory.getLogger(TaskServiceImpl.class);
     private final TaskRepository taskRepository;
+    private KafkaPublisher kafkaPublisher;
 
     @Autowired
-    public TaskServiceImpl(TaskRepository taskRepository) {
+    public TaskServiceImpl(TaskRepository taskRepository, KafkaPublisher kafkaPublisher) {
         this.taskRepository = taskRepository;
+        this.kafkaPublisher = kafkaPublisher;
     }
 
     /**
@@ -38,7 +41,7 @@ public class TaskServiceImpl implements TaskService {
 
         Task task = TaskRequest.convertToEntity(taskRequest);
         Task savedTask = taskRepository.save(task);
-
+        kafkaPublisher.sendTaskCreatedEvent(task);
         logger.info("Task created successfully with ID: {}", savedTask.getId());
         return TaskResponse.convertToResponse(savedTask);
     }
@@ -87,7 +90,7 @@ public class TaskServiceImpl implements TaskService {
 
         Task updatedTask = taskRepository.save(existingTask);
         logger.info("updateTask: Task with ID {} updated successfully", taskId);
-
+        kafkaPublisher.sendUpdateTaskEvent(updatedTask);
         return TaskResponse.convertToResponse(updatedTask);
     }
 

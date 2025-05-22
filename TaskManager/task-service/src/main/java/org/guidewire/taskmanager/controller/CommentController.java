@@ -19,8 +19,8 @@ import java.util.UUID;
 @RequestMapping("/api/task-manager/comments")
 public class CommentController {
 
-    private final CommentService commentService;
     private static final Logger logger = LoggerFactory.getLogger(CommentController.class);
+    private final CommentService commentService;
 
     public CommentController(CommentService commentService) {
         this.commentService = commentService;

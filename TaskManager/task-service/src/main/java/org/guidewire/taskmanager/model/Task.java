@@ -1,14 +1,15 @@
 package org.guidewire.taskmanager.model;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.guidewire.taskmanager.model.Enums.Priority;
 import org.guidewire.taskmanager.model.Enums.TaskStatus;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import java.time.ZonedDateTime;
 import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.UUID;
 

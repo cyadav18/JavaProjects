@@ -23,7 +23,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
@@ -159,7 +162,7 @@ public class AuthService {
     public List<UserResponse> getUserDetails(@NotNull List<UUID> userId) {
 //        List<UUID> userIds = userId.stream().map(UUID::fromString).toList();
         List<User> users = userRepository.findAllById(userId);
-        return users.stream().map(user->new UserResponse(user.getId(),user.getUsername(),user.getEmail(),null)).toList();
+        return users.stream().map(user -> new UserResponse(user.getId(), user.getUsername(), user.getEmail(), null)).toList();
 
     }
 }

@@ -49,6 +49,9 @@ jwt:
 server:
   port: 8081
 
+grpc:
+  port: 9093
+
 management:
   endpoints:
     web:

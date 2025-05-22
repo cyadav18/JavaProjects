@@ -1,6 +1,5 @@
 package org.guidewire.taskmanager.services;
 
-import lombok.extern.slf4j.Slf4j;
 import org.guidewire.taskmanager.dto.request.CommentRequest;
 import org.guidewire.taskmanager.dto.response.CommentResponse;
 import org.guidewire.taskmanager.exceptionhandlers.CommentNotFoundException;
@@ -21,10 +20,10 @@ import java.util.stream.Collectors;
 @Service
 public class CommentService {
 
+    private static final Logger logger = LoggerFactory.getLogger(CommentService.class);
     private final CommentRepository commentRepository;
     private final TaskRepository taskRepository;
     private final SubTaskRepository subTaskRepository;
-    private static final Logger logger = LoggerFactory.getLogger(CommentService.class);
 
     public CommentService(CommentRepository commentRepository, TaskRepository taskRepository, SubTaskRepository subTaskRepository) {
         this.commentRepository = commentRepository;
@@ -63,7 +62,7 @@ public class CommentService {
 
     public List<CommentResponse> getCommentsByTask(UUID taskId) {
         logger.info("getCommentsByTask: Fetching comments for task '{}'", taskId);
-        List<Comment> comment =  commentRepository.findByTaskId(taskId);
+        List<Comment> comment = commentRepository.findByTaskId(taskId);
         logger.info("getCommentsByTask: Retrieved comments for task '{}'", comment.size());
         return comment.stream()
                 .map(CommentResponse::convertToDto)

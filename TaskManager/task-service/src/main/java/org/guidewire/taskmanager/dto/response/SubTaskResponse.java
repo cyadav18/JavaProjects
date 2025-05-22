@@ -1,6 +1,5 @@
 package org.guidewire.taskmanager.dto.response;
 
-import lombok.Data;
 import org.guidewire.taskmanager.model.Enums.Priority;
 import org.guidewire.taskmanager.model.Enums.TaskStatus;
 import org.guidewire.taskmanager.model.SubTask;
@@ -9,7 +8,6 @@ import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.UUID;
 
-@Data
 public class SubTaskResponse {
     private UUID id;
     private String subject;
@@ -37,5 +35,93 @@ public class SubTaskResponse {
         response.setWatchers(subTask.getWatchers());
         response.setCreatedBy(subTask.getCreatedBy());
         return response;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public UUID getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(UUID createdBy) {
+        this.createdBy = createdBy;
+    }
+
+    public UUID getAssignee() {
+        return assignee;
+    }
+
+    public void setAssignee(UUID assignee) {
+        this.assignee = assignee;
+    }
+
+    public ZonedDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(ZonedDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public ZonedDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(ZonedDateTime updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public ZonedDateTime getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(ZonedDateTime dueDate) {
+        this.dueDate = dueDate;
+    }
+
+    public TaskStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(TaskStatus status) {
+        this.status = status;
+    }
+
+    public Priority getPriority() {
+        return priority;
+    }
+
+    public void setPriority(Priority priority) {
+        this.priority = priority;
+    }
+
+    public List<UUID> getWatchers() {
+        return watchers;
+    }
+
+    public void setWatchers(List<UUID> watchers) {
+        this.watchers = watchers;
     }
 }

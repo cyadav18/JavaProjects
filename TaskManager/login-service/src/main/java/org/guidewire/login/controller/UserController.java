@@ -13,6 +13,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/auth/users")
@@ -62,6 +63,11 @@ public class UserController {
             logger.error("updateUserRoles: Unexpected error while updating user roles", e);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An unexpected error occurred.");
         }
+    }
+
+    @GetMapping("/id/{id}")
+    public ResponseEntity<UserResponse> getUserById(@PathVariable String id) {
+        return ResponseEntity.ok(userService.getUserById(UUID.fromString(id)));
     }
 
 }

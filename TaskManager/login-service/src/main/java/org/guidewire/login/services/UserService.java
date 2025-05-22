@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -104,4 +105,27 @@ public class UserService {
         return new UserResponse(user.getId(), user.getUsername(), user.getEmail(),
                 roles.stream().map(Role::getName).collect(Collectors.toSet()));
     }
+
+
+    /**
+     * Retrieves a user by username.
+     *
+     * @param id The username of the user.
+     * @return The user details.
+     * @throws UserNotFoundException If the user is not found.
+     */
+    public UserResponse getUserById(UUID id) {
+        logger.info("getUserByUsername: Fetching user with id: {}", id);
+
+        User user = userRepository.findByUserId(id)
+                .orElseThrow(() -> {
+                    logger.warn("getUserById: User not found with username: {}", id);
+                    return new UserNotFoundException("User not found");
+                });
+
+        logger.info("getUserById: Successfully retrieved user: {}", id);
+        return new UserResponse(user.getId(), user.getUsername(), user.getEmail(), user.getPhoneNumber(),
+                user.getRoles().stream().map(Role::getName).collect(Collectors.toSet()));
+    }
+
 }
