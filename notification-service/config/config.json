@@ -1,7 +1,7 @@
 {
   "twilio": {
     "accountSID": "AC5014aa39d14a73ea3a47b5a90bccf4db",
-    "authToken": "59be3298da6665b05b0c457bf684736b",
+    "authToken": "",
     "whatsAppNumber": "+14155238886"
   },
   "kafka": {

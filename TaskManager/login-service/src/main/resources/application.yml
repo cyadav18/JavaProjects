@@ -2,63 +2,21 @@ spring:
   application:
     name: LoginService
 
-  datasource:
-    url: jdbc:postgresql://localhost:5432/login_db
-    username: postgres
-    password: password
-  #  <create | create-drop | update | validate | none>
-  jpa:
-    hibernate:
-      ddl-auto: none
-    show-sql: true
-# Enable Hibernate SQL logging
-# Enable Hibernate SQL logging and application logging
-logging:
-  level:
-    org:
-      springframework: DEBUG
-      hibernate:
-        SQL: DEBUG
-        type:
-          descriptor:
-            sql:
-              BasicBinder: TRACE  # Log query parameters
-    org.guidewire.login: TRACE  # Log everything from TRACE to ERROR
-
-  file:
-    name: logs/application.log  # Log file location
-
-  pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
-    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
-
-  logback:
-    rollingpolicy:
-      file-name-pattern: logs/application-%d{yyyy-MM-dd}.log  # Daily rolling logs
-      max-history: 30  # Keep logs for 30 days
-
-  config: classpath:logback-spring.xml  # External Logback config file
-
-
-
-# JWT Secret Key (use a strong Base64-encoded key)
 jwt:
-  secret: dGVzdGluZyB0aGUgYXBwIG5vdyB3aXRoIGJhc2UgNjQgZW5jb2RlZCBwYXNzd29yZCA=
+  secret: base64-default-secret
   expirationMs: 86400000
-
-server:
-  port: 8081
 
 grpc:
   port: 9093
 
 management:
   endpoints:
-    web:
-      exposure:
-        include: "*"  # Allows all actuator endpoints
+    web.exposure.include: "*"
   endpoint:
-    health:
-      show-details: always
-    info:
-      enabled: true
+    health.show-details: always
+    info.enabled: true
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

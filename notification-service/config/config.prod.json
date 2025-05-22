@@ -1,0 +1,16 @@
+{
+  "twilio": {
+    "accountSID": "${TWILIO_SID}",
+    "authToken": "${TWILIO_TOKEN}",
+    "whatsAppNumber": "${TWILIO_WHATSAPP_NUMBER}"
+  },
+  "kafka": {
+    "bootstrapServers": ["kafka.prod:9092"],
+    "groupId": "notification-group"
+  },
+  "services": {
+    "loginService": {
+      "url": "http://login-service.prod:8081"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/login_db
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+logging:
+  level:
+    org.springframework: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.guidewire.login: TRACE
+
+  file:
+    name: logs/login-service.log
+  logback:
+    rollingpolicy:
+      file-name-pattern: logs/login-service-%d{yyyy-MM-dd}.log
+      max-history: 30

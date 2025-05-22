@@ -16,7 +16,12 @@ import (
 
 func main() {
 	log.Println("[BOOT] Loading application config from config/config.json")
-	appCfg := config.LoadConfig("config/config.json")
+
+	configPath := os.Getenv("CONFIG_PATH")
+	if configPath == "" {
+		configPath = "config.json"
+	}
+	appCfg := config.LoadConfig(configPath)
 
 	log.Println("[BOOT] Setting up dependencies")
 	userFetcher := userfetcher.NewRPCUserFetcher(appCfg.LoginService.URL)
