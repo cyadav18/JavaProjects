@@ -8,7 +8,7 @@ WORKDIR /task-service-build
 COPY . .
 
 # Build only the task-service module and its dependencies
-RUN mvn clean package -pl task-service -am -DskipTests
+RUN mvn clean package  -DskipTests
 
 # Stage 2: Run
 FROM eclipse-temurin:17-jre

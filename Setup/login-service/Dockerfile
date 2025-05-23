@@ -5,7 +5,7 @@ WORKDIR /login-service-build
 
 COPY . .
 
-RUN mvn clean package -pl login-service -am -DskipTests
+RUN mvn clean package -DskipTests
 
 # Stage 2: Run
 FROM eclipse-temurin:17-jre
