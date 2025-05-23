@@ -3,8 +3,7 @@ FROM maven:3.9.6-eclipse-temurin-17 AS build
 LABEL authors="cyadav"
 WORKDIR /login-service-build
 
-COPY login-service/pom.xml ./login-service/
-COPY login-service/src ./login-service/src
+COPY . .
 
 RUN mvn clean package -pl login-service -am -DskipTests
 
