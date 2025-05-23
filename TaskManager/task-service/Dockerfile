@@ -5,7 +5,8 @@ FROM maven:3.9.6-eclipse-temurin-17 AS build
 LABEL authors="cyadav"
 WORKDIR /task-service-build
 
-COPY . .
+COPY task-service/pom.xml ./task-service/
+COPY task-service/src ./task-service/src
 
 # Build only the task-service module and its dependencies
 RUN mvn clean package -pl task-service -am -DskipTests

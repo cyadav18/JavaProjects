@@ -18,7 +18,7 @@ RUN go mod download
 COPY . .
 
 # Build the binary
-RUN go build -o notification-service main.go
+RUN go build -o notification-service ./cmd/
 
 # Stage 2: Create a small runtime image
 FROM alpine:latest
