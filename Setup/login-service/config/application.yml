@@ -1,10 +1,10 @@
 spring:
   application:
-    name: LoginService
+    name: login-service
 
 jwt:
-  secret: base64-default-secret
-  expirationMs: 86400000
+  secret: ${JWT_SECRET}
+  expirationMs: ${JWT_EXPIRATION}
 
 grpc:
   port: 9093

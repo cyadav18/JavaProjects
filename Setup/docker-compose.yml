@@ -1,8 +1,8 @@
-version: '3.8'
 
 services:
   zookeeper:
     image: confluentinc/cp-zookeeper:7.5.0
+    container_name: zookeeper
     ports:
       - "2181:2181"
     environment:
@@ -16,6 +16,7 @@ services:
 
   kafka:
     image: confluentinc/cp-kafka:7.5.0
+    container_name: kafka
     depends_on:
       - zookeeper
     ports:
@@ -35,6 +36,7 @@ services:
 
   kafdrop:
     image: obsidiandynamics/kafdrop
+    container_name: kafdrop
     depends_on:
       - kafka
     ports:
@@ -45,7 +47,8 @@ services:
       - backendservices
 
   gateway-service:
-    image: gateway-service:dev
+    image: gateway-service:${IMAGE_VERSION}
+    container_name: gateway-service
     build:
       context: ../
       dockerfile: gateway-service/Dockerfile
@@ -57,15 +60,16 @@ services:
       - notification-service
     volumes:
       - ./gateway-service/config/application.yml:/gateway/config/application.yml
-      - ./gateway-service/config/application-dev.yml:/gateway/config/application-dev.yml
+      - ./gateway-service/config/application-${SPRING_PROFILES_ACTIVE}.yml:/gateway/config/application-${SPRING_PROFILES_ACTIVE}.yml
     environment:
-      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE}
       - SPRING_CONFIG_LOCATION=classpath:/,file:/gateway/config/
     networks:
       - backendservices
 
   login-service:
-    image: login-service:dev
+    image: login-service:${IMAGE_VERSION}
+    container_name: login-service
     build:
       context: ../TaskManager
       dockerfile: login-service/Dockerfile
@@ -73,20 +77,22 @@ services:
       - "8081:8081"
     depends_on:
       - kafka
+      - postgres
     volumes:
       - ./login-service/config/application.yml:/login/config/application.yml
-      - ./login-service/config/application-dev.yml:/login/config/application-dev.yml
+      - ./login-service/config/application-${SPRING_PROFILES_ACTIVE}.yml:/login/config/application-${SPRING_PROFILES_ACTIVE}.yml
     environment:
-      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE}
       - SPRING_CONFIG_LOCATION=classpath:/,file:/login/config/
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/login_db
-      - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=password
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://${DB_HOST}:${DB_PORT}/${LOGIN_DB}
+      - SPRING_DATASOURCE_USERNAME=${SPRING_DATASOURCE_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${SPRING_DATASOURCE_PASSWORD}
     networks:
       - backendservices
 
   task-service:
-    image: task-service:dev
+    image: task-service:${IMAGE_VERSION}
+    container_name: task-service
     build:
       context: ../TaskManager
       dockerfile: task-service/Dockerfile
@@ -94,19 +100,21 @@ services:
       - "8082:8082"
     depends_on:
       - kafka
+      - postgres
     volumes:
       - ./task-service/config/application.yml:/task/config/application.yml
-      - ./task-service/config/application-dev.yml:/task/config/application-dev.yml
+      - ./task-service/config/application-${SPRING_PROFILES_ACTIVE}.yml:/task/config/application-${SPRING_PROFILES_ACTIVE}.yml
     environment:
-      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE}
       - SPRING_CONFIG_LOCATION=classpath:/,file:/task/config/
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/login_db
-      - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=password
+       - SPRING_DATASOURCE_URL=jdbc:postgresql://${DB_HOST}:${DB_PORT}/${TASK_DB}
+      - SPRING_DATASOURCE_USERNAME=${SPRING_DATASOURCE_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${SPRING_DATASOURCE_PASSWORD}
     networks:
       - backendservices
   notification-service:
-    image: notification-service:dev
+    image: notification-service:${IMAGE_VERSION}
+    container_name: notification-service
     build:
       context: ../notification-service
       dockerfile: Dockerfile
@@ -114,7 +122,7 @@ services:
       - kafka
       - login-service
     volumes:
-      - ./notification-service/config.dev.json:/notification/config.json
+      - ./notification-service/config.${SPRING_PROFILES_ACTIVE}.json:/notification/config.json
     networks:
       - backendservices
 
@@ -137,8 +145,9 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
       - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
@@ -148,4 +157,3 @@ services:
 networks:
   backendservices:
     driver: bridge
-    external: true
