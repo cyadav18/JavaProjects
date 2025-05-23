@@ -47,7 +47,7 @@ services:
   gateway-service:
     image: gateway-service:dev
     build:
-      context: ./gateway-service
+      context: ../
       dockerfile: gateway-service/Dockerfile
     ports:
       - "8080:8080"
@@ -67,7 +67,7 @@ services:
   login-service:
     image: login-service:dev
     build:
-      context: ./login-service
+      context: ../TaskManger
       dockerfile: login-service/Dockerfile
     ports:
       - "8081:8081"
@@ -88,7 +88,7 @@ services:
   task-service:
     image: task-service:dev
     build:
-      context: ./task-service
+      context: ../TaskManger
       dockerfile: task-service/Dockerfile
     ports:
       - "8082:8082"
@@ -109,7 +109,7 @@ services:
   notification-service:
     image: notification-service:dev
     build:
-      context: ./notification-service
+      context: ../
       dockerfile: notification-service/Dockerfile
     depends_on:
       - kafka
