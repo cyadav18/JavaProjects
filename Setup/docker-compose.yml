@@ -1,0 +1,148 @@
+version: '3.8'
+
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.0
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    volumes:
+      - ./data/zookeeper:/data
+      - ./data/zookeeper/datalog:/datalog
+    networks:
+      - backendservices
+
+  kafka:
+    image: confluentinc/cp-kafka:7.5.0
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
+    volumes:
+      - ./data/kafka:/var/lib/kafka/data
+    networks:
+      - backendservices
+
+  kafdrop:
+    image: obsidiandynamics/kafdrop
+    depends_on:
+      - kafka
+    ports:
+      - "9001:9000"
+    environment:
+      KAFKA_BROKERCONNECT: PLAINTEXT://kafka:9092
+    networks:
+      - backendservices
+  
+  gateway-service:
+    image: gateway-service:dev
+    build:
+      context: ./gateway-service
+    ports:
+      - "8080:8080"
+    depends_on:
+      - login-service
+      - task-service
+      - notification-service
+    volumes:
+      - ./gateway-service/config/application.yml:/gateway/config/application.yml
+      - ./gateway-service/config/application-dev.yml:/gateway/config/application-dev.yml
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_CONFIG_LOCATION=classpath:/,file:/gateway/config/
+    networks:
+      - backendservices
+
+  login-service:
+    image: login-service:dev
+    build:
+      context: ./login-service
+    ports:
+      - "8081:8081"
+    depends_on:
+      - kafka
+    volumes:
+      - ./login-service/config/application.yml:/login/config/application.yml
+      - ./login-service/config/application-dev.yml:/login/config/application-dev.yml
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_CONFIG_LOCATION=classpath:/,file:/login/config/
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/login_db
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=password
+    networks:
+      - backendservices
+
+  task-service:
+    image: task-service:dev
+    build:
+      context: ./task-service
+    ports:
+      - "8082:8082"
+    depends_on:
+      - kafka
+    volumes:
+      - ./task-service/config/application.yml:/task/config/application.yml
+      - ./task-service/config/application-dev.yml:/task/config/application-dev.yml
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_CONFIG_LOCATION=classpath:/,file:/task/config/
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/login_db
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=password
+    networks:
+      - backendservices
+
+  notification-service:
+    image: notification-service:dev
+    build:
+      context: ./notification-service
+    depends_on:
+      - kafka
+      - login-service
+    volumes:
+      - ./notification-service/config.dev.json:/notification/config.json
+    networks:
+      - backendservices
+
+  appsmith:
+    image: appsmith/appsmith-ce
+    container_name: appsmith
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./data/appsmith:/appsmith-stacks
+    networks:
+      - backendservices
+    
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - backendservices
+
+
+networks:
+  backendservices:
+    driver: bridge
+    external: true

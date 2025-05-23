@@ -1,0 +1,19 @@
+server:
+  port: 80
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: login-service
+          uri: http://login-service.default.svc.cluster.local:8081
+          predicates:
+            - Path=/api/auth/**
+        - id: task-service
+          uri: http://task-service.default.svc.cluster.local:8082
+          predicates:
+            - Path=/api/task-manager/**
+        - id: notification-service
+          uri: http://notification-service.default.svc.cluster.local:8083
+          predicates:
+            - Path=/api/notifications/**

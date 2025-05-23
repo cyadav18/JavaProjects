@@ -1,0 +1,38 @@
+setup-taskmanager/
+│
+├── docker-compose.yml                  # Master file for all services
+├── .env                                # (Optional) Shared environment vars
+│
+├── login-service/
+│   ├── Dockerfile
+│   └── config/
+│       └── application.properties      # or .yml
+│
+├── task-service/
+│   ├── Dockerfile
+│   └── config/
+│       └── application.properties
+│
+├── notification-service/
+│   ├── Dockerfile
+│   ├── config/
+│   │   └── config.dev.json             # Mounted into container
+│
+├── gateway-service/
+│   ├── Dockerfile
+│   └── config/
+│       └── application.yml
+│
+├── postgres/
+│   └── init.sql                        # Creates login_db and task_db
+│
+├── appsmith/
+│   ├── import/
+│   │   └── taskmanager-app.json        # Exported Appsmith app file
+│   └── import-app.sh                   # Script to import app via REST
+│
+└── data/
+    ├── kafka/
+    ├── zookeeper/
+    ├── postgres/
+    └── appsmith/
