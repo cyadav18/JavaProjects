@@ -79,6 +79,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         User admin = new User();
         admin.setUsername("admin");
         admin.setEmail("admin@example.com");
+        admin.setPhoneNumber("NA");
         admin.setPassword(passwordEncoder.encode("admin")); // Encrypt password
         admin.setRoles(Collections.singleton(adminRole));
 

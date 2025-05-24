@@ -34,6 +34,17 @@ services:
     networks:
       - backendservices
 
+  kafka-init:
+    image: confluentinc/cp-kafka:7.5.0
+    container_name: kafka-init
+    depends_on:
+      - kafka
+    volumes:
+      - ./kafka/init-kafka.sh:/init-kafka.sh
+    entrypoint: ["/bin/bash", "/init-kafka.sh"]
+    networks:
+      - backendservices
+
   kafdrop:
     image: obsidiandynamics/kafdrop
     container_name: kafdrop
@@ -143,7 +154,7 @@ services:
     container_name: postgres
     restart: unless-stopped
     ports:
-      - "5432:5432"
+      - "5433:5433"
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
