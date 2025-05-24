@@ -119,7 +119,7 @@
             "authType": "DEFAULT"
           }
         },
-        "url": "http://192.168.1.2:8000",
+        "url": "http://gateway-service:8080",
         "headers": [],
         "queryParameters": []
       },
@@ -137,7 +137,7 @@
             "authType": "DEFAULT"
           }
         },
-        "url": "http://192.168.1.2:8080/api/task-manager/",
+        "url": "http://gateway-service:8080/api/task-manager/",
         "headers": [
           {
             "key": "Authorization",
@@ -160,7 +160,7 @@
             "authType": "DEFAULT"
           }
         },
-        "url": "http://192.168.1.2:8080/api/auth/",
+        "url": "http://gateway-service:8080/api/auth/",
         "headers": [],
         "queryParameters": []
       },
@@ -178,7 +178,7 @@
             "authType": "DEFAULT"
           }
         },
-        "url": "http://192.168.1.2:8080/api/auth/",
+        "url": "http://gateway-service:8080/api/auth/",
         "headers": [
           {
             "key": "Authorization",
@@ -9248,7 +9248,7 @@
                           "defaultImage": "",
                           "flexVerticalAlignment": "start",
                           "key": "utiy1cih7m",
-                          "image": "http://192.168.1.19:8000/uploads/attachments/tasks/79d36cd6-eeff-4142-bf20-78c98e27fd7f/f4c8a3d0-0037-4c50-9264-74b716a232df.png",
+                          "image": "http://file-server:8085/uploads/attachments/tasks/79d36cd6-eeff-4142-bf20-78c98e27fd7f/f4c8a3d0-0037-4c50-9264-74b716a232df.png",
                           "rightColumn": 63.0,
                           "objectFit": "cover",
                           "widgetId": "6zhiucuul7",
@@ -13515,7 +13515,7 @@
                           "defaultImage": "",
                           "flexVerticalAlignment": "start",
                           "key": "utiy1cih7m",
-                          "image": "http://192.168.1.14:8000/uploads/attachments/tasks/79d36cd6-eeff-4142-bf20-78c98e27fd7f/f4c8a3d0-0037-4c50-9264-74b716a232df.png",
+                          "image": "http://file-server:8085/uploads/attachments/tasks/79d36cd6-eeff-4142-bf20-78c98e27fd7f/f4c8a3d0-0037-4c50-9264-74b716a232df.png",
                           "rightColumn": 63.0,
                           "objectFit": "cover",
                           "widgetId": "6zhiucuul7",
@@ -16463,7 +16463,7 @@
           "timeoutInMillisecond": 10000.0,
           "paginationType": "NONE",
           "encodeParamsToggle": true,
-          "body": "function () {\n  let baseUrl = \"http://192.168.1.2:8000/\";\n  let selectedFile = task_attachments_table.selectedRow;\n  if (!selectedFile) {\n    showAlert(\"No file selected!\", \"warning\");\n    return;\n  }\n  let fileUrl = baseUrl + selectedFile.filePath;\n  let fileType = selectedFile.fileType.toLowerCase();\n  storeValue(\"fileURL\", \"\");\n  storeValue(\"fileType\", \"\");\n  storeValue(\"fileURL\", fileUrl);\n  storeValue(\"fileType\", fileType);\n  console.log(\"Stored File URL:\", fileUrl);\n  console.log(\"Stored File Type:\", fileType);\n  setTimeout(() => {\n    JSObject1.handleFilePreview(fileType, fileUrl);\n  }, 200);\n}",
+          "body": "function () {\n  let baseUrl = \"http://gateway-service:8080/\";\n  let selectedFile = task_attachments_table.selectedRow;\n  if (!selectedFile) {\n    showAlert(\"No file selected!\", \"warning\");\n    return;\n  }\n  let fileUrl = baseUrl + selectedFile.filePath;\n  let fileType = selectedFile.fileType.toLowerCase();\n  storeValue(\"fileURL\", \"\");\n  storeValue(\"fileType\", \"\");\n  storeValue(\"fileURL\", fileUrl);\n  storeValue(\"fileType\", fileType);\n  console.log(\"Stored File URL:\", fileUrl);\n  console.log(\"Stored File Type:\", fileType);\n  setTimeout(() => {\n    JSObject1.handleFilePreview(fileType, fileUrl);\n  }, 200);\n}",
           "selfReferencingDataPaths": [],
           "jsArguments": []
         },
@@ -16477,7 +16477,7 @@
         "invalids": [],
         "messages": [],
         "jsonPathKeys": [
-          "function () {\n  let baseUrl = \"http://192.168.1.2:8000/\";\n  let selectedFile = task_attachments_table.selectedRow;\n  if (!selectedFile) {\n    showAlert(\"No file selected!\", \"warning\");\n    return;\n  }\n  let fileUrl = baseUrl + selectedFile.filePath;\n  let fileType = selectedFile.fileType.toLowerCase();\n  storeValue(\"fileURL\", \"\");\n  storeValue(\"fileType\", \"\");\n  storeValue(\"fileURL\", fileUrl);\n  storeValue(\"fileType\", fileType);\n  console.log(\"Stored File URL:\", fileUrl);\n  console.log(\"Stored File Type:\", fileType);\n  setTimeout(() => {\n    JSObject1.handleFilePreview(fileType, fileUrl);\n  }, 200);\n}"
+          "function () {\n  let baseUrl = \"http://gateway-service:8080/\";\n  let selectedFile = task_attachments_table.selectedRow;\n  if (!selectedFile) {\n    showAlert(\"No file selected!\", \"warning\");\n    return;\n  }\n  let fileUrl = baseUrl + selectedFile.filePath;\n  let fileType = selectedFile.fileType.toLowerCase();\n  storeValue(\"fileURL\", \"\");\n  storeValue(\"fileType\", \"\");\n  storeValue(\"fileURL\", fileUrl);\n  storeValue(\"fileType\", fileType);\n  console.log(\"Stored File URL:\", fileUrl);\n  console.log(\"Stored File Type:\", fileType);\n  setTimeout(() => {\n    JSObject1.handleFilePreview(fileType, fileUrl);\n  }, 200);\n}"
         ],
         "userSetOnLoad": false,
         "confirmBeforeExecute": false,
@@ -17639,7 +17639,7 @@
           "timeoutInMillisecond": 10000.0,
           "paginationType": "NONE",
           "encodeParamsToggle": true,
-          "body": "function () {\n  let baseUrl = \"http://192.168.1.2:8000/\";\n  let selectedFile = task_attachments_table.selectedRow;\n  if (!selectedFile) {\n    showAlert(\"No file selected!\", \"warning\");\n    return;\n  }\n  let fileUrl = baseUrl + selectedFile.filePath;\n  let fileType = selectedFile.fileType.toLowerCase();\n  storeValue(\"fileURL\", \"\");\n  storeValue(\"fileType\", \"\");\n  storeValue(\"fileURL\", fileUrl);\n  storeValue(\"fileType\", fileType);\n  console.log(\"Stored File URL:\", fileUrl);\n  console.log(\"Stored File Type:\", fileType);\n  setTimeout(() => {\n    JSObject1.handleFilePreview(fileType, fileUrl);\n  }, 200);\n}",
+          "body": "function () {\n  let baseUrl = \"http://gateway-service:8080/\";\n  let selectedFile = task_attachments_table.selectedRow;\n  if (!selectedFile) {\n    showAlert(\"No file selected!\", \"warning\");\n    return;\n  }\n  let fileUrl = baseUrl + selectedFile.filePath;\n  let fileType = selectedFile.fileType.toLowerCase();\n  storeValue(\"fileURL\", \"\");\n  storeValue(\"fileType\", \"\");\n  storeValue(\"fileURL\", fileUrl);\n  storeValue(\"fileType\", fileType);\n  console.log(\"Stored File URL:\", fileUrl);\n  console.log(\"Stored File Type:\", fileType);\n  setTimeout(() => {\n    JSObject1.handleFilePreview(fileType, fileUrl);\n  }, 200);\n}",
           "selfReferencingDataPaths": [],
           "jsArguments": []
         },
@@ -17653,7 +17653,7 @@
         "invalids": [],
         "messages": [],
         "jsonPathKeys": [
-          "function () {\n  let baseUrl = \"http://192.168.1.2:8000/\";\n  let selectedFile = task_attachments_table.selectedRow;\n  if (!selectedFile) {\n    showAlert(\"No file selected!\", \"warning\");\n    return;\n  }\n  let fileUrl = baseUrl + selectedFile.filePath;\n  let fileType = selectedFile.fileType.toLowerCase();\n  storeValue(\"fileURL\", \"\");\n  storeValue(\"fileType\", \"\");\n  storeValue(\"fileURL\", fileUrl);\n  storeValue(\"fileType\", fileType);\n  console.log(\"Stored File URL:\", fileUrl);\n  console.log(\"Stored File Type:\", fileType);\n  setTimeout(() => {\n    JSObject1.handleFilePreview(fileType, fileUrl);\n  }, 200);\n}"
+          "function () {\n  let baseUrl = \"http://gateway-service:8080/\";\n  let selectedFile = task_attachments_table.selectedRow;\n  if (!selectedFile) {\n    showAlert(\"No file selected!\", \"warning\");\n    return;\n  }\n  let fileUrl = baseUrl + selectedFile.filePath;\n  let fileType = selectedFile.fileType.toLowerCase();\n  storeValue(\"fileURL\", \"\");\n  storeValue(\"fileType\", \"\");\n  storeValue(\"fileURL\", fileUrl);\n  storeValue(\"fileType\", fileType);\n  console.log(\"Stored File URL:\", fileUrl);\n  console.log(\"Stored File Type:\", fileType);\n  setTimeout(() => {\n    JSObject1.handleFilePreview(fileType, fileUrl);\n  }, 200);\n}"
         ],
         "userSetOnLoad": false,
         "confirmBeforeExecute": false,
@@ -18691,7 +18691,7 @@
         "pluginType": "JS",
         "actions": [],
         "archivedActions": [],
-        "body": "export default {\n\tpreviewFile() {\n\t\tlet baseUrl = \"http://192.168.1.2:8000/\";  // Your backend URL\n\t\tlet selectedFile = task_attachments_table.selectedRow; // Get selected file details\n\n\t\tif (!selectedFile) {\n\t\t\tshowAlert(\"No file selected!\", \"warning\");\n\t\t\treturn;\n\t\t}\n\n\t\tlet fileUrl = baseUrl + selectedFile.filePath;\n\t\tlet fileType = selectedFile.fileType.toLowerCase(); // Normalize file type\n\n\t\t// \uD83D\uDED1 Reset stored values before updating\n\t\tstoreValue(\"fileURL\", \"\"); // Ensures the previous file isn't shown\n\t\tstoreValue(\"fileType\", \"\");\n\n\t\t// ✅ Store the new file details\n\t\tstoreValue(\"fileURL\", fileUrl);\n\t\tstoreValue(\"fileType\", fileType);\n\n\t\t// \uD83D\uDEE0 Debugging to ensure correct values\n\t\tconsole.log(\"Stored File URL:\", fileUrl);\n\t\tconsole.log(\"Stored File Type:\", fileType);\n\n\t\t// Wait for stored values to update, then trigger modal\n\t\tsetTimeout(() => {\n\t\t\tthis.handleFilePreview(fileType, fileUrl);\n\t\t}, 200);\n\t},\n\n\thandleFilePreview(fileType, fileUrl) {\n\t\t// \uD83D\uDCF8 Ensure all image types work\n\t\tif (fileType.startsWith(\"image/\")) {\n\t\t\tshowModal(image_preview.name);\n\n\t\t} else if (fileType === \"application/pdf\" || fileType === \"text/plain\" || fileType === \"application/json\") {\n\t\t\tshowModal(pdf_doccument_preview.name);\n\n\t\t} else {\n\t\t\tshowAlert(\"File type not supported for preview!\", \"warning\");\n\t\t}\n\t}\n};\n",
+        "body": "export default {\n\tpreviewFile() {\n\t\tlet baseUrl = \"http://gateway-service:8080/\";  // Your backend URL\n\t\tlet selectedFile = task_attachments_table.selectedRow; // Get selected file details\n\n\t\tif (!selectedFile) {\n\t\t\tshowAlert(\"No file selected!\", \"warning\");\n\t\t\treturn;\n\t\t}\n\n\t\tlet fileUrl = baseUrl + selectedFile.filePath;\n\t\tlet fileType = selectedFile.fileType.toLowerCase(); // Normalize file type\n\n\t\t// \uD83D\uDED1 Reset stored values before updating\n\t\tstoreValue(\"fileURL\", \"\"); // Ensures the previous file isn't shown\n\t\tstoreValue(\"fileType\", \"\");\n\n\t\t// ✅ Store the new file details\n\t\tstoreValue(\"fileURL\", fileUrl);\n\t\tstoreValue(\"fileType\", fileType);\n\n\t\t// \uD83D\uDEE0 Debugging to ensure correct values\n\t\tconsole.log(\"Stored File URL:\", fileUrl);\n\t\tconsole.log(\"Stored File Type:\", fileType);\n\n\t\t// Wait for stored values to update, then trigger modal\n\t\tsetTimeout(() => {\n\t\t\tthis.handleFilePreview(fileType, fileUrl);\n\t\t}, 200);\n\t},\n\n\thandleFilePreview(fileType, fileUrl) {\n\t\t// \uD83D\uDCF8 Ensure all image types work\n\t\tif (fileType.startsWith(\"image/\")) {\n\t\t\tshowModal(image_preview.name);\n\n\t\t} else if (fileType === \"application/pdf\" || fileType === \"text/plain\" || fileType === \"application/json\") {\n\t\t\tshowModal(pdf_doccument_preview.name);\n\n\t\t} else {\n\t\t\tshowAlert(\"File type not supported for preview!\", \"warning\");\n\t\t}\n\t}\n};\n",
         "variables": [],
         "userPermissions": []
       },
@@ -18735,7 +18735,7 @@
         "pluginType": "JS",
         "actions": [],
         "archivedActions": [],
-        "body": "export default {\n\tpreviewFile() {\n\t\tlet baseUrl = \"http://192.168.1.2:8000/\";  // Your backend URL\n\t\tlet selectedFile = task_attachments_table.selectedRow; // Get selected file details\n\n\t\tif (!selectedFile) {\n\t\t\tshowAlert(\"No file selected!\", \"warning\");\n\t\t\treturn;\n\t\t}\n\n\t\tlet fileUrl = baseUrl + selectedFile.filePath;\n\t\tlet fileType = selectedFile.fileType.toLowerCase(); // Normalize file type\n\n\t\t// \uD83D\uDED1 Reset stored values before updating\n\t\tstoreValue(\"fileURL\", \"\"); // Ensures the previous file isn't shown\n\t\tstoreValue(\"fileType\", \"\");\n\n\t\t// ✅ Store the new file details\n\t\tstoreValue(\"fileURL\", fileUrl);\n\t\tstoreValue(\"fileType\", fileType);\n\n\t\t// \uD83D\uDEE0 Debugging to ensure correct values\n\t\tconsole.log(\"Stored File URL:\", fileUrl);\n\t\tconsole.log(\"Stored File Type:\", fileType);\n\n\t\t// Wait for stored values to update, then trigger modal\n\t\tsetTimeout(() => {\n\t\t\tthis.handleFilePreview(fileType, fileUrl);\n\t\t}, 200);\n\t},\n\n\thandleFilePreview(fileType, fileUrl) {\n\t\t// \uD83D\uDCF8 Ensure all image types work\n\t\tif (fileType.startsWith(\"image/\")) {\n\t\t\tshowModal(image_preview.name);\n\n\t\t} else if (fileType === \"application/pdf\" || fileType === \"text/plain\" || fileType === \"application/json\") {\n\t\t\tshowModal(pdf_doccument_preview.name);\n\n\t\t} else {\n\t\t\tshowAlert(\"File type not supported for preview!\", \"warning\");\n\t\t}\n\t}\n};\n",
+        "body": "export default {\n\tpreviewFile() {\n\t\tlet baseUrl = \"http://gateway-service:8080/\";  // Your backend URL\n\t\tlet selectedFile = task_attachments_table.selectedRow; // Get selected file details\n\n\t\tif (!selectedFile) {\n\t\t\tshowAlert(\"No file selected!\", \"warning\");\n\t\t\treturn;\n\t\t}\n\n\t\tlet fileUrl = baseUrl + selectedFile.filePath;\n\t\tlet fileType = selectedFile.fileType.toLowerCase(); // Normalize file type\n\n\t\t// \uD83D\uDED1 Reset stored values before updating\n\t\tstoreValue(\"fileURL\", \"\"); // Ensures the previous file isn't shown\n\t\tstoreValue(\"fileType\", \"\");\n\n\t\t// ✅ Store the new file details\n\t\tstoreValue(\"fileURL\", fileUrl);\n\t\tstoreValue(\"fileType\", fileType);\n\n\t\t// \uD83D\uDEE0 Debugging to ensure correct values\n\t\tconsole.log(\"Stored File URL:\", fileUrl);\n\t\tconsole.log(\"Stored File Type:\", fileType);\n\n\t\t// Wait for stored values to update, then trigger modal\n\t\tsetTimeout(() => {\n\t\t\tthis.handleFilePreview(fileType, fileUrl);\n\t\t}, 200);\n\t},\n\n\thandleFilePreview(fileType, fileUrl) {\n\t\t// \uD83D\uDCF8 Ensure all image types work\n\t\tif (fileType.startsWith(\"image/\")) {\n\t\t\tshowModal(image_preview.name);\n\n\t\t} else if (fileType === \"application/pdf\" || fileType === \"text/plain\" || fileType === \"application/json\") {\n\t\t\tshowModal(pdf_doccument_preview.name);\n\n\t\t} else {\n\t\t\tshowAlert(\"File type not supported for preview!\", \"warning\");\n\t\t}\n\t}\n};\n",
         "variables": [],
         "userPermissions": []
       },

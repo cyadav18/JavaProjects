@@ -168,6 +168,17 @@ services:
     networks:
       - backendservices
 
+  file-server:
+    image: python:3
+    container_name: file-server
+    working_dir: /usr/src/app
+    command: python3 -m http.server 8085
+    volumes:
+      - ./uploads:/usr/src/app/uploads
+    ports:
+      - "8085:8085"
+    networks:
+      - backendservices
 
 networks:
   backendservices:
