@@ -93,6 +93,8 @@ services:
       - ./login-service/config/application.yml:/login/config/application.yml
       - ./login-service/config/application-${SPRING_PROFILES_ACTIVE}.yml:/login/config/application-${SPRING_PROFILES_ACTIVE}.yml
     environment:
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRATION=${JWT_EXPIRATION_MS}
       - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE}
       - SPRING_CONFIG_LOCATION=classpath:/,file:/login/config/
       - SPRING_DATASOURCE_URL=jdbc:postgresql://${DB_HOST}:${DB_PORT}/${LOGIN_DB}
@@ -116,9 +118,11 @@ services:
       - ./task-service/config/application.yml:/task/config/application.yml
       - ./task-service/config/application-${SPRING_PROFILES_ACTIVE}.yml:/task/config/application-${SPRING_PROFILES_ACTIVE}.yml
     environment:
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRATION=${JWT_EXPIRATION_MS}
       - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE}
       - SPRING_CONFIG_LOCATION=classpath:/,file:/task/config/
-       - SPRING_DATASOURCE_URL=jdbc:postgresql://${DB_HOST}:${DB_PORT}/${TASK_DB}
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://${DB_HOST}:${DB_PORT}/${TASK_DB}
       - SPRING_DATASOURCE_USERNAME=${SPRING_DATASOURCE_USERNAME}
       - SPRING_DATASOURCE_PASSWORD=${SPRING_DATASOURCE_PASSWORD}
     networks:
