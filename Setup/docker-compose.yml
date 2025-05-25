@@ -72,6 +72,7 @@ services:
     volumes:
       - ./gateway-service/config/application.yml:/gateway/config/application.yml
       - ./gateway-service/config/application-${SPRING_PROFILES_ACTIVE}.yml:/gateway/config/application-${SPRING_PROFILES_ACTIVE}.yml
+      - ./logs/gateway-service:/logs
     environment:
       - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE}
       - SPRING_CONFIG_LOCATION=classpath:/,file:/gateway/config/
@@ -92,6 +93,7 @@ services:
     volumes:
       - ./login-service/config/application.yml:/login/config/application.yml
       - ./login-service/config/application-${SPRING_PROFILES_ACTIVE}.yml:/login/config/application-${SPRING_PROFILES_ACTIVE}.yml
+      - ./logs/login-service:/login/logs
     environment:
       - JWT_SECRET=${JWT_SECRET}
       - JWT_EXPIRATION=${JWT_EXPIRATION_MS}
@@ -117,6 +119,7 @@ services:
     volumes:
       - ./task-service/config/application.yml:/task/config/application.yml
       - ./task-service/config/application-${SPRING_PROFILES_ACTIVE}.yml:/task/config/application-${SPRING_PROFILES_ACTIVE}.yml
+      - ./logs/task-service:/task/logs
     environment:
       - JWT_SECRET=${JWT_SECRET}
       - JWT_EXPIRATION=${JWT_EXPIRATION_MS}
@@ -138,6 +141,7 @@ services:
       - login-service
     volumes:
       - ./notification-service/config.${SPRING_PROFILES_ACTIVE}.json:/notification/config.json
+      - ./logs/notification-service:/notification/logs
     networks:
       - backendservices
 

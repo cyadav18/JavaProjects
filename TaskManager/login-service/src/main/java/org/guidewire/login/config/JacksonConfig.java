@@ -1,4 +1,4 @@
-package org.guidewire.taskmanager.config;
+package org.guidewire.login.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
