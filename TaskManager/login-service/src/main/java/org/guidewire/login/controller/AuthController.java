@@ -39,7 +39,7 @@ public class AuthController {
      * Registers a new user.
      *
      * @param request Signup request DTO containing user details.
-     * @return ResponseEntity with success message or error.
+     * @return ResponseEntity with a success message or error.
      */
     @PostMapping("/register")
     public ResponseEntity<?> registerUser(@RequestBody SignupRequest request) {
