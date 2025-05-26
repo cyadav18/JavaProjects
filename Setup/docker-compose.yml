@@ -140,7 +140,7 @@ services:
       - kafka
       - login-service
     volumes:
-      - ./notification-service/config.${SPRING_PROFILES_ACTIVE}.json:/notification/config.json
+      - ./notification-service/config-${SPRING_PROFILES_ACTIVE}.json:/notification/config.json
       - ./logs/notification-service:/notification/logs
     networks:
       - backendservices
