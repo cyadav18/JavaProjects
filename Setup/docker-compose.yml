@@ -142,6 +142,8 @@ services:
     volumes:
       - ./notification-service/config-${SPRING_PROFILES_ACTIVE}.json:/notification/config.json
       - ./logs/notification-service:/notification/logs
+    environment:
+      - CONFIG_PATH=/notification/config.json
     networks:
       - backendservices
 

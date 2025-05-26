@@ -4,7 +4,7 @@ WORKDIR /build-notification-service
 
 ENV CGO_ENABLED=0 \
     GOOS=linux \
-    GOARCH=arm \
+    GOARCH=amd64 \
     GOINSECURE=golang.org/x \
     GOPROXY=direct \
     GOSUMDB=off
@@ -18,7 +18,7 @@ RUN go build -o notification-service ./cmd/
 
 # Stage 2: Small runtime image
 FROM alpine:latest
-WORKDIR /build-notification-service
+WORKDIR /notification
 
 COPY --from=builder /build-notification-service/notification-service .
 RUN chmod +x notification-service
