@@ -33,6 +33,11 @@ services:
       - ./data/kafka:/var/lib/kafka/data
     networks:
       - backendservices
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "9092"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   kafka-init:
     image: confluentinc/cp-kafka:7.5.0
