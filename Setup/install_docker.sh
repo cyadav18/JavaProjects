@@ -34,4 +34,4 @@ sudo usermod -aG docker $USER
 
 echo "Docker and Docker Compose installed. Please log out and back in or run 'newgrp docker' to apply group changes."
 
-exist
+exit

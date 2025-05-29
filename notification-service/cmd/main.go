@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"io"
 	"log"
 	"notification-service/config"
 	"notification-service/internal/adapters/kafka"
@@ -11,17 +12,40 @@ import (
 	"notification-service/internal/domain"
 	"os"
 	"os/signal"
+	"path/filepath"
 	"syscall"
 )
 
 func main() {
-	log.Println("[BOOT] Loading application config from config/config.json")
-
+	log.Printf("[BOOT] Loading application config from %s", os.Getenv("CONFIG_PATH"))
 	configPath := os.Getenv("CONFIG_PATH")
 	if configPath == "" {
-		configPath = "config.json"
+		configPath = "config/config.json"
 	}
 	appCfg := config.LoadConfig(configPath)
+	// Set default log file path if not in config
+	logFilePath := appCfg.LogFilePath
+	if logFilePath == "" {
+		logFilePath = "logs/notification-service.log"
+	}
+
+	// Create directory if not exists
+	logDir := filepath.Dir(logFilePath)
+	if err := os.MkdirAll(logDir, 0755); err != nil {
+		log.Fatalf("[FATAL] Failed to create log directory: %v", err)
+	}
+
+	// Open log file
+	logFile, err := os.OpenFile(logFilePath, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
+	if err != nil {
+		log.Fatalf("[FATAL] Failed to open log file: %v", err)
+	}
+
+	// Optional: log to both stdout and file
+	log.SetOutput(io.MultiWriter(os.Stdout, logFile))
+	log.SetFlags(log.LstdFlags | log.Lshortfile)
+
+	log.Printf("[BOOT] Logging initialized. Writing to %s", logFilePath)
 
 	log.Println("[BOOT] Setting up dependencies")
 	userFetcher := userfetcher.NewRPCUserFetcher(appCfg.LoginService.URL)

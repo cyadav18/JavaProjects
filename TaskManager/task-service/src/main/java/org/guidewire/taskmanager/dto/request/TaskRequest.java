@@ -27,7 +27,7 @@ public class TaskRequest {
     @FutureOrPresent(message = "Due date must be in the future or present")
     private ZonedDateTime dueDate;
 
-    @NotNull(message = "CreatedBy user is required")
+//    @NotNull(message = "CreatedBy user is required")
     private UUID createdBy;
 
     @NotNull(message = "Priority is required")

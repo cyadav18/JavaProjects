@@ -22,11 +22,13 @@ func NewKafkaConsumers(k domain.Kafka, app *app.NotificationService) []*Consumer
 
 	for _, topic := range k.Topic {
 		r := kafka.NewReader(kafka.ReaderConfig{
-			Brokers:  k.BootstrapServer,
-			Topic:    topic,
-			GroupID:  k.GroupID,
-			MinBytes: 10e3,
-			MaxBytes: 10e6,
+			Brokers:           k.BootstrapServer,
+			Topic:             topic,
+			GroupID:           k.GroupID,
+			MinBytes:          10e3,
+			MaxBytes:          10e6,
+			SessionTimeout:    60 * time.Second,
+			HeartbeatInterval: 10 * time.Second,
 		})
 
 		consumer := &Consumer{
@@ -74,4 +76,9 @@ func (c *Consumer) StartConsuming(ctx context.Context) {
 			}
 		}
 	}
+}
+
+func (c *Consumer) Close() error {
+	log.Printf(" Closing consumer for topic: %s", c.TopicName)
+	return c.Reader.Close()
 }

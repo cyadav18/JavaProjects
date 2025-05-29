@@ -28,6 +28,7 @@ type AppConfig struct {
 	Twilio       TwilioConfig       `json:"twilio"`
 	Kafka        KafkaConfig        `json:"kafka"`
 	LoginService LoginServiceConfig `json:"loginService"`
+	LogFilePath  string             `json:"logFilePath"`
 }
 
 func LoadConfig(path string) AppConfig {

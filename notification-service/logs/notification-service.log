@@ -1,0 +1,858 @@
+2025/05/26 17:45:47 main.go:48: [BOOT] Logging initialized. Writing to logs/notification-service.log
+2025/05/26 17:45:47 main.go:50: [BOOT] Setting up dependencies
+2025/05/26 17:45:47 main.go:55: [BOOT] Creating Kafka consumers for topics: [task-created task-updated task-deleted]
+2025/05/26 17:45:47 main.go:61: [BOOT] Starting consumers...
+2025/05/26 17:45:47 main.go:79: [SYSTEM] Notification Service is running. Press Ctrl+C to exit.
+2025/05/26 17:45:47 consumer.go:46:  Kafka Consumer started for topic: task-created
+2025/05/26 17:45:47 consumer.go:46:  Kafka Consumer started for topic: task-deleted
+2025/05/26 17:45:47 consumer.go:46:  Kafka Consumer started for topic: task-updated
+2025/05/26 17:46:05 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:46:05 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:46:05 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:46:23 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:46:23 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:46:23 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:46:41 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:46:41 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:46:42 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:47:08 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 127.0.0.1:57636->127.0.0.1:9092: i/o timeout
+2025/05/26 17:47:08 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 127.0.0.1:57637->127.0.0.1:9092: i/o timeout
+2025/05/26 17:47:08 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 127.0.0.1:57638->127.0.0.1:9092: i/o timeout
+2025/05/26 17:47:38 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 127.0.0.1:57706->127.0.0.1:9092: i/o timeout
+2025/05/26 17:47:38 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 127.0.0.1:57705->127.0.0.1:9092: i/o timeout
+2025/05/26 17:47:38 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 127.0.0.1:57707->127.0.0.1:9092: i/o timeout
+2025/05/26 17:48:08 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 127.0.0.1:57759->127.0.0.1:9092: i/o timeout
+2025/05/26 17:48:08 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 127.0.0.1:57760->127.0.0.1:9092: i/o timeout
+2025/05/26 17:48:08 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 127.0.0.1:57761->127.0.0.1:9092: i/o timeout
+2025/05/26 17:48:38 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 127.0.0.1:57820->127.0.0.1:9092: i/o timeout
+2025/05/26 17:48:38 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 127.0.0.1:57819->127.0.0.1:9092: i/o timeout
+2025/05/26 17:48:38 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 127.0.0.1:57821->127.0.0.1:9092: i/o timeout
+2025/05/26 17:49:01 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:49:01 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:49:01 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:49:16 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:49:16 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:49:16 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:49:31 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:49:31 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:49:31 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:49:46 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:49:46 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:49:46 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:50:01 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:50:01 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:50:01 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:50:16 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:50:16 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:50:16 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:50:31 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:50:31 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:50:31 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:50:46 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:50:46 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:50:46 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:51:01 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:51:01 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:51:01 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:51:16 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:51:16 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:51:16 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:51:31 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:51:31 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:51:31 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:51:46 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:51:46 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:51:46 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:52:01 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:52:01 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:52:01 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:52:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:52:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:52:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:52:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:52:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:52:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:52:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:52:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:52:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:53:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:53:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:53:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:53:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:53:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:53:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:53:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:53:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:53:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:53:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:53:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:53:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:54:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:54:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:54:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:54:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:54:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:54:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:54:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:54:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:54:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:54:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:54:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:54:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:55:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:55:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:55:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:55:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:55:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:55:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp 127.0.0.1:9092: connect: connection refused
+2025/05/26 17:55:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:55:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:55:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:55:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:55:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:55:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:56:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:56:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:56:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:56:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp [::1]:9092: connect: connection refused
+2025/05/26 17:56:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp [::1]:9092: connect: connection refused
+2025/05/26 17:56:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp [::1]:9092: connect: connection refused
+2025/05/26 17:56:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp [::1]:9092: connect: connection refused
+2025/05/26 17:56:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp [::1]:9092: connect: connection refused
+2025/05/26 17:56:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp [::1]:9092: connect: connection refused
+2025/05/26 17:56:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp [::1]:9092: connect: connection refused
+2025/05/26 17:56:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp [::1]:9092: connect: connection refused
+2025/05/26 17:56:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to localhost:9092: dial tcp [::1]:9092: connect: connection refused
+2025/05/26 17:57:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:57:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:57:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:57:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:57:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:57:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:57:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:57:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:57:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:57:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:57:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:57:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:58:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:58:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:58:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:58:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:58:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:58:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:58:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:58:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:58:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:58:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:58:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:58:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:59:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:59:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:59:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:59:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:59:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:59:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:59:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:59:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:59:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:59:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:59:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 17:59:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:00:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:00:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:00:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:00:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:00:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:00:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:00:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:00:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:00:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:00:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:00:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:00:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:01:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:01:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:01:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:01:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:01:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:01:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:01:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:01:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:01:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:01:48 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:01:48 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:01:48 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:02:03 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:02:03 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:02:03 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:02:18 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:02:18 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:02:18 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:02:33 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:02:33 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:02:33 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:02:48 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:02:48 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:02:48 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:03:03 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:03:03 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:03:03 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:03:18 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:03:18 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:03:18 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:03:33 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:03:33 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:03:33 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:03:53 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:03:53 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:03:53 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:04:08 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:04:08 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:04:08 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:04:23 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:04:23 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:04:23 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:04:38 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:04:38 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:04:38 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:04:53 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:04:53 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:04:53 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:05:08 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:05:08 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:05:08 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:05:23 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:05:23 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:05:23 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:05:38 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:05:38 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:05:38 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:05:53 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:05:53 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:05:53 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:06:08 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:06:08 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:06:08 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:06:23 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:06:23 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:06:23 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:06:38 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:06:38 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:06:38 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:06:53 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:06:53 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:06:53 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:07:08 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:07:08 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:07:08 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:07:23 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:07:23 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:07:23 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:07:38 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:07:38 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:07:38 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:07:53 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:07:53 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:07:53 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:08:08 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:08:08 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:08:08 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:08:23 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:08:23 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:08:23 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:08:38 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:08:38 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:08:38 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:08:53 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:08:53 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:08:53 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:09:09 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:09:09 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:09:09 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:09:24 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:09:24 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:09:24 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:09:39 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp [::1]:61890->[::1]:9092: read: connection reset by peer
+2025/05/26 18:09:39 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp [::1]:61892->[::1]:9092: read: connection reset by peer
+2025/05/26 18:09:39 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp [::1]:61891->[::1]:9092: read: connection reset by peer
+2025/05/26 18:09:54 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:09:54 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:09:54 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:10:09 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:10:09 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:10:09 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:10:24 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:10:24 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:10:24 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:10:39 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:10:39 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:10:39 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:10:54 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:10:54 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:10:54 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:11:09 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:11:09 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:11:09 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:11:24 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:11:24 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:11:24 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:11:39 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:11:39 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:11:39 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:11:54 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:11:54 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:11:54 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:12:09 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:12:09 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:12:09 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:12:24 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:12:24 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:12:24 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:12:39 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:12:39 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:12:39 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:12:43 main.go:71: [SHUTDOWN] Signal received: interrupt. Initiating shutdown...
+2025/05/26 18:12:43 main.go:81: [SYSTEM] All Kafka consumers stopped. Service shutting down.
+2025/05/26 18:12:43 consumer.go:58: Context cancelled for topic task-deleted: context canceled
+2025/05/26 18:12:43 consumer.go:58: Context cancelled for topic task-updated: context canceled
+2025/05/26 18:12:43 consumer.go:58: Context cancelled for topic task-created: context canceled
+2025/05/26 18:12:45 main.go:48: [BOOT] Logging initialized. Writing to logs/notification-service.log
+2025/05/26 18:12:45 main.go:50: [BOOT] Setting up dependencies
+2025/05/26 18:12:45 main.go:55: [BOOT] Creating Kafka consumers for topics: [task-created task-updated task-deleted]
+2025/05/26 18:12:45 main.go:61: [BOOT] Starting consumers...
+2025/05/26 18:12:45 main.go:79: [SYSTEM] Notification Service is running. Press Ctrl+C to exit.
+2025/05/26 18:12:45 consumer.go:46:  Kafka Consumer started for topic: task-deleted
+2025/05/26 18:12:45 consumer.go:46:  Kafka Consumer started for topic: task-updated
+2025/05/26 18:12:45 consumer.go:46:  Kafka Consumer started for topic: task-created
+2025/05/26 18:12:55 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:12:55 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:12:55 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:13:10 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:13:10 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:13:10 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:13:15 main.go:71: [SHUTDOWN] Signal received: interrupt. Initiating shutdown...
+2025/05/26 18:13:15 main.go:81: [SYSTEM] All Kafka consumers stopped. Service shutting down.
+2025/05/26 18:13:15 consumer.go:58: Context cancelled for topic task-created: context canceled
+2025/05/26 18:13:15 consumer.go:58: Context cancelled for topic task-deleted: context canceled
+2025/05/26 18:13:15 consumer.go:58: Context cancelled for topic task-updated: context canceled
+2025/05/26 18:13:23 main.go:48: [BOOT] Logging initialized. Writing to logs/notification-service.log
+2025/05/26 18:13:23 main.go:50: [BOOT] Setting up dependencies
+2025/05/26 18:13:23 main.go:55: [BOOT] Creating Kafka consumers for topics: [task-created task-updated task-deleted]
+2025/05/26 18:13:23 main.go:61: [BOOT] Starting consumers...
+2025/05/26 18:13:23 main.go:79: [SYSTEM] Notification Service is running. Press Ctrl+C to exit.
+2025/05/26 18:13:23 consumer.go:46:  Kafka Consumer started for topic: task-created
+2025/05/26 18:13:23 consumer.go:46:  Kafka Consumer started for topic: task-deleted
+2025/05/26 18:13:23 consumer.go:46:  Kafka Consumer started for topic: task-updated
+2025/05/26 18:13:33 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:13:33 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:13:33 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:13:48 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:13:48 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:13:48 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:14:03 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:14:03 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:14:03 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:14:10 main.go:71: [SHUTDOWN] Signal received: interrupt. Initiating shutdown...
+2025/05/26 18:14:10 main.go:81: [SYSTEM] All Kafka consumers stopped. Service shutting down.
+2025/05/26 18:14:10 consumer.go:58: Context cancelled for topic task-created: context canceled
+2025/05/26 18:14:10 consumer.go:58: Context cancelled for topic task-updated: context canceled
+2025/05/26 18:14:10 consumer.go:58: Context cancelled for topic task-deleted: context canceled
+2025/05/26 18:14:16 main.go:48: [BOOT] Logging initialized. Writing to logs/notification-service.log
+2025/05/26 18:14:16 main.go:50: [BOOT] Setting up dependencies
+2025/05/26 18:14:16 main.go:55: [BOOT] Creating Kafka consumers for topics: [task-created task-updated task-deleted]
+2025/05/26 18:14:29 main.go:61: [BOOT] Starting consumers...
+2025/05/26 18:14:29 main.go:79: [SYSTEM] Notification Service is running. Press Ctrl+C to exit.
+2025/05/26 18:14:29 consumer.go:46:  Kafka Consumer started for topic: task-deleted
+2025/05/26 18:14:29 consumer.go:46:  Kafka Consumer started for topic: task-updated
+2025/05/26 18:14:29 consumer.go:46:  Kafka Consumer started for topic: task-created
+2025/05/26 18:14:39 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:14:39 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:14:39 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:14:54 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:14:54 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:14:54 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:15:09 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:15:09 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:15:09 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:15:24 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:15:24 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:15:24 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:15:39 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:15:39 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:15:39 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to kafka:9092: dial tcp: lookup kafka: no such host
+2025/05/26 18:15:58 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 192.168.1.2:62944->192.168.1.2:9092: read: connection reset by peer
+2025/05/26 18:15:58 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 192.168.1.2:62945->192.168.1.2:9092: read: connection reset by peer
+2025/05/26 18:15:58 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 192.168.1.2:62946->192.168.1.2:9092: read: connection reset by peer
+2025/05/26 18:16:15 main.go:71: [SHUTDOWN] Signal received: interrupt. Initiating shutdown...
+2025/05/26 18:16:15 main.go:81: [SYSTEM] All Kafka consumers stopped. Service shutting down.
+2025/05/26 18:16:15 consumer.go:58: Context cancelled for topic task-deleted: context canceled
+2025/05/26 18:16:15 consumer.go:58: Context cancelled for topic task-updated: context canceled
+2025/05/26 18:16:15 consumer.go:58: Context cancelled for topic task-created: context canceled
+2025/05/26 18:16:21 main.go:48: [BOOT] Logging initialized. Writing to logs/notification-service.log
+2025/05/26 18:16:21 main.go:50: [BOOT] Setting up dependencies
+2025/05/26 18:16:21 main.go:55: [BOOT] Creating Kafka consumers for topics: [task-created task-updated task-deleted]
+2025/05/26 18:16:21 main.go:61: [BOOT] Starting consumers...
+2025/05/26 18:16:21 main.go:79: [SYSTEM] Notification Service is running. Press Ctrl+C to exit.
+2025/05/26 18:16:21 consumer.go:46:  Kafka Consumer started for topic: task-deleted
+2025/05/26 18:16:21 consumer.go:46:  Kafka Consumer started for topic: task-updated
+2025/05/26 18:16:21 consumer.go:46:  Kafka Consumer started for topic: task-created
+2025/05/26 18:18:31 main.go:71: [SHUTDOWN] Signal received: interrupt. Initiating shutdown...
+2025/05/26 18:18:31 main.go:81: [SYSTEM] All Kafka consumers stopped. Service shutting down.
+2025/05/26 18:18:31 consumer.go:58: Context cancelled for topic task-deleted: context canceled
+2025/05/26 18:18:31 consumer.go:58: Context cancelled for topic task-updated: context canceled
+2025/05/26 18:18:31 consumer.go:58: Context cancelled for topic task-created: context canceled
+2025/05/26 18:18:33 main.go:48: [BOOT] Logging initialized. Writing to logs/notification-service.log
+2025/05/26 18:18:33 main.go:50: [BOOT] Setting up dependencies
+2025/05/26 18:18:33 main.go:55: [BOOT] Creating Kafka consumers for topics: [task-created task-updated task-deleted]
+2025/05/26 18:18:33 main.go:61: [BOOT] Starting consumers...
+2025/05/26 18:18:33 main.go:79: [SYSTEM] Notification Service is running. Press Ctrl+C to exit.
+2025/05/26 18:18:33 consumer.go:46:  Kafka Consumer started for topic: task-updated
+2025/05/26 18:18:33 consumer.go:46:  Kafka Consumer started for topic: task-deleted
+2025/05/26 18:18:33 consumer.go:46:  Kafka Consumer started for topic: task-created
+2025/05/27 08:39:14 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:14 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:14 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:16 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:16 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:16 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:18 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:18 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:18 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:24 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:24 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:24 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:39:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:41:15 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:41:15 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:41:15 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:41:33 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:41:33 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:41:33 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:41:49 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:41:49 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:41:49 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:43:06 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:43:06 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:43:06 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:43:56 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:43:56 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:43:56 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:44:11 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:44:11 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:44:11 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:44:26 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:44:26 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:44:26 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:44:41 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:44:41 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:44:41 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:44:56 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:44:56 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:44:56 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:45:11 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:45:11 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:45:11 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:45:27 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:45:27 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:45:27 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:45:42 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:45:42 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:45:42 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:45:57 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:45:57 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:45:57 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:46:12 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:46:12 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:46:12 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:46:27 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:46:27 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:46:27 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:46:58 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:46:58 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:46:58 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:47:13 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:47:13 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:47:13 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:47:28 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:47:28 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:47:28 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:47:43 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:47:43 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:47:43 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:48:01 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:48:01 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:48:01 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:48:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:48:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:48:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:48:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:48:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:48:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:48:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:48:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:48:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:49:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:49:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:49:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:49:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:49:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:49:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:49:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:49:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:49:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:49:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:49:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:49:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:50:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:50:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:50:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:50:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:50:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:50:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:51:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:51:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:51:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:51:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:51:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:51:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:51:35 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:51:35 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:51:35 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:52:06 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:52:06 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:52:06 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:52:21 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:52:21 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:52:21 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:52:39 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:52:39 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:52:39 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:53:01 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:53:01 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:53:01 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:53:19 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:53:19 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:53:19 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:53:35 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:53:35 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:53:35 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:53:56 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:53:56 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:53:56 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:54:11 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:54:11 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:54:11 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:54:30 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:54:30 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:54:30 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:54:45 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:54:45 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:54:45 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:55:00 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:55:00 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:55:00 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:55:15 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:55:15 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:55:15 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:55:36 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:55:36 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:55:36 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:55:53 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:55:53 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:55:53 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:56:12 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:56:12 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:56:12 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:56:27 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:56:27 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:56:27 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:56:42 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:56:42 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:56:42 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:56:57 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:56:57 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:56:57 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:57:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:57:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:57:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:57:49 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:57:49 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:57:49 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:58:07 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:58:07 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:58:07 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:58:26 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:58:26 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:58:26 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:58:50 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:58:50 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:58:50 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:59:26 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:59:26 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:59:26 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:59:54 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:59:54 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 08:59:54 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:00:13 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:00:13 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:00:13 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:00:35 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:00:35 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:00:35 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:01:29 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:01:29 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:01:29 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:02:18 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:02:18 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:02:18 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:02:34 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:02:34 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:02:34 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:04:35 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:04:35 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:04:35 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:05:21 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:05:21 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:05:21 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:08:18 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:08:18 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:08:18 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:09:00 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:09:00 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:09:00 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:09:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:09:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:09:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:10:07 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:10:07 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:10:07 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:10:24 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:10:24 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:10:24 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:10:39 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:10:39 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:10:39 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:10:58 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:10:58 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:10:58 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:11:43 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:11:43 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:11:43 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:13:23 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:13:23 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:13:23 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:18:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:18:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:18:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:25:12 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:25:12 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:25:12 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:27:18 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:27:18 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:27:18 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:27:46 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:27:46 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:27:46 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:29:43 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:29:43 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:29:43 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:30:08 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:30:08 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:30:08 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:32:05 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:32:06 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:32:06 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:32:35 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:32:35 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:32:35 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:33:18 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:33:18 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:33:18 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:33:57 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:33:57 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:33:57 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:34:24 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:34:24 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:34:24 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:35:20 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:35:20 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:35:20 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:35:48 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:35:48 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:35:48 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:36:07 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:36:07 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:36:08 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:37:18 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:37:18 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:37:18 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:37:45 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:37:45 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:37:45 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:38:10 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:38:10 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:38:10 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:38:44 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:38:44 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:38:44 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:38:59 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:38:59 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:38:59 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:39:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:39:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:39:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:39:40 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:39:40 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:39:40 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:39:57 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:39:57 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:39:57 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:40:13 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:40:13 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:40:13 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:40:28 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:40:28 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:40:28 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:40:43 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:40:43 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:40:43 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:40:58 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:40:58 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:40:58 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:41:14 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:41:14 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:41:14 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:41:29 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:41:29 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:41:29 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:41:45 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:41:45 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:41:45 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:42:10 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:42:10 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:42:10 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:42:30 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:42:30 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:42:30 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:42:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:42:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:42:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:43:08 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:43:08 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:43:08 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:43:31 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:43:31 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:43:31 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:43:47 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:43:47 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:43:47 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:44:02 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:44:02 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:44:02 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:44:17 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:44:17 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:44:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:44:32 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:44:32 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:44:32 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:44:57 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:44:57 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:44:57 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:45:13 consumer.go:61:  Failed to read message from task-updated: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:45:13 consumer.go:61:  Failed to read message from task-created: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:45:13 consumer.go:61:  Failed to read message from task-deleted: fetching message: failed to dial: failed to open connection to 192.168.1.2:9092: dial tcp 192.168.1.2:9092: connect: network is unreachable
+2025/05/27 09:45:40 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:49319->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:45:40 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:49323->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:45:40 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:49321->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:45:56 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:49422->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:45:56 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:49423->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:45:56 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:49426->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:46:11 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:49509->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:46:11 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:49511->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:46:11 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:49513->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:46:26 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:49598->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:46:26 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:49600->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:46:26 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:49602->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:46:41 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:49682->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:46:41 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:49685->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:46:41 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:49687->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:46:56 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:49833->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:46:56 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:49837->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:46:56 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:49839->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:47:11 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:49959->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:47:11 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:49960->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:47:11 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:49961->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:47:26 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:50047->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:47:26 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:50049->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:47:26 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:50051->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:47:41 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:50119->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:47:41 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:50120->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:47:41 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:50121->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:47:56 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:50248->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:47:56 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:50250->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:47:56 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:50252->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:48:11 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:50336->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:48:11 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:50338->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:48:11 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:50339->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:48:26 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:50413->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:48:26 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:50415->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:48:26 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:50416->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:48:41 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:50490->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:48:41 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:50492->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:48:41 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:50493->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:48:56 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:50561->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:48:56 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:50563->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:48:56 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:50564->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:49:11 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:50639->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:49:11 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:50641->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:49:11 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:50643->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:49:26 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:50712->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:49:26 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:50714->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:49:26 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:50717->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:49:41 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:50794->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:49:41 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:50795->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:49:42 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:50798->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:49:57 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:50870->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:49:57 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:50871->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:49:57 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:50874->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:50:12 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:50945->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:50:12 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:50946->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:50:12 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:50947->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:52:46 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:51039->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:52:46 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:51040->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:52:46 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:51042->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:53:01 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:51149->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:53:01 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:51151->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:53:01 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:51153->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:53:17 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:51247->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:53:17 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:51248->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:53:17 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:51251->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:53:33 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:51328->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:53:33 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:51331->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:53:33 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:51330->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:53:48 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:51444->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:53:48 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:51446->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:53:48 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:51448->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:54:03 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:51520->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:54:03 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:51522->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:54:03 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:51524->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:54:18 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:51595->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:54:18 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:51597->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:54:18 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:51599->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:54:33 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:51682->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:54:33 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:51684->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:54:33 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:51686->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:54:48 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:51760->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:54:48 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:51761->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:54:48 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:51762->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:55:03 consumer.go:61:  Failed to read message from task-deleted: fetching message: read tcp 100.64.0.1:51809->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:55:03 consumer.go:61:  Failed to read message from task-updated: fetching message: read tcp 100.64.0.1:51810->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:55:03 consumer.go:61:  Failed to read message from task-created: fetching message: read tcp 100.64.0.1:51813->192.168.1.2:9092: read: connection reset by peer
+2025/05/27 09:55:16 main.go:71: [SHUTDOWN] Signal received: interrupt. Initiating shutdown...
+2025/05/27 09:55:16 consumer.go:58: Context cancelled for topic task-updated: context canceled
+2025/05/27 09:55:16 consumer.go:58: Context cancelled for topic task-deleted: context canceled
+2025/05/27 09:55:16 consumer.go:58: Context cancelled for topic task-created: context canceled
+2025/05/27 09:55:16 main.go:81: [SYSTEM] All Kafka consumers stopped. Service shutting down.
