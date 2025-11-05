@@ -95,6 +95,12 @@ public class GlobalExceptionHandler {
         return buildErrorResponse(ex, HttpStatus.NOT_FOUND, "Tasks not found.");
     }
 
+    @ExceptionHandler(FileUploadFailedException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ResponseEntity<Map<String, Object>> handleAttachmentNotFound(@NotNull FileUploadFailedException ex) {
+        return buildErrorResponse(ex, HttpStatus.NOT_FOUND, "File upload failed.");
+    }
+
 
     /**
      * Utility method to create structured error responses.

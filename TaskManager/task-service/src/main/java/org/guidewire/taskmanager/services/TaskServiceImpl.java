@@ -1,5 +1,6 @@
 package org.guidewire.taskmanager.services;
 
+import org.guidewire.taskmanager.dto.kafka.TaskResponseToKafka;
 import org.guidewire.taskmanager.dto.request.TaskRequest;
 import org.guidewire.taskmanager.dto.response.TaskResponse;
 import org.guidewire.taskmanager.exceptionhandlers.TaskNotFoundException;

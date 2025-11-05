@@ -1,0 +1,256 @@
+2025-06-03 00:15:51 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m42s767ms).
+2025-06-03 00:34:13 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m22s578ms).
+2025-06-03 00:50:09 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m56s156ms).
+2025-06-03 00:54:41 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m32s17ms).
+2025-06-03 01:29:38 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m56s991ms).
+2025-06-03 01:46:25 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m11s477ms).
+2025-06-03 01:55:36 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m10s932ms).
+2025-06-03 02:11:30 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s989ms).
+2025-06-03 02:28:14 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m43s718ms).
+2025-06-03 02:56:17 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m2s606ms).
+2025-06-03 03:13:19 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m2s520ms).
+2025-06-03 03:57:38 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m41s726ms).
+2025-06-03 04:13:32 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s274ms).
+2025-06-03 04:29:28 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m56s56ms).
+2025-06-03 04:34:07 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m38s881ms).
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/auth/users/list/ids
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.g.l.s.JwtAuthenticationFilter - doFilterInternal: No valid Authorization header found, skipping JWT processing.
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/auth/users/list/ids
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/auth/users/list/ids", parameters={}
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.guidewire.login.controller.UserController#getUserById(String[])
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [{ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725 (truncated)...]
+2025-06-03 04:35:51 [http-nio-8081-exec-3] INFO  o.g.login.services.UserService - getUserByUsername: Fetching user with id: [ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725-da17dd7e5590, c00fda99-1472-4452-8b18-fb0273c2db55, 4bcced83-fb72-4ea7-8957-2db00dd6fc95]
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1933372717<open>)] for JPA transaction
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAllById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [HikariProxyConnection@731332728 wrapping org.postgresql.jdbc.PgConnection@6845ce80] read-only
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6b85b301]
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,u1_0.phone_number,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.id in (?,?,?,?,?)
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1933372717<open>)]
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [HikariProxyConnection@731332728 wrapping org.postgresql.jdbc.PgConnection@6845ce80]
+2025-06-03 04:35:51 [http-nio-8081-exec-3] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2025-06-03 04:35:51 [http-nio-8081-exec-3] INFO  o.g.login.services.UserService - getUserById: Successfully retrieved user: [ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725-da17dd7e5590, c00fda99-1472-4452-8b18-fb0273c2db55, 4bcced83-fb72-4ea7-8957-2db00dd6fc95]
+2025-06-03 04:35:52 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-03 04:35:52 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[org.guidewire.login.dto.responses.UserResponse@1dff4108, org.guidewire.login.dto.responses.UserResp (truncated)...]
+2025-06-03 04:35:52 [http-nio-8081-exec-3] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-06-03 04:35:52 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/auth/users/list/ids
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.g.l.s.JwtAuthenticationFilter - doFilterInternal: No valid Authorization header found, skipping JWT processing.
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/auth/users/list/ids
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/auth/users/list/ids", parameters={}
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.guidewire.login.controller.UserController#getUserById(String[])
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [{ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725 (truncated)...]
+2025-06-03 04:58:46 [http-nio-8081-exec-5] INFO  o.g.login.services.UserService - getUserByUsername: Fetching user with id: [ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725-da17dd7e5590, c00fda99-1472-4452-8b18-fb0273c2db55, 4bcced83-fb72-4ea7-8957-2db00dd6fc95]
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(522727512<open>)] for JPA transaction
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAllById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [HikariProxyConnection@1912729373 wrapping org.postgresql.jdbc.PgConnection@26f31c48] read-only
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6545732d]
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,u1_0.phone_number,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.id in (?,?,?,?,?)
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(522727512<open>)]
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1912729373 wrapping org.postgresql.jdbc.PgConnection@26f31c48]
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2025-06-03 04:58:46 [http-nio-8081-exec-5] INFO  o.g.login.services.UserService - getUserById: Successfully retrieved user: [ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725-da17dd7e5590, c00fda99-1472-4452-8b18-fb0273c2db55, 4bcced83-fb72-4ea7-8957-2db00dd6fc95]
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[org.guidewire.login.dto.responses.UserResponse@72c8d4dd, org.guidewire.login.dto.responses.UserResp (truncated)...]
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-06-03 04:58:46 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/auth/users/list/ids
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.g.l.s.JwtAuthenticationFilter - doFilterInternal: No valid Authorization header found, skipping JWT processing.
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/auth/users/list/ids
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/auth/users/list/ids", parameters={}
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.guidewire.login.controller.UserController#getUserById(String[])
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [{ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725 (truncated)...]
+2025-06-03 04:58:52 [http-nio-8081-exec-9] INFO  o.g.login.services.UserService - getUserByUsername: Fetching user with id: [ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725-da17dd7e5590, c00fda99-1472-4452-8b18-fb0273c2db55, 3d480867-d12b-4c5f-a725-da17dd7e5590]
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1084090604<open>)] for JPA transaction
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAllById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [HikariProxyConnection@2135994034 wrapping org.postgresql.jdbc.PgConnection@26f31c48] read-only
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@676cd002]
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,u1_0.phone_number,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.id in (?,?,?,?,?)
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1084090604<open>)]
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [HikariProxyConnection@2135994034 wrapping org.postgresql.jdbc.PgConnection@26f31c48]
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2025-06-03 04:58:52 [http-nio-8081-exec-9] INFO  o.g.login.services.UserService - getUserById: Successfully retrieved user: [ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725-da17dd7e5590, c00fda99-1472-4452-8b18-fb0273c2db55, 3d480867-d12b-4c5f-a725-da17dd7e5590]
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[org.guidewire.login.dto.responses.UserResponse@2a9ff992, org.guidewire.login.dto.responses.UserResp (truncated)...]
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-06-03 04:58:52 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/auth/users/list/ids
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.g.l.s.JwtAuthenticationFilter - doFilterInternal: No valid Authorization header found, skipping JWT processing.
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/auth/users/list/ids
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/auth/users/list/ids", parameters={}
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.guidewire.login.controller.UserController#getUserById(String[])
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [{ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725 (truncated)...]
+2025-06-03 05:00:56 [http-nio-8081-exec-8] INFO  o.g.login.services.UserService - getUserByUsername: Fetching user with id: [ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725-da17dd7e5590, c00fda99-1472-4452-8b18-fb0273c2db55, ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5]
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1366888368<open>)] for JPA transaction
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAllById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [HikariProxyConnection@776399126 wrapping org.postgresql.jdbc.PgConnection@7ba5da10] read-only
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1175a53e]
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,u1_0.phone_number,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.id in (?,?,?,?,?)
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1366888368<open>)]
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [HikariProxyConnection@776399126 wrapping org.postgresql.jdbc.PgConnection@7ba5da10]
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2025-06-03 05:00:56 [http-nio-8081-exec-8] INFO  o.g.login.services.UserService - getUserById: Successfully retrieved user: [ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725-da17dd7e5590, c00fda99-1472-4452-8b18-fb0273c2db55, ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5]
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[org.guidewire.login.dto.responses.UserResponse@740bac32, org.guidewire.login.dto.responses.UserResp (truncated)...]
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-06-03 05:00:56 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/auth/users/list/ids
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.g.l.s.JwtAuthenticationFilter - doFilterInternal: No valid Authorization header found, skipping JWT processing.
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/auth/users/list/ids
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/auth/users/list/ids", parameters={}
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.guidewire.login.controller.UserController#getUserById(String[])
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [{ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725 (truncated)...]
+2025-06-03 05:01:02 [http-nio-8081-exec-7] INFO  o.g.login.services.UserService - getUserByUsername: Fetching user with id: [ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725-da17dd7e5590, c00fda99-1472-4452-8b18-fb0273c2db55, ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5]
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1479701589<open>)] for JPA transaction
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAllById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [HikariProxyConnection@1206551314 wrapping org.postgresql.jdbc.PgConnection@7ba5da10] read-only
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@92f5212]
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select u1_0.id,u1_0.created_at,u1_0.email,u1_0.password,u1_0.phone_number,u1_0.updated_at,u1_0.username from users u1_0 where u1_0.id in (?,?,?,?,?)
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - select r1_0.user_id,r1_1.id,r1_1.created_at,r1_1.name,p1_0.role_id,p1_1.id,p1_1.created_at,p1_1.description,p1_1.name,p1_1.updated_at,r1_1.updated_at from user_roles r1_0 join roles r1_1 on r1_1.id=r1_0.role_id left join role_permissions p1_0 on r1_1.id=p1_0.role_id left join permissions p1_1 on p1_1.id=p1_0.permission_id where r1_0.user_id=?
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1479701589<open>)]
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1206551314 wrapping org.postgresql.jdbc.PgConnection@7ba5da10]
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2025-06-03 05:01:02 [http-nio-8081-exec-7] INFO  o.g.login.services.UserService - getUserById: Successfully retrieved user: [ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5, 4bcced83-fb72-4ea7-8957-2db00dd6fc95, 3d480867-d12b-4c5f-a725-da17dd7e5590, c00fda99-1472-4452-8b18-fb0273c2db55, ce3ef1d5-ef3e-42b1-9ba6-fc808ad7eef5]
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[org.guidewire.login.dto.responses.UserResponse@ef989f4, org.guidewire.login.dto.responses.UserRespo (truncated)...]
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-06-03 05:01:02 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-03 06:01:34 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m57s44ms).
+2025-06-03 06:19:10 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m58s152ms).
+2025-06-03 06:35:31 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m21s116ms).
+2025-06-03 07:06:19 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m47s646ms).
+2025-06-03 07:23:29 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m10s693ms).
+2025-06-03 07:56:43 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m13s497ms).
+2025-06-03 08:07:08 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m24s950ms).
+2025-06-03 08:14:31 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m9s17ms).
+2025-06-03 08:47:47 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m16s453ms).
+2025-06-03 09:01:10 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m48s72ms).
+2025-06-03 09:14:50 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s776ms).
+2025-06-03 09:17:22 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s568ms).
+2025-06-03 09:20:26 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s513ms).
+2025-06-03 09:21:13 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s922ms).
+2025-06-03 09:27:33 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m7s152ms).
+2025-06-03 09:28:28 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s422ms).
+2025-06-03 09:31:11 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s995ms).
+2025-06-03 09:31:59 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s53ms).
+2025-06-03 09:34:43 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s866ms).
+2025-06-03 09:36:12 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s441ms).
+2025-06-03 09:42:16 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s269ms).
+2025-06-03 09:43:02 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s803ms).
+2025-06-03 09:44:40 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s877ms).
+2025-06-03 09:45:47 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m7s183ms).
+2025-06-03 09:46:45 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s675ms).
+2025-06-03 09:53:48 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s344ms).
+2025-06-03 10:06:06 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s711ms).
+2025-06-03 10:09:55 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s471ms).
+2025-06-03 10:11:29 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m34s518ms).
+2025-06-03 10:12:16 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s12ms).
+2025-06-03 10:17:59 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m42s280ms).
+2025-06-03 10:21:14 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m15s660ms).
+2025-06-03 10:28:39 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m54s329ms).
+2025-06-03 10:42:34 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m55s637ms).
+2025-06-03 11:19:33 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s540ms).
+2025-06-03 11:22:46 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m42s446ms).
+2025-06-03 11:32:38 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m22s344ms).
+2025-06-03 11:33:42 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s473ms).
+2025-06-03 12:32:04 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m20s851ms).
+2025-06-03 12:46:01 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m27s448ms).
+2025-06-03 12:46:56 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s394ms).
+2025-06-03 12:48:37 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m41s423ms).
+2025-06-03 12:50:42 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m5s342ms).
+2025-06-03 13:19:06 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m24s18ms).
+2025-06-03 13:32:33 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m26s170ms).
+2025-06-03 13:35:25 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m22s571ms).
+2025-06-03 14:54:13 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m47s207ms).
+2025-06-03 15:01:24 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m10s672ms).
+2025-06-03 15:07:04 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m10s111ms).
+2025-06-03 15:08:20 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s472ms).
+2025-06-03 15:38:49 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m28s93ms).
+2025-06-03 15:39:52 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s230ms).
+2025-06-03 15:40:56 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s458ms).
+2025-06-03 15:42:30 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m34s74ms).
+2025-06-03 15:44:01 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s51ms).
+2025-06-03 15:46:45 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s570ms).
+2025-06-03 15:48:03 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s262ms).
+2025-06-03 15:50:06 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s218ms).
+2025-06-03 15:56:18 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s456ms).
+2025-06-03 15:57:15 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s916ms).
+2025-06-03 15:58:47 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s829ms).
+2025-06-03 15:59:33 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s906ms).
+2025-06-03 16:02:10 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s23ms).
+2025-06-03 16:03:38 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m28s261ms).
+2025-06-03 16:04:27 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s865ms).
+2025-06-03 16:05:23 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s653ms).
+2025-06-03 16:07:06 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s287ms).
+2025-06-03 16:11:54 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m47s160ms).
+2025-06-03 16:13:52 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m58s960ms).
+2025-06-03 16:15:37 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m44s388ms).
+2025-06-03 16:17:28 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m50s925ms).
+2025-06-03 16:18:45 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m17s651ms).
+2025-06-03 16:19:34 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s680ms).
+2025-06-03 16:20:21 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s513ms).
+2025-06-03 16:21:10 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s119ms).
+2025-06-03 16:23:17 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m7s599ms).
+2025-06-03 16:25:56 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m38s557ms).
+2025-06-03 16:27:50 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m53s701ms).
+2025-06-03 16:29:32 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m42s105ms).
+2025-06-03 16:31:32 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s816ms).
+2025-06-03 16:32:17 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s371ms).
+2025-06-03 16:33:13 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s839ms).
+2025-06-03 16:34:22 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s971ms).
+2025-06-03 16:35:38 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s17ms).
+2025-06-03 16:37:00 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s517ms).
+2025-06-03 16:39:11 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s348ms).
+2025-06-03 16:40:10 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s99ms).
+2025-06-03 16:41:14 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s230ms).
+2025-06-03 16:46:42 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m59s955ms).
+2025-06-03 16:47:42 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m198ms).
+2025-06-03 16:48:31 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s677ms).
+2025-06-03 16:52:06 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s850ms).
+2025-06-03 16:53:48 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s260ms).
+2025-06-03 16:55:12 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s718ms).
+2025-06-03 16:56:03 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s155ms).
+2025-06-03 16:58:27 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m23s492ms).
+2025-06-03 17:00:05 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s159ms).
+2025-06-03 17:00:50 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s383ms).
+2025-06-03 17:06:32 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s883ms).
+2025-06-03 17:22:50 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m43s322ms).
+2025-06-03 17:34:29 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m38s903ms).
+2025-06-03 18:06:44 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m45s572ms).
+2025-06-03 18:54:30 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m44s859ms).
+2025-06-03 23:03:44 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m39s803ms).
+2025-06-03 23:23:14 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m19s602ms).
+2025-06-03 23:42:45 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m41s773ms).

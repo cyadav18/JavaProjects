@@ -12,8 +12,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/auth/users")
@@ -65,9 +67,9 @@ public class UserController {
         }
     }
 
-    @GetMapping("/id/{id}")
-    public ResponseEntity<UserResponse> getUserById(@PathVariable String id) {
-        return ResponseEntity.ok(userService.getUserById(UUID.fromString(id)));
+    @GetMapping("/list/ids")
+    public ResponseEntity<List<UserResponse>> getUserById(@RequestBody String[] ids) {
+        return ResponseEntity.ok(userService.getUserById(Arrays.stream(ids).map(UUID::fromString).toList()));
     }
 
 }

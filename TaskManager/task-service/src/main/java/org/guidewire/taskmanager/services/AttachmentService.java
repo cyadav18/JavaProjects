@@ -1,9 +1,6 @@
 package org.guidewire.taskmanager.services;
 
-import org.guidewire.taskmanager.exceptionhandlers.AttachmentNotFoundException;
-import org.guidewire.taskmanager.exceptionhandlers.CommentNotFoundException;
-import org.guidewire.taskmanager.exceptionhandlers.FileStorageException;
-import org.guidewire.taskmanager.exceptionhandlers.TaskNotFoundException;
+import org.guidewire.taskmanager.exceptionhandlers.*;
 import org.guidewire.taskmanager.model.Attachment;
 import org.guidewire.taskmanager.model.Comment;
 import org.guidewire.taskmanager.model.SubTask;
@@ -15,8 +12,17 @@ import org.guidewire.taskmanager.repository.TaskRepository;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.ByteArrayResource;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -38,8 +44,10 @@ public class AttachmentService {
     private final TaskRepository taskRepository;
     private final SubTaskRepository subTaskRepository;
     private final CommentRepository commentRepository;
-    @Value("${file.storage.local.path}")
-    private String baseStoragePath;
+    @Value("${file.server.url}")
+    private String fileServerUrl;
+    //    @Value("${file.storage.local.path}")
+//    private String baseStoragePath;
     @Value("${attachments.storage.tasks-path}")
     private String taskStoragePath;
     @Value("${attachments.storage.comments-path}")
@@ -47,6 +55,9 @@ public class AttachmentService {
     @Value("${attachments.storage.subtasks-path}")
     private String subTaskStoragePath;
 
+    private final RestTemplate restTemplate = new RestTemplate();
+
+    @Autowired
     public AttachmentService(AttachmentRepository attachmentRepository, TaskRepository taskRepository, SubTaskRepository subTaskRepository, CommentRepository commentRepository) {
         this.attachmentRepository = attachmentRepository;
         this.taskRepository = taskRepository;
@@ -124,6 +135,45 @@ public class AttachmentService {
         return storeFileFromBase64(commentStoragePath, base64Data, metadata, null, comment, null);
     }
 
+    public String uploadFileToServer(byte[] fileBytes, String uploadPath, String fileName) {
+        try {
+            // Create the multipart body
+            MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
+
+            // Create the resource for the file
+            ByteArrayResource fileResource = new ByteArrayResource(fileBytes) {
+                @Override
+                public String getFilename() {
+                    return fileName;
+                }
+            };
+
+            body.add("file", fileResource);
+            body.add("targetPath", uploadPath);
+
+            // Set headers
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.MULTIPART_FORM_DATA);
+
+            HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
+
+            // POST to file server
+            ResponseEntity<String> response = restTemplate.postForEntity(
+                    fileServerUrl ,
+                    requestEntity,
+                    String.class
+            );
+
+            if (!response.getStatusCode().is2xxSuccessful()) {
+                throw new FileUploadFailedException("Upload failed: " + response.getBody());
+            }
+            return response.getBody();
+
+        } catch (Exception e) {
+            throw new FileUploadFailedException("Upload to file server failed: " + e.getMessage());
+        }
+    }
+
 
     /**
      * Handles file storage logic.
@@ -176,7 +226,7 @@ public class AttachmentService {
 
     public Attachment storeFileFromBase64(String storagePath, String base64Data, Map<String, Object> metadata, Task task, Comment comment, SubTask subTask) {
         try {
-            // Validate metadata
+            //  Validate metadata
             if (!metadata.containsKey("name") || !metadata.containsKey("type") || !metadata.containsKey("size")) {
                 throw new IllegalArgumentException("Missing required metadata: 'name', 'type', or 'size'");
             }
@@ -185,53 +235,31 @@ public class AttachmentService {
             String fileType = (String) metadata.get("type");
             Long fileSize = metadata.get("size") != null ? Long.parseLong(metadata.get("size").toString()) : 0L;
 
-            // Extract file extension
-            String fileExtension = "";
-            if (originalFileName != null && originalFileName.contains(".")) {
-                fileExtension = originalFileName.substring(originalFileName.lastIndexOf("."));
-            } else {
-                logger.warn("storeFileFromBase64: No file extension found for '{}'. Assigning default '.bin'", originalFileName);
-                fileExtension = ".bin"; // Fallback for unknown file types
-            }
-
-            // Generate a unique directory path
-            String directoryPath = Paths.get(storagePath, UUID.randomUUID().toString()).toString();
-            File directory = new File(directoryPath);
-            if (!directory.exists() && !directory.mkdirs()) {
-                logger.error("storeFileFromBase64: Failed to create directory '{}'", directoryPath);
-                throw new FileStorageException("Failed to create storage directory.");
-            }
-
-            // Generate unique filename while preserving extension
-            String fileName = UUID.randomUUID() + fileExtension;
-            Path filePath = Paths.get(directoryPath, fileName);
-
-            // Validate Base64 string before decoding
+            //  Validate base64
             if (base64Data == null || base64Data.isBlank()) {
                 throw new IllegalArgumentException("Base64 data is empty or null");
             }
 
-            // Decode Base64 and store the file
+            //  Decode base64
             byte[] decodedBytes = Base64.getDecoder().decode(base64Data);
-            try (OutputStream outputStream = new FileOutputStream(filePath.toFile())) {
-                outputStream.write(decodedBytes);
-            }
 
-            logger.info("storeFileFromBase64: Successfully stored file '{}' at '{}'", originalFileName, filePath);
+            //  Upload to Go file server
+            String uploadedPath = uploadFileToServer(decodedBytes, storagePath, originalFileName);
 
-            // Save file metadata to database
+            // Create DB record
             Attachment attachment = new Attachment();
             attachment.setName(originalFileName);
             attachment.setType(fileType);
-            attachment.setFilePath(filePath.toString());
+            attachment.setFilePath(uploadedPath);
             attachment.setSize(fileSize);
             attachment.setTask(task);
             attachment.setComment(comment);
             attachment.setSubTask(subTask);
 
             return attachmentRepository.save(attachment);
-        } catch (IOException e) {
-            logger.error("storeFileFromBase64: Error storing Base64 file '{}'", metadata.get("name"), e);
+
+        } catch (Exception e) {
+            logger.error("storeFileFromBase64: Failed to handle Base64 attachment for '{}'", metadata.get("name"), e);
             throw new FileStorageException("Could not store Base64 file: " + metadata.get("name"));
         }
     }

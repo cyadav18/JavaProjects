@@ -3,6 +3,7 @@ package org.guidewire.taskmanager.kafka;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import org.guidewire.taskmanager.dto.kafka.TaskResponseToKafka;
 import org.guidewire.taskmanager.dto.response.TaskResponse;
 import org.guidewire.taskmanager.model.SubTask;
 import org.guidewire.taskmanager.model.Task;
@@ -57,7 +58,8 @@ public class KafkaPublisher {
 
     public void sendUpdateTaskEvent(Task task) {
         try {
-            String payload = objectMapper.writeValueAsString(task);
+            TaskResponseToKafka taskResponseToKafka = TaskResponseToKafka.convertToResponse(task);
+            String payload = objectMapper.writeValueAsString(taskResponseToKafka);
             logger.info("Publishing task-updated event to topic [{}]: {}", taskUpdatedTopic, payload);
             kafkaTemplate.send(taskUpdatedTopic, task.getId().toString(), payload);
         } catch (JsonProcessingException e) {

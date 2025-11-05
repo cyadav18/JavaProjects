@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 import java.util.UUID;
@@ -110,22 +111,25 @@ public class UserService {
     /**
      * Retrieves a user by username.
      *
-     * @param id The username of the user.
+     * @param ids The username of the user.
      * @return The user details.
      * @throws UserNotFoundException If the user is not found.
      */
-    public UserResponse getUserById(UUID id) {
-        logger.info("getUserByUsername: Fetching user with id: {}", id);
+    public List<UserResponse> getUserById(List<UUID> ids) {
+        logger.info("getUserByUsername: Fetching user with id: {}", ids);
 
-        User user = userRepository.findByUserId(id)
-                .orElseThrow(() -> {
-                    logger.warn("getUserById: User not found with username: {}", id);
-                    return new UserNotFoundException("User not found");
-                });
+        List<User> users = userRepository.findAllById(ids).stream().toList();
 
-        logger.info("getUserById: Successfully retrieved user: {}", id);
-        return new UserResponse(user.getId(), user.getUsername(), user.getEmail(), user.getPhoneNumber(),
-                user.getRoles().stream().map(Role::getName).collect(Collectors.toSet()));
+        logger.info("getUserById: Successfully retrieved user: {}",  ids);
+
+        return users.stream().
+                map(user -> new UserResponse(
+                       user.getId(),
+                       user.getUsername(),
+                       user.getEmail(),
+                       user.getPhoneNumber(),
+                       user.getRoles().stream().map(Role::getName).collect(Collectors.toSet())
+               )).toList();
     }
 
 }

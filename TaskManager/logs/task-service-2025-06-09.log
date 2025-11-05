@@ -1,0 +1,1138 @@
+2025-06-09 00:09:37 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26489 ms.
+2025-06-09 00:09:37 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m32s540ms).
+2025-06-09 00:10:08 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 00:20:56 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24684 ms.
+2025-06-09 00:21:02 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m54s472ms).
+2025-06-09 00:21:24 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26547 ms.
+2025-06-09 00:21:25 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 00:38:32 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 00:38:43 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m11s68ms).
+2025-06-09 00:39:03 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 00:56:58 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 00:57:14 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m580ms).
+2025-06-09 00:57:27 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27951 ms.
+2025-06-09 01:13:16 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 01:13:35 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m51s657ms).
+2025-06-09 01:13:47 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 01:21:56 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24432 ms.
+2025-06-09 01:39:16 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 01:39:32 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m26s937ms).
+2025-06-09 01:39:43 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26251 ms.
+2025-06-09 01:39:44 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 01:56:27 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 01:56:30 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m58s37ms).
+2025-06-09 01:56:58 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 01:57:29 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 01:57:30 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 01:57:31 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 01:57:32 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 01:57:33 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 01:57:34 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 01:57:35 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 02:15:16 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 02:15:41 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m10s582ms).
+2025-06-09 02:15:47 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 02:22:56 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 02:22:57 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m16s606ms).
+2025-06-09 02:39:41 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 02:39:57 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m59s170ms).
+2025-06-09 02:40:12 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 02:55:32 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28463 ms.
+2025-06-09 02:56:01 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m33s978ms).
+2025-06-09 02:56:03 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 03:11:39 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 03:11:40 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m39s734ms).
+2025-06-09 03:12:10 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 03:23:56 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 03:24:00 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m50s229ms).
+2025-06-09 03:24:27 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 03:40:39 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26713 ms.
+2025-06-09 03:40:46 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m15s60ms).
+2025-06-09 03:41:08 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27553 ms.
+2025-06-09 03:58:59 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 03:59:09 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m53s795ms).
+2025-06-09 03:59:30 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 04:17:50 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 04:18:04 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m24s327ms).
+2025-06-09 04:18:17 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26019 ms.
+2025-06-09 04:18:18 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 04:18:19 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 04:24:57 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 04:41:44 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24961 ms.
+2025-06-09 04:41:53 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m18s931ms).
+2025-06-09 04:42:14 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28421 ms.
+2025-06-09 04:58:03 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27136 ms.
+2025-06-09 04:58:24 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m1s939ms).
+2025-06-09 04:58:30 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 25728 ms.
+2025-06-09 04:58:31 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 04:58:57 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 25467 ms.
+2025-06-09 05:14:28 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 05:14:53 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s378ms).
+2025-06-09 05:14:59 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29729 ms.
+2025-06-09 05:25:57 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27679 ms.
+2025-06-09 05:25:58 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m5s521ms).
+2025-06-09 05:26:26 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27447 ms.
+2025-06-09 05:26:57 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 05:26:58 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 05:26:59 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 05:27:00 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 05:27:01 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 05:27:02 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 05:27:03 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 05:27:03 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 05:27:04 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 05:44:44 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 05:45:08 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m9s462ms).
+2025-06-09 05:45:15 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 05:46:35 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29425 ms.
+2025-06-09 06:03:11 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27854 ms.
+2025-06-09 06:03:27 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m49s147ms).
+2025-06-09 06:03:37 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24770 ms.
+2025-06-09 06:03:38 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 06:03:39 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 06:03:40 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 06:19:07 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28633 ms.
+2025-06-09 06:19:27 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s990ms).
+2025-06-09 06:19:38 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29907 ms.
+2025-06-09 06:26:57 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 06:43:52 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 06:44:11 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m14s157ms).
+2025-06-09 06:44:23 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 07:00:25 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 07:00:31 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m19s531ms).
+2025-06-09 07:00:53 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26617 ms.
+2025-06-09 07:18:24 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29542 ms.
+2025-06-09 07:18:36 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m35s404ms).
+2025-06-09 07:18:55 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 07:27:58 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 07:43:23 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 07:43:34 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m28s227ms).
+2025-06-09 07:43:50 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 25634 ms.
+2025-06-09 07:43:51 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 07:59:33 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 08:00:01 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m57s15ms).
+2025-06-09 08:00:02 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27405 ms.
+2025-06-09 08:17:35 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29865 ms.
+2025-06-09 08:17:40 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m38s857ms).
+2025-06-09 08:18:06 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 08:28:59 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26570 ms.
+2025-06-09 08:29:10 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m59s533ms).
+2025-06-09 08:29:26 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 25828 ms.
+2025-06-09 08:29:27 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 08:29:53 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 25201 ms.
+2025-06-09 08:47:26 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 08:47:38 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m57s926ms).
+2025-06-09 08:47:57 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 09:05:07 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29001 ms.
+2025-06-09 09:05:25 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m17s683ms).
+2025-06-09 09:05:38 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 09:22:53 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 09:23:18 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m22s666ms).
+2025-06-09 09:23:24 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 09:23:50 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24137 ms.
+2025-06-09 09:47:40 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 25902 ms.
+2025-06-09 09:47:58 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m9s401ms).
+2025-06-09 09:48:10 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28476 ms.
+2025-06-09 10:05:09 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 10:05:14 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m15s999ms).
+2025-06-09 10:05:39 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28602 ms.
+2025-06-09 10:22:33 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 10:22:46 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m2s681ms).
+2025-06-09 10:23:04 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 10:31:01 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 10:46:12 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 10:46:23 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m6s895ms).
+2025-06-09 10:46:40 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27058 ms.
+2025-06-09 10:46:41 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 11:02:56 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29029 ms.
+2025-06-09 11:03:20 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m26s985ms).
+2025-06-09 11:03:26 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28496 ms.
+2025-06-09 11:21:18 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26154 ms.
+2025-06-09 11:21:43 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24047 ms.
+2025-06-09 11:21:44 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 11:21:45 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 11:21:46 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m55s485ms).
+2025-06-09 11:21:46 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 11:21:47 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 11:21:48 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 11:21:49 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 11:32:02 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26306 ms.
+2025-06-09 11:32:06 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m20s576ms).
+2025-06-09 11:48:20 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28981 ms.
+2025-06-09 11:48:47 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m40s589ms).
+2025-06-09 11:48:51 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 12:05:05 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27923 ms.
+2025-06-09 12:05:15 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m27s945ms).
+2025-06-09 12:05:36 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 12:21:20 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 12:21:36 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m51s276ms).
+2025-06-09 12:21:51 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 12:21:52 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 12:21:53 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 12:21:54 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 12:33:03 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29844 ms.
+2025-06-09 12:33:26 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m19s689ms).
+2025-06-09 12:33:34 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29189 ms.
+2025-06-09 12:34:04 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29327 ms.
+2025-06-09 12:49:55 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29876 ms.
+2025-06-09 12:50:04 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m8s233ms).
+2025-06-09 12:50:25 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28906 ms.
+2025-06-09 13:06:22 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26563 ms.
+2025-06-09 13:06:43 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m9s501ms).
+2025-06-09 13:06:53 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 13:22:27 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27495 ms.
+2025-06-09 13:22:54 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m40s588ms).
+2025-06-09 13:22:58 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 13:34:04 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 13:34:10 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m15s676ms).
+2025-06-09 13:34:32 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26500 ms.
+2025-06-09 13:35:00 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27053 ms.
+2025-06-09 13:52:31 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 13:52:34 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m53s911ms).
+2025-06-09 13:53:02 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 13:59:35 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 13:59:41 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m37s580ms).
+2025-06-09 14:15:33 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 14:16:02 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27130 ms.
+2025-06-09 14:16:02 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m20s465ms).
+2025-06-09 14:31:24 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 25931 ms.
+2025-06-09 14:31:34 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m32s430ms).
+2025-06-09 14:31:51 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 25849 ms.
+2025-06-09 14:31:52 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 14:32:23 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 14:32:24 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 14:35:05 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 14:51:20 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 14:51:22 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m17s796ms).
+2025-06-09 14:51:46 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24988 ms.
+2025-06-09 14:51:47 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 14:51:48 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 14:51:49 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 14:51:50 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 15:08:22 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29594 ms.
+2025-06-09 15:08:37 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m44s960ms).
+2025-06-09 15:08:53 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29240 ms.
+2025-06-09 15:25:29 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 15:25:31 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m53s924ms).
+2025-06-09 15:26:00 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29783 ms.
+2025-06-09 15:36:06 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29998 ms.
+2025-06-09 15:36:13 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m12s508ms).
+2025-06-09 15:51:59 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 25309 ms.
+2025-06-09 15:52:29 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m15s518ms).
+2025-06-09 15:52:30 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 16:09:10 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28152 ms.
+2025-06-09 16:09:23 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m54s43ms).
+2025-06-09 16:09:41 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 16:25:15 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 16:25:40 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m46s708ms).
+2025-06-09 16:25:43 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26807 ms.
+2025-06-09 16:26:12 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28126 ms.
+2025-06-09 16:37:07 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 16:37:34 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m22s365ms).
+2025-06-09 16:37:38 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 16:38:05 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26046 ms.
+2025-06-09 16:54:06 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 16:54:33 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m29s582ms).
+2025-06-09 16:54:37 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 17:10:59 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29682 ms.
+2025-06-09 17:11:05 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m31s481ms).
+2025-06-09 17:11:30 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 17:11:59 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27305 ms.
+2025-06-09 17:15:17 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m42s623ms).
+2025-06-09 17:31:03 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28712 ms.
+2025-06-09 17:31:29 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24941 ms.
+2025-06-09 17:31:30 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m12s293ms).
+2025-06-09 17:31:30 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 17:38:08 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 17:38:10 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m40s639ms).
+2025-06-09 17:55:51 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 17:56:16 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m5s634ms).
+2025-06-09 17:56:22 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 18:11:38 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 18:11:50 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m33s540ms).
+2025-06-09 18:12:08 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29085 ms.
+2025-06-09 18:12:35 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24816 ms.
+2025-06-09 18:30:07 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24184 ms.
+2025-06-09 18:30:17 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m57s334ms).
+2025-06-09 18:30:37 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28636 ms.
+2025-06-09 18:39:09 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28284 ms.
+2025-06-09 18:39:21 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m33s791ms).
+2025-06-09 18:54:31 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29781 ms.
+2025-06-09 18:54:55 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m34s304ms).
+2025-06-09 18:55:02 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 19:10:37 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 19:10:45 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m49s649ms).
+2025-06-09 19:11:08 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 19:11:38 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28204 ms.
+2025-06-09 19:28:32 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 19:28:32 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m17s648ms).
+2025-06-09 19:29:03 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 19:29:34 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 19:40:10 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 19:40:37 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m5s9ms).
+2025-06-09 19:40:41 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 19:41:09 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27091 ms.
+2025-06-09 19:58:58 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24859 ms.
+2025-06-09 19:59:13 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m5s499ms).
+2025-06-09 19:59:29 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 20:14:53 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24849 ms.
+2025-06-09 20:15:13 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m30s485ms).
+2025-06-09 20:15:19 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24958 ms.
+2025-06-09 20:15:20 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 20:15:21 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 20:15:49 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27364 ms.
+2025-06-09 20:30:58 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 20:31:13 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m29s591ms).
+2025-06-09 20:31:28 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28738 ms.
+2025-06-09 20:41:10 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27264 ms.
+2025-06-09 20:56:59 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 20:57:13 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m30s66ms).
+2025-06-09 20:57:30 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 21:14:19 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 21:14:45 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24637 ms.
+2025-06-09 21:14:46 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 21:14:46 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m3s239ms).
+2025-06-09 21:14:47 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 21:31:57 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 21:31:58 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m11s698ms).
+2025-06-09 21:32:28 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 21:42:11 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 25362 ms.
+2025-06-09 21:58:28 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 21:58:30 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m1s860ms).
+2025-06-09 21:58:59 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29775 ms.
+2025-06-09 22:12:35 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 22:12:54 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m54s30ms).
+2025-06-09 22:13:05 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 28155 ms.
+2025-06-09 22:13:32 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 25872 ms.
+2025-06-09 22:29:32 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 22:29:54 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m29s707ms).
+2025-06-09 22:30:03 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 22:43:12 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 27415 ms.
+2025-06-09 22:43:37 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m13s740ms).
+2025-06-09 22:43:39 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 25988 ms.
+2025-06-09 22:43:40 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 22:43:41 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 22:44:07 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 24650 ms.
+2025-06-09 23:00:04 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 25935 ms.
+2025-06-09 23:00:33 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m25s943ms).
+2025-06-09 23:00:34 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29054 ms.
+2025-06-09 23:17:28 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29744 ms.
+2025-06-09 23:17:31 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m57s375ms).
+2025-06-09 23:17:59 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 23:35:34 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 29172 ms.
+2025-06-09 23:35:40 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m39s103ms).
+2025-06-09 23:36:02 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 26469 ms.
+2025-06-09 23:36:03 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1306)
+	at org.apache.kafka.clients.NetworkClient$TelemetrySender.maybeUpdate(NetworkClient.java:1275)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:583)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 23:36:34 [kafka-producer-network-thread | TaskService-producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 30000 ms.
+2025-06-09 23:44:13 [kafka-producer-network-thread | TaskService-producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=TaskService-producer-1] Error connecting to node 192.168.1.14:9092 (id: 1 rack: null)
+java.net.SocketException: Host is down
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.apache.kafka.common.network.Selector.doConnect(Selector.java:277)
+	at org.apache.kafka.common.network.Selector.connect(Selector.java:255)
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:1052)
+	at org.apache.kafka.clients.NetworkClient.access$700(NetworkClient.java:76)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1230)
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1130)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:582)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:351)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:253)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-09 23:44:21 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m10s690ms).
